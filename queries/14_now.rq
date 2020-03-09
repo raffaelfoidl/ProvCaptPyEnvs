@@ -1,0 +1,22 @@
+#title:Get module dependencies
+#comment:This returns all module dependencies including additional information available that have been recorded as part of deployment provenance.
+#tags:noworkflow,order
+#color:ex-green
+
+SELECT ?module_name ?version ?path ?code_hash
+WHERE {
+ ?modules a prov:Collection ;
+			prov:hadMember ?module .
+ ?module a prov:Entity,
+			  "moduleDependency" ;
+			rdfs:label ?module_name .
+ 
+ OPTIONAL { ?module ns1:version ?version_ . }
+ OPTIONAL { ?module prov:atLocation ?path_ . }
+ OPTIONAL {	?module ns1:codeHash ?code_hash_ . }
+  
+ BIND ( COALESCE(?version_, "<unavailable>") AS ?version )
+ BIND ( COALESCE(?path_, "<unavailable>") AS ?path )
+ BIND ( COALESCE(?code_hash_, "<unavailable>") AS ?code_hash )
+}
+ORDER BY ?module_name

@@ -1,0 +1,33 @@
+#title:Get function activations by return value
+#comment:This query returns all activations of any (or a fixed, specifiable) function that produced a specific return value.
+#tags:noworkflow,order,group,alias,optional,concat,group_concat,ucase
+#color:ex-green
+
+SELECT ?activation ?function (GROUP_CONCAT(CONCAT("{", UCASE(?parameter_name), " = ", ?parameter_value, "}"); separator = ", ") AS ?arguments)
+WHERE {
+ ?return_value a prov:Entity, "returnValue" ;
+			   prov:qualifiedGeneration ?generation ;
+			   prov:value "(3, 'Gentle breeze')" . # change output value to inspect generation of
+  
+ ?generation a prov:Generation ;
+			 prov:activity ?activation .
+  
+ ?activation a prov:Activity, "functionActivation" ;
+             # a specific function could be given here to restrict activations to a single function
+			 # (i. e. not only filter by return value, but also by function name)
+			 rdfs:label ?function .
+  
+ OPTIONAL {
+  ?activation prov:qualifiedUsage ?usage .
+   
+  ?usage a prov:Usage, "argumentActivation" ;
+		 prov:hadRole "argument" ;
+		 prov:entity ?parameter .
+  
+  ?parameter a prov:Entity, "argumentActivation" ;
+			 rdfs:label ?parameter_name ;
+			 prov:value ?parameter_value .
+ }
+}
+GROUP BY ?activation ?function
+ORDER BY ?activation

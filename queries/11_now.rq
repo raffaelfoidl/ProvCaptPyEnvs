@@ -1,0 +1,33 @@
+#title:Get function definitions
+#comment:This displays basic information about function definitions that are attributed to the definition provenance of a python script.
+#tags:noworkflow,alias,optional,bind,coalesce,group,order,sample,count,group_concat,sum,if
+#color:ex-green
+
+SELECT (?label as ?function) (SAMPLE(?description) AS ?description) (SAMPLE(?first_line) AS ?first_line) (SAMPLE(?last_line) AS ?last_line) (SUM(if(?argument_name != "<none>", 1, 0)) AS ?argument_count) (GROUP_CONCAT(?argument_name; separator=", ") AS ?arguments)
+WHERE {
+ ?func a prov:Activity ,
+		 "functionDefinition" ;
+	   rdfs:label ?label ;
+	   ns1:firstLine ?first_line ;
+	   ns1:lastLine ?last_line .
+ 
+ OPTIONAL {
+  ?func ns1:docString ?doc .
+ }
+  
+ OPTIONAL {
+  ?func prov:qualifiedUsage ?usage .
+  ?usage a prov:Usage,
+		   "argumentDefinition" ;
+		 prov:entity ?argument .
+  
+  ?argument a prov:Entity,
+			  "argumentDefinition" ;
+			rdfs:label ?argument_label .
+ }
+ 
+ BIND ( COALESCE(?doc, "<undefined>") AS ?description )
+ BIND ( COALESCE(?argument_label, "<none>") AS ?argument_name )
+}
+GROUP BY ?label
+ORDER BY ?label

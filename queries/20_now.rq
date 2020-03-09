@@ -1,0 +1,22 @@
+#title:Get removed module dependencies
+#comment:This returns all module dependencies that have been removed between the two trial executions. Additional information such as version, path and code hash are also provided, if available.
+#tags:noworkflow,alias,bind,coalesce,optional
+#color:ex-green
+
+SELECT ?name ?version ?path ?code_hash
+WHERE {
+ ?removed_dep a prov:Entity, "moduleDependency" ;
+			  rdfs:label ?name ;
+			  prov:qualifiedInvalidation ?removal .
+ 
+ ?removal a prov:Invalidation ;
+		  prov:hadRole "dependencyRemoval" .
+ 
+ OPTIONAL { ?removed_dep ns1:version ?version_ . }
+ OPTIONAL { ?removed_dep prov:atLocation ?path_ . }
+ OPTIONAL {	?removed_dep ns1:codeHash ?code_hash_ . }
+  
+ BIND ( COALESCE(?version_, "<unavailable>") AS ?version )
+ BIND ( COALESCE(?path_, "<unavailable>") AS ?path )
+ BIND ( COALESCE(?code_hash_, "<unavailable>") AS ?code_hash )
+}

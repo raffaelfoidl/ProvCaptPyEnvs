@@ -1,0 +1,15 @@
+#title:Get log messages
+#comment:Selects all log messages that have been declared using the @log qualifying annotation, including the entity that has received/triggered the log entry.
+#command:yw extract script.py -c extract.provenancefile=script_prov -c extract.provenanceformat=turtle -c extract.provenancens=http://yesworkflow.org/ -c extract.provenanceprefix=yw
+#tags:yesWorkflow,alias,bind,replace,regex
+#color:ex-yellow
+
+SELECT (?activity AS ?function) ?logger ?log_message
+WHERE {
+ ?activity a prov:Activity .
+ ?activity rdfs:label ?label .
+  
+  FILTER (regex(?label, "log_(.*):(.*)") ) .
+  BIND (REPLACE(?label, "log_(.*):(.*)", "$1") AS ?logger)
+  BIND (REPLACE(?label, "log_(.*):(.*)", "$2") AS ?log_message)
+}

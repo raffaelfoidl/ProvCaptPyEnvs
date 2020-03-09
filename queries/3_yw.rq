@@ -1,0 +1,16 @@
+#title:Get parameters
+#comment:Selects all entities that are consumed by functions (= input parameters) and - if available - the descriptions retrieved by the yesWorkflow parser for these arguments
+#command:yw extract script.py -c extract.provenancefile=script_prov -c extract.provenanceformat=turtle -c extract.provenancens=http://yesworkflow.org/ -c extract.provenanceprefix=yw
+#tags:yesWorkflow,alias,order,optional,coalesce,bind
+#color:ex-yellow
+
+SELECT (?activity AS ?function) (?entity AS ?input_parameter) ?description
+WHERE {
+ ?usage a prov:Usage .
+ ?usage prov:entity ?entity .
+ ?activity prov:qualifiedUsage ?usage .
+ OPTIONAL { ?entity rdfs:label ?label } .
+
+ BIND(COALESCE(?label, "<undefined>") AS ?description)
+}
+ORDER BY ?activity

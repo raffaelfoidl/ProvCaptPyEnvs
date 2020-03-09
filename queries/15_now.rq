@@ -1,0 +1,16 @@
+#title:Get file accesses
+#comment:This returns all file accesses that have been recorded during the trial execution.
+#tags:noworkflow,order,order,asc,xsd:dateTime
+#color:ex-green
+
+SELECT ?file ?mode ?time ?hash_before ?hash_after
+WHERE {
+ ?file_access a prov:Activity,
+				?mode ;
+			  prov:atLocation ?file ;
+			  prov:time ?time .
+ OPTIONAL {	?file_access ns1:contentHashBefore ?hash_before; }
+ OPTIONAL { ?file_access ns1:contentHashAfter ?hash_after . }
+ FILTER (?mode != prov:Activity)
+}
+ORDER BY ASC(xsd:dateTime(?time))

@@ -1,0 +1,22 @@
+#title:Get helper method calls
+#comment:Selects all calls to helper functions defined by a @call annotation, i. e. the calling function, the helper method and the helper method's description, if available.
+#command:yw extract script.py -c extract.provenancefile=script_prov -c extract.provenanceformat=turtle -c extract.provenancens=http://yesworkflow.org/ -c extract.provenanceprefix=yw
+#tags:yesWorkflow,alias,bind,optional,replace,str,group,order,coalesce,group_concat,sample
+#color:ex-yellow
+
+SELECT (?entity AS ?helper_method) (SAMPLE(?description) AS ?description) (GROUP_CONCAT(?function_name; separator = ", ") AS ?called_by)
+WHERE {
+ ?usage a prov:Usage .
+ ?usage prov:entity ?entity .
+ ?activity prov:qualifiedUsage ?usage .
+ OPTIONAL { ?entity rdfs:label ?label } .
+
+ BIND(COALESCE(?label, "<undefined>") AS ?description) .
+ 
+ ?entity a "calledFunction" .
+  
+ # optional: only display local name instead of full function URI
+ BIND(replace(str(?activity), ".*\\/", "") AS ?function_name)
+}
+GROUP BY ?entity
+ORDER BY ?entity

@@ -1,0 +1,36 @@
+#title:Get activations of a function
+#comment:This query returns all activations of a specific function that were recorded during execution provenance capturing. Each result record contains the line by which the function was called, the start and end time of the function execution, the parameters given (names + values) and the return value.
+#tags:noworkflow,order,group,optional,group_concat,ucase,concat,xsd:dateTime,asc
+#color:ex-green
+
+SELECT ?activation ?line_called ?start_time ?end_time (GROUP_CONCAT(CONCAT("{", UCASE(?argument_name), " = ", ?argument_value, "}"); separator = ", ") AS ?args) ?return_value
+WHERE {
+ ?activation a prov:Activity, "functionActivation" ;
+			 rdfs:label "get_classification" ; # change desired function name here
+			 prov:startedAtTime ?start_time ;
+			 prov:endedAtTime ?end_time ;
+			 ns1:line ?line_called .
+			   
+ OPTIONAL {
+  ?generation a prov:Generation ;
+			  prov:activity ?activation .
+ 
+  ?retVal a prov:Entity, "returnValue" ;
+		  prov:qualifiedGeneration ?generation ;
+		  prov:value ?return_value .
+ }
+   
+ OPTIONAL {
+   ?activation prov:qualifiedUsage ?usage . 
+   ?usage a prov:Usage, "argumentActivation" ;
+		prov:hadRole "argument" ;
+		prov:entity ?argumentAct .
+   
+   ?argumentAct a prov:Entity, "argumentActivation" ;
+	            rdfs:label ?argument_name ;
+			    prov:value ?argument_value .
+ }
+ 
+}
+GROUP BY ?activation ?line_called ?start_time ?end_time ?return_value
+ORDER BY ASC(xsd:dateTime(?start_time))

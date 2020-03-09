@@ -1,0 +1,22 @@
+#title:Get function calls
+#comment:This returns all function calls from within other functions that can be retrieved from the definition provenance.
+#tags:noworkflow,alias,group,order,count,group_concat
+#color:ex-green
+
+SELECT ?calling_function (COUNT(?called_function) AS ?called_count) (GROUP_CONCAT(?called_function; separator=", ") AS ?called_functions)
+WHERE {
+ ?func a prov:Activity ,
+		 "functionDefinition" ;
+	   rdfs:label ?calling_function . # change desired function here (e. g. hardcoded)
+  
+ ?call a prov:Communication,
+		 "callDefinition" ;
+	   prov:activity ?func .
+		 
+ ?callDef a prov:Activity,
+			"callDefinition" ;
+		  rdfs:label ?called_function ;
+		  prov:qualifiedCommunication ?call .
+}
+GROUP BY ?calling_function
+ORDER BY ?calling_function

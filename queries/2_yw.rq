@@ -1,0 +1,13 @@
+#title:Get return values
+#comment:Selects all return values that are defined to be output parameters of any function, along with the respective function
+#command:yw extract script.py -c extract.provenancefile=script_prov -c extract.provenanceformat=turtle -c extract.provenancens=http://yesworkflow.org/ -c extract.provenanceprefix=yw
+#tags:yesWorkflow,alias,order
+#color:ex-yellow
+
+SELECT (?entity AS ?return_value) (?activity AS ?function)
+WHERE {
+ ?generation a prov:Generation .
+ ?generation prov:activity ?activity .
+ ?entity prov:qualifiedGeneration ?generation .
+}
+ORDER BY ?entity ?activity
