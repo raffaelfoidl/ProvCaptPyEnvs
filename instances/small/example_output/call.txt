@@ -1,0 +1,1 @@
+python inst_s.py data.csv

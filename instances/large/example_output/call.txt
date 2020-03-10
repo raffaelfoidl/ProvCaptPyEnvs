@@ -1,0 +1,1 @@
+python inst_l.py 177 proc_freqs.png res_summary_data.csv res_summary_plot.png res_conflicts.json trace_1.json trace_2.json trace_3.json trace_4.json

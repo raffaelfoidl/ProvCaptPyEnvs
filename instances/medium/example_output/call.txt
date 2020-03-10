@@ -1,0 +1,1 @@
+python inst_m.py 4 in.jpg blurred.jpg differences.jpg
