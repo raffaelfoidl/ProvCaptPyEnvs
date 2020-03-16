@@ -1,5 +1,6 @@
 #title:Get function calls
 #comment:This returns all function calls from within other functions that can be retrieved from the definition provenance.
+#command:now provo -d --format turtle 7
 #tags:noworkflow,alias,group,order,count,group_concat
 #color:ex-green
 

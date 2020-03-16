@@ -1,14 +1,17 @@
 #title:Get functions that have at least 2 parameters
-#comment:Selects all functions that are defined to consume at least a certain number of input parameters.
+#comment:Selects all functions that are defined to consume at least 2 input parameters, including the functions' descriptions (if available), parameter count and parameter names.
 #command:yw extract script.py -c extract.provenancefile=script_prov -c extract.provenanceformat=turtle -c extract.provenancens=http://yesworkflow.org/ -c extract.provenanceprefix=yw
-#tags:yesWorkflow,alias,bind,replace,str,count,group_concat,having,order,group
+#tags:yesWorkflow,alias,bind,replace,str,count,group_concat,having,order,group,coalesce
 #color:ex-yellow
 
-SELECT (?activity AS ?function) (COUNT(?entity) AS ?parameter_count) (GROUP_CONCAT(?entity_name; separator= ", ") AS ?parameters)
+SELECT (?activity AS ?function) (SAMPLE(?description) AS ?description) (COUNT(?entity) AS ?parameter_count) (GROUP_CONCAT(?entity_name; separator= ", ") AS ?parameters)
 WHERE {
  ?usage a prov:Usage .
  ?usage prov:entity ?entity .
  ?activity prov:qualifiedUsage ?usage .
+
+ OPTIONAL { ?activity rdfs:label ?label . }
+ BIND(COALESCE(?label, "<undefined>") AS ?description)
 
  # optional: only display local name instead of full entity URI
  BIND(replace(str(?entity), ".*\\/", "") AS ?entity_name)

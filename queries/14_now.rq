@@ -1,5 +1,6 @@
 #title:Get module dependencies
 #comment:This returns all module dependencies including additional information available that have been recorded as part of deployment provenance.
+#command:now provo -m --format turtle 7
 #tags:noworkflow,order
 #color:ex-green
 

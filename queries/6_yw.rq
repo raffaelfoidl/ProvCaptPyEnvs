@@ -1,5 +1,5 @@
 #title:Get functions that influenced output parameters
-#comment:Selects all functions that are involved in the generation of the output parameters in this script. One result record contains the return value, the number of functions found to be influental and a comma-separated list of those functions. 
+#comment:Selects all functions that are involved in the generation of the output parameters in this script. Result records contain the return value, the number of functions found to be influental and a comma-separated list of those functions. 
 #command:yw extract script.py -c extract.provenancefile=script_prov -c extract.provenanceformat=turtle -c extract.provenancens=http://yesworkflow.org/ -c extract.provenanceprefix=yw
 #tags:yesWorkflow,alias,bind,replace,str,group,order,property path,group_concat,distinct,filter
 #color:ex-yellow

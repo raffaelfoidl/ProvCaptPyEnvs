@@ -1,5 +1,6 @@
 #title:Get removed module dependencies
 #comment:This returns all module dependencies that have been removed between the two trial executions. Additional information such as version, path and code hash are also provided, if available.
+#command:now diff -p -m --format turtle 7 1
 #tags:noworkflow,alias,bind,coalesce,optional
 #color:ex-green
 

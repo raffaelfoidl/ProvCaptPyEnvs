@@ -1,5 +1,5 @@
 #title:Get aliases
-#comment:Select all entities that have alternate versions (including these alternate values)
+#comment:Select all entities that have alternate versions (including these alternate values).
 #command:yw extract script.py -c extract.provenancefile=script_provv -c extract.provenanceformat=turtle -c extract.provenancens=http://yesworkflow.org/ -c extract.provenanceprefix=yw
 #tags:yesWorkflow,order
 #color:ex-yellow

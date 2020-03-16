@@ -1,5 +1,6 @@
 #title:Get environment attributes
 #comment:This returns all environment attribute names and values that have been recorded as part of deployment provenance capturing.
+#command:now provo -e --format turtle 7
 #tags:noworkflow,order
 #color:ex-green
 

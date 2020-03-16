@@ -1,5 +1,6 @@
 #title:Get file accesses
 #comment:This returns all file accesses that have been recorded during the trial execution.
+#command:now provo -f --format turtle 7
 #tags:noworkflow,order,order,asc,xsd:dateTime
 #color:ex-green
 

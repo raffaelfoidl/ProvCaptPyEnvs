@@ -1,5 +1,6 @@
 #title:Get replaced environment attributes
 #comment:This returns all environment attributes that have been modified (i. e. "replaced" = removed and added) between the two trial executions. Additional information such as old and new values and IDs are also provided.
+#command:now diff -p -e --format turtle 7 1
 #tags:noworkflow,order,blank node
 #color:ex-green
 

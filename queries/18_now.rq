@@ -1,5 +1,6 @@
 #title:Get function activations that influenced an output parameter
-#comment:This query selects all functions that were involved in the generation of a specific, configurable  output parameter (return value). The result contains all function activations in this property path (until the root activity is reached), along with function name, depth (i. e. depth(root) == 1), start and end time.
+#comment:This query selects all functions that were involved in the generation of a specific, configurable  output parameter (return value).\nThe result contains all function activations in this property path (until the root activity is reached), along with function name, depth (i. e. depth(root) == 1), start and end time.
+#command:now provo -a --format turtle 7
 #tags:noworkflow,order,alias,property path,desc
 #color:ex-green
 
