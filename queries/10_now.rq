@@ -1,7 +1,7 @@
 #title:Get information about a trial
 #comment:This selects the pieces of general information about a trial that describe it on a very rough detail level, i. e. invoked script, execution command used, start and end time, optionally the id of a parent trial.
 #command:now provo --format turtle 7
-#tags:noworkflow,alias,optional,bind,coalesce
+#tags:noworkflow,alias,optional,bind,coalesce,provo
 #color:ex-green
 
 SELECT ?trial_id ?script_file ?command ?start_time ?end_time ?parent_trial

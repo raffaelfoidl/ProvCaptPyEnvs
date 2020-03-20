@@ -1,7 +1,7 @@
 #title:Get function definitions
 #comment:This displays basic information about function definitions that are attributed to the definition provenance of a python script.
 #command:now provo -d --format turtle 7
-#tags:noworkflow,alias,optional,bind,coalesce,group,order,sample,count,group_concat,sum,if
+#tags:noworkflow,alias,optional,bind,coalesce,group,order,sample,count,group_concat,sum,if,provo
 #color:ex-green
 
 SELECT (?label as ?function) (SAMPLE(?description) AS ?description) (SAMPLE(?first_line) AS ?first_line) (SAMPLE(?last_line) AS ?last_line) (SUM(if(?argument_name != "<none>", 1, 0)) AS ?argument_count) (GROUP_CONCAT(?argument_name; separator=", ") AS ?arguments)

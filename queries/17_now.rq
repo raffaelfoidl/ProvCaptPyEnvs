@@ -1,7 +1,7 @@
 #title:Get function activations by return value
 #comment:This query returns all activations of any (or a fixed, specifiable) function that produced a specific return value.
 #command:now provo -a --format turtle 7
-#tags:noworkflow,order,group,alias,optional,concat,group_concat,ucase
+#tags:noworkflow,order,group,alias,optional,concat,group_concat,ucase,provo
 #color:ex-green
 
 SELECT ?activation ?function (GROUP_CONCAT(CONCAT("{", UCASE(?parameter_name), " = ", ?parameter_value, "}"); separator = ", ") AS ?arguments)

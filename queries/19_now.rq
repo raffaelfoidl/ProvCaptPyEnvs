@@ -1,7 +1,7 @@
 #title:Compare information on two trials
 #comment:This selects the pieces of general information about two trials, i. e. invoked script, execution command used, start and end time, optionally the id of a parent trial.\nThese pieces of data are compared between the two trials and a "=>" denotes differences between the two executions.
 #command:now diff -p --format turtle 7 1
-#tags:noworkflow,alias,coalesce,bind,str,if,optional,limit,filter
+#tags:noworkflow,alias,coalesce,bind,str,if,optional,limit,filter,diff
 #color:ex-green
 
 SELECT ?trial_id ?script_file ?command ?start_time ?end_time ?parent_trial

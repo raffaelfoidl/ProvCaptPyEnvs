@@ -1,7 +1,7 @@
 #title:Get activations of a function
 #comment:This query returns all activations of a specific function that were recorded during execution provenance capturing.\nEach result record contains the line by which the function was called, the start and end time of the function execution, the parameters given (names + values) and the return value.
 #command:now provo -a --format turtle 7
-#tags:noworkflow,order,group,optional,group_concat,ucase,concat,xsd:dateTime,asc
+#tags:noworkflow,order,group,optional,group_concat,ucase,concat,xsd:dateTime,asc,provo
 #color:ex-green
 
 SELECT ?activation ?line_called ?start_time ?end_time (GROUP_CONCAT(CONCAT("{", UCASE(?argument_name), " = ", ?argument_value, "}"); separator = ", ") AS ?args) ?return_value

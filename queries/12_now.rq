@@ -1,7 +1,7 @@
 #title:Get function calls
 #comment:This returns all function calls from within other functions that can be retrieved from the definition provenance.
 #command:now provo -d --format turtle 7
-#tags:noworkflow,alias,group,order,count,group_concat
+#tags:noworkflow,alias,group,order,count,group_concat,provo
 #color:ex-green
 
 SELECT ?calling_function (COUNT(?called_function) AS ?called_count) (GROUP_CONCAT(?called_function; separator=", ") AS ?called_functions)
