@@ -1,0 +1,136 @@
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix yw: <http://yesworkflow.org/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+yw:data_by_country a prov:Entity ;
+	rdfs:label "[output] contries grouped by country (list of sublists)" , "[input] country-grouped data" .
+
+yw:data_by_country__GEN__group_data_by_country a prov:Generation ;
+	prov:activity yw:group_data_by_country .
+
+yw:data_by_country prov:qualifiedGeneration yw:data_by_country__GEN__group_data_by_country .
+
+yw:get_top_ten_overall a prov:Activity ;
+	rdfs:label "sort by wind speed, return first 10 items" .
+
+yw:summary_overall__GEN__inst_s.main a prov:Generation ;
+	prov:activity yw:inst_s.main .
+
+yw:summary_overall prov:qualifiedGeneration yw:summary_overall__GEN__inst_s.main .
+
+yw:data_parsed__GEN__read_file a prov:Generation ;
+	prov:activity yw:read_file .
+
+yw:data_parsed prov:qualifiedGeneration yw:data_parsed__GEN__read_file .
+
+yw:country_top_ten a prov:Entity .
+
+yw:data a prov:Entity ;
+	rdfs:label "CSV file with country, code, city, wind_speed as columns" .
+
+yw:read_file a prov:Activity ;
+	rdfs:label "read CSV data as NamedTuple" .
+
+yw:data_parsed a prov:Entity ;
+	rdfs:label "CSV data as NamedTuple" .
+
+yw:overall_top_ten a prov:Entity .
+
+yw:country_top_ten__USE__persist_top_ten_by_country a prov:Usage ;
+	prov:entity yw:country_top_ten .
+
+yw:persist_top_ten_by_country prov:qualifiedUsage yw:country_top_ten__USE__persist_top_ten_by_country .
+
+yw:get_classification__CALL__persist_top_ten_overall a prov:Usage ;
+	prov:entity yw:get_classification .
+
+yw:persist_top_ten_overall prov:qualifiedUsage yw:get_classification__CALL__persist_top_ten_overall .
+
+yw:get_classification__CALL__persist_top_ten_overall a "call" .
+
+yw:get_classification a prov:Entity , "calledFunction" ;
+	rdfs:label "maps wind speed to Beaufort scale" .
+
+yw:overall_top_ten__GEN__get_top_ten_overall a prov:Generation ;
+	prov:activity yw:get_top_ten_overall .
+
+yw:overall_top_ten prov:qualifiedGeneration yw:overall_top_ten__GEN__get_top_ten_overall .
+
+yw:overall_top_ten__USE__persist_top_ten_overall a prov:Usage ;
+	prov:entity yw:overall_top_ten .
+
+yw:persist_top_ten_overall prov:qualifiedUsage yw:overall_top_ten__USE__persist_top_ten_overall .
+
+yw:data__USE__read_file a prov:Usage ;
+	prov:entity yw:data .
+
+yw:read_file prov:qualifiedUsage yw:data__USE__read_file .
+
+yw:data__USE__inst_s.main a prov:Usage ;
+	prov:entity yw:data .
+
+yw:inst_s.main prov:qualifiedUsage yw:data__USE__inst_s.main .
+
+yw:summary_by_country a prov:Entity ;
+	rdfs:label "file:by_country.json" .
+
+yw:inst_s.main a prov:Activity ;
+	rdfs:label "Processes a list of wind speed measurements" .
+
+yw:summary_overall a prov:Entity ;
+	rdfs:label "file:overall.json" .
+
+yw:group_data_by_country a prov:Activity ;
+	rdfs:label "split data by country" .
+
+yw:summary_by_country__GEN__persist_top_ten_by_country a prov:Generation ;
+	prov:activity yw:persist_top_ten_by_country .
+
+yw:summary_by_country prov:qualifiedGeneration yw:summary_by_country__GEN__persist_top_ten_by_country .
+
+yw:summary_overall__GEN__persist_top_ten_overall a prov:Generation ;
+	prov:activity yw:persist_top_ten_overall .
+
+yw:summary_overall prov:qualifiedGeneration yw:summary_overall__GEN__persist_top_ten_overall .
+
+yw:summary_by_country__GEN__inst_s.main a prov:Generation ;
+	prov:activity yw:inst_s.main .
+
+yw:summary_by_country prov:qualifiedGeneration yw:summary_by_country__GEN__inst_s.main .
+
+yw:persist_top_ten_by_country a prov:Activity .
+
+yw:persist_top_ten_overall a prov:Activity .
+
+yw:data_by_country__USE__get_top_ten_by_country a prov:Usage ;
+	prov:entity yw:data_by_country .
+
+yw:get_top_ten_by_country prov:qualifiedUsage yw:data_by_country__USE__get_top_ten_by_country .
+
+yw:data_parsed__USE__get_top_ten_overall a prov:Usage ;
+	prov:entity yw:data_parsed .
+
+yw:get_top_ten_overall prov:qualifiedUsage yw:data_parsed__USE__get_top_ten_overall .
+
+yw:get_classification__CALL__persist_top_ten_by_country a prov:Usage ;
+	prov:entity yw:get_classification .
+
+yw:persist_top_ten_by_country prov:qualifiedUsage yw:get_classification__CALL__persist_top_ten_by_country .
+
+yw:get_classification__CALL__persist_top_ten_by_country a "call" .
+
+yw:data_parsed__USE__group_data_by_country a prov:Usage ;
+	prov:entity yw:data_parsed .
+
+yw:group_data_by_country prov:qualifiedUsage yw:data_parsed__USE__group_data_by_country .
+
+yw:country_top_ten__GEN__get_top_ten_by_country a prov:Generation ;
+	prov:activity yw:get_top_ten_by_country .
+
+yw:country_top_ten prov:qualifiedGeneration yw:country_top_ten__GEN__get_top_ten_by_country .
+
+yw:get_top_ten_by_country a prov:Activity ;
+	rdfs:label "10 countries with highest avg wind speed" .

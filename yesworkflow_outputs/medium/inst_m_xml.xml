@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<prov:document xmlns:prov="http://www.w3.org/ns/prov#" xmlns:ns2="http://openprovenance.org/prov/extension#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:yw="http://yesworkflow.org/">
+    <prov:wasGeneratedBy prov:id="yw:diff__file____GEN____save__diff__image">
+        <prov:entity prov:ref="yw:diff__file"/>
+        <prov:activity prov:ref="yw:save__diff__image"/>
+    </prov:wasGeneratedBy>
+    <prov:used prov:id="yw:diff____USE____save__diff__image">
+        <prov:activity prov:ref="yw:save__diff__image"/>
+        <prov:entity prov:ref="yw:diff"/>
+    </prov:used>
+    <prov:wasGeneratedBy prov:id="yw:diff__image____GEN____calculate__differences">
+        <prov:entity prov:ref="yw:diff__image"/>
+        <prov:activity prov:ref="yw:calculate__differences"/>
+    </prov:wasGeneratedBy>
+    <prov:entity prov:id="yw:blurred__image"/>
+    <prov:wasGeneratedBy prov:id="yw:out__file____GEN____save__out__file">
+        <prov:entity prov:ref="yw:out__file"/>
+        <prov:activity prov:ref="yw:save__out__file"/>
+    </prov:wasGeneratedBy>
+    <prov:used prov:id="yw:output__path____USE____inst__m.main">
+        <prov:activity prov:ref="yw:inst__m.main"/>
+        <prov:entity prov:ref="yw:output__path"/>
+    </prov:used>
+    <prov:used prov:id="yw:diff____USE____inst__m.main">
+        <prov:activity prov:ref="yw:inst__m.main"/>
+        <prov:entity prov:ref="yw:diff"/>
+    </prov:used>
+    <prov:used prov:id="yw:output__path____USE____save__out__file">
+        <prov:activity prov:ref="yw:save__out__file"/>
+        <prov:entity prov:ref="yw:output__path"/>
+    </prov:used>
+    <prov:wasGeneratedBy prov:id="yw:input__file____GEN____read__input">
+        <prov:entity prov:ref="yw:input__file"/>
+        <prov:activity prov:ref="yw:read__input"/>
+    </prov:wasGeneratedBy>
+    <prov:used prov:id="yw:diff__image____USE____save__diff__image">
+        <prov:activity prov:ref="yw:save__diff__image"/>
+        <prov:entity prov:ref="yw:diff__image"/>
+    </prov:used>
+    <prov:used prov:id="yw:input__path____USE____inst__m.main">
+        <prov:activity prov:ref="yw:inst__m.main"/>
+        <prov:entity prov:ref="yw:input__path"/>
+    </prov:used>
+    <prov:entity prov:id="yw:input__path">
+        <prov:label>input file</prov:label>
+    </prov:entity>
+    <prov:used prov:id="yw:input__file____USE____apply__gauss">
+        <prov:activity prov:ref="yw:apply__gauss"/>
+        <prov:entity prov:ref="yw:input__file"/>
+    </prov:used>
+    <prov:activity prov:id="yw:save__diff__image">
+        <prov:label>persist image with color differences</prov:label>
+    </prov:activity>
+    <prov:used prov:id="yw:sigma____USE____inst__m.main">
+        <prov:activity prov:ref="yw:inst__m.main"/>
+        <prov:entity prov:ref="yw:sigma"/>
+    </prov:used>
+    <prov:used prov:id="yw:input__path____USE____read__input">
+        <prov:activity prov:ref="yw:read__input"/>
+        <prov:entity prov:ref="yw:input__path"/>
+    </prov:used>
+    <prov:entity prov:id="yw:diff">
+        <prov:label>diff image file path</prov:label>
+    </prov:entity>
+    <prov:activity prov:id="yw:apply__gauss">
+        <prov:label>apply gaussian blur with specified parameter to input file</prov:label>
+    </prov:activity>
+    <prov:used prov:id="yw:blurred__image____USE____save__out__file">
+        <prov:activity prov:ref="yw:save__out__file"/>
+        <prov:entity prov:ref="yw:blurred__image"/>
+    </prov:used>
+    <prov:used prov:id="yw:blurred__image____USE____calculate__differences">
+        <prov:activity prov:ref="yw:calculate__differences"/>
+        <prov:entity prov:ref="yw:blurred__image"/>
+    </prov:used>
+    <prov:wasGeneratedBy prov:id="yw:blurred__image____GEN____apply__gauss">
+        <prov:entity prov:ref="yw:blurred__image"/>
+        <prov:activity prov:ref="yw:apply__gauss"/>
+    </prov:wasGeneratedBy>
+    <prov:activity prov:id="yw:read__input">
+        <prov:label>read image from input path</prov:label>
+    </prov:activity>
+    <prov:used prov:id="yw:input__file____USE____calculate__differences">
+        <prov:activity prov:ref="yw:calculate__differences"/>
+        <prov:entity prov:ref="yw:input__file"/>
+    </prov:used>
+    <prov:entity prov:id="yw:diff__image"/>
+    <prov:activity prov:id="yw:save__out__file">
+        <prov:label>persist blurred image</prov:label>
+        <prov:label>log_out_file: Done saving output image</prov:label>
+    </prov:activity>
+    <prov:entity prov:id="yw:sigma">
+        <prov:label>sigma for gauss filter</prov:label>
+    </prov:entity>
+    <prov:entity prov:id="yw:output__path">
+        <prov:label>output image file path</prov:label>
+    </prov:entity>
+    <prov:activity prov:id="yw:inst__m.main">
+        <prov:label>Blurs an image and computes the differences to the original</prov:label>
+    </prov:activity>
+    <prov:activity prov:id="yw:calculate__differences">
+        <prov:label>compute color differences in pixels</prov:label>
+        <prov:label>log_diff_image: {percentage} % done</prov:label>
+        <prov:label>log_diff_image: Done calculating</prov:label>
+    </prov:activity>
+    <prov:entity prov:id="yw:diff__file">
+        <prov:label>file:{diff}</prov:label>
+    </prov:entity>
+    <prov:used prov:id="yw:sigma____USE____apply__gauss">
+        <prov:activity prov:ref="yw:apply__gauss"/>
+        <prov:entity prov:ref="yw:sigma"/>
+    </prov:used>
+    <prov:wasGeneratedBy prov:id="yw:out__file____GEN____inst__m.main">
+        <prov:entity prov:ref="yw:out__file"/>
+        <prov:activity prov:ref="yw:inst__m.main"/>
+    </prov:wasGeneratedBy>
+    <prov:wasGeneratedBy prov:id="yw:diff__file____GEN____inst__m.main">
+        <prov:entity prov:ref="yw:diff__file"/>
+        <prov:activity prov:ref="yw:inst__m.main"/>
+    </prov:wasGeneratedBy>
+    <prov:entity prov:id="yw:input__file"/>
+    <prov:entity prov:id="yw:out__file">
+        <prov:label>file:{out}</prov:label>
+    </prov:entity>
+    <prov:alternateOf>
+        <prov:alternate1 prov:ref="yw:output__path"/>
+        <prov:alternate2 prov:ref="yw:out"/>
+    </prov:alternateOf>
+    <prov:alternateOf>
+        <prov:alternate1 prov:ref="yw:input__path"/>
+        <prov:alternate2 prov:ref="yw:in"/>
+    </prov:alternateOf>
+</prov:document>

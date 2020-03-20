@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<prov:document xmlns:prov="http://www.w3.org/ns/prov#" xmlns:ns2="http://openprovenance.org/prov/extension#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:yw="http://yesworkflow.org/">
+    <prov:entity prov:id="yw:data__by__country">
+        <prov:label>[output] contries grouped by country (list of sublists)</prov:label>
+        <prov:label>[input] country-grouped data</prov:label>
+    </prov:entity>
+    <prov:wasGeneratedBy prov:id="yw:data__by__country____GEN____group__data__by__country">
+        <prov:entity prov:ref="yw:data__by__country"/>
+        <prov:activity prov:ref="yw:group__data__by__country"/>
+    </prov:wasGeneratedBy>
+    <prov:activity prov:id="yw:get__top__ten__overall">
+        <prov:label>sort by wind speed, return first 10 items</prov:label>
+    </prov:activity>
+    <prov:wasGeneratedBy prov:id="yw:summary__overall____GEN____inst__s.main">
+        <prov:entity prov:ref="yw:summary__overall"/>
+        <prov:activity prov:ref="yw:inst__s.main"/>
+    </prov:wasGeneratedBy>
+    <prov:wasGeneratedBy prov:id="yw:data__parsed____GEN____read__file">
+        <prov:entity prov:ref="yw:data__parsed"/>
+        <prov:activity prov:ref="yw:read__file"/>
+    </prov:wasGeneratedBy>
+    <prov:entity prov:id="yw:country__top__ten"/>
+    <prov:entity prov:id="yw:data">
+        <prov:label>CSV file with country, code, city, wind_speed as columns</prov:label>
+    </prov:entity>
+    <prov:activity prov:id="yw:read__file">
+        <prov:label>read CSV data as NamedTuple</prov:label>
+    </prov:activity>
+    <prov:entity prov:id="yw:data__parsed">
+        <prov:label>CSV data as NamedTuple</prov:label>
+    </prov:entity>
+    <prov:entity prov:id="yw:overall__top__ten"/>
+    <prov:used prov:id="yw:country__top__ten____USE____persist__top__ten__by__country">
+        <prov:activity prov:ref="yw:persist__top__ten__by__country"/>
+        <prov:entity prov:ref="yw:country__top__ten"/>
+    </prov:used>
+    <prov:used prov:id="yw:get__classification____CALL____persist__top__ten__overall">
+        <prov:activity prov:ref="yw:persist__top__ten__overall"/>
+        <prov:entity prov:ref="yw:get__classification"/>
+        <prov:type xsi:type="xsd:string">call</prov:type>
+    </prov:used>
+    <prov:entity prov:id="yw:get__classification">
+        <prov:label>maps wind speed to Beaufort scale</prov:label>
+        <prov:type xsi:type="xsd:string">calledFunction</prov:type>
+    </prov:entity>
+    <prov:wasGeneratedBy prov:id="yw:overall__top__ten____GEN____get__top__ten__overall">
+        <prov:entity prov:ref="yw:overall__top__ten"/>
+        <prov:activity prov:ref="yw:get__top__ten__overall"/>
+    </prov:wasGeneratedBy>
+    <prov:used prov:id="yw:overall__top__ten____USE____persist__top__ten__overall">
+        <prov:activity prov:ref="yw:persist__top__ten__overall"/>
+        <prov:entity prov:ref="yw:overall__top__ten"/>
+    </prov:used>
+    <prov:used prov:id="yw:data____USE____read__file">
+        <prov:activity prov:ref="yw:read__file"/>
+        <prov:entity prov:ref="yw:data"/>
+    </prov:used>
+    <prov:used prov:id="yw:data____USE____inst__s.main">
+        <prov:activity prov:ref="yw:inst__s.main"/>
+        <prov:entity prov:ref="yw:data"/>
+    </prov:used>
+    <prov:entity prov:id="yw:summary__by__country">
+        <prov:label>file:by_country.json</prov:label>
+    </prov:entity>
+    <prov:activity prov:id="yw:inst__s.main">
+        <prov:label>Processes a list of wind speed measurements</prov:label>
+    </prov:activity>
+    <prov:entity prov:id="yw:summary__overall">
+        <prov:label>file:overall.json</prov:label>
+    </prov:entity>
+    <prov:activity prov:id="yw:group__data__by__country">
+        <prov:label>split data by country</prov:label>
+    </prov:activity>
+    <prov:wasGeneratedBy prov:id="yw:summary__by__country____GEN____persist__top__ten__by__country">
+        <prov:entity prov:ref="yw:summary__by__country"/>
+        <prov:activity prov:ref="yw:persist__top__ten__by__country"/>
+    </prov:wasGeneratedBy>
+    <prov:wasGeneratedBy prov:id="yw:summary__overall____GEN____persist__top__ten__overall">
+        <prov:entity prov:ref="yw:summary__overall"/>
+        <prov:activity prov:ref="yw:persist__top__ten__overall"/>
+    </prov:wasGeneratedBy>
+    <prov:wasGeneratedBy prov:id="yw:summary__by__country____GEN____inst__s.main">
+        <prov:entity prov:ref="yw:summary__by__country"/>
+        <prov:activity prov:ref="yw:inst__s.main"/>
+    </prov:wasGeneratedBy>
+    <prov:activity prov:id="yw:persist__top__ten__by__country"/>
+    <prov:activity prov:id="yw:persist__top__ten__overall"/>
+    <prov:used prov:id="yw:data__by__country____USE____get__top__ten__by__country">
+        <prov:activity prov:ref="yw:get__top__ten__by__country"/>
+        <prov:entity prov:ref="yw:data__by__country"/>
+    </prov:used>
+    <prov:used prov:id="yw:data__parsed____USE____get__top__ten__overall">
+        <prov:activity prov:ref="yw:get__top__ten__overall"/>
+        <prov:entity prov:ref="yw:data__parsed"/>
+    </prov:used>
+    <prov:used prov:id="yw:get__classification____CALL____persist__top__ten__by__country">
+        <prov:activity prov:ref="yw:persist__top__ten__by__country"/>
+        <prov:entity prov:ref="yw:get__classification"/>
+        <prov:type xsi:type="xsd:string">call</prov:type>
+    </prov:used>
+    <prov:used prov:id="yw:data__parsed____USE____group__data__by__country">
+        <prov:activity prov:ref="yw:group__data__by__country"/>
+        <prov:entity prov:ref="yw:data__parsed"/>
+    </prov:used>
+    <prov:wasGeneratedBy prov:id="yw:country__top__ten____GEN____get__top__ten__by__country">
+        <prov:entity prov:ref="yw:country__top__ten"/>
+        <prov:activity prov:ref="yw:get__top__ten__by__country"/>
+    </prov:wasGeneratedBy>
+    <prov:activity prov:id="yw:get__top__ten__by__country">
+        <prov:label>10 countries with highest avg wind speed</prov:label>
+    </prov:activity>
+</prov:document>

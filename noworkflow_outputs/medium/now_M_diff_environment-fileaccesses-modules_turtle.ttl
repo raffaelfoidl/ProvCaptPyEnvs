@@ -1,0 +1,149 @@
+@prefix ns1: <https://github.com/gems-uff/noworkflow#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ns1:environmentAttribute222_a a prov:Entity,
+        "environmentAttribute"^^xsd:string ;
+    rdfs:label "PID"^^xsd:string ;
+    prov:qualifiedGeneration ns1:environmentAttribute222AddAttr ;
+    prov:qualifiedRevision [ a prov:Revision,
+                "environmentAttributeReplacement"^^xsd:string ;
+            prov:entity ns1:environmentAttribute222_r ;
+            prov:hadActivity ns1:trial1Execution ] ;
+    prov:value "71186"^^xsd:string ;
+    ns1:id "222"^^xsd:int .
+
+ns1:environmentAttribute98_a a prov:Entity,
+        "environmentAttribute"^^xsd:string ;
+    rdfs:label "SC_AVPHYS_PAGES"^^xsd:string ;
+    prov:qualifiedGeneration ns1:environmentAttribute98AddAttr ;
+    prov:qualifiedRevision [ a prov:Revision,
+                "environmentAttributeReplacement"^^xsd:string ;
+            prov:entity ns1:environmentAttribute75_r ;
+            prov:hadActivity ns1:trial1Execution ] ;
+    prov:value "855114"^^xsd:string ;
+    ns1:id "98"^^xsd:int .
+
+ns1:fileAccess2_a a prov:Activity,
+        "w+b"^^xsd:string ;
+    prov:atLocation "out.jpg"^^xsd:string ;
+    prov:qualifiedCommunication ns1:fileAcc2AddAcc ;
+    prov:time "2020-03-20T13:10:46.938252"^^xsd:dateTime ;
+    ns1:buffering "default"^^xsd:string ;
+    ns1:contentHashAfter "ce9ffaace5809b23a8b5ddf82a6e2b1105536bb4"^^xsd:string ;
+    ns1:id "2"^^xsd:int .
+
+ns1:fileAccess2_r a prov:Activity,
+        "w+b"^^xsd:string ;
+    prov:atLocation "out.jpg"^^xsd:string ;
+    prov:qualifiedCommunication ns1:fileAcc2RemoveAcc ;
+    prov:time "2020-03-20T13:12:37.232728"^^xsd:dateTime ;
+    ns1:buffering "default"^^xsd:string ;
+    ns1:contentHashAfter "3ed582a2ed5babd64f4d8e2ba556c65d0ddf1587"^^xsd:string ;
+    ns1:contentHashBefore "ce9ffaace5809b23a8b5ddf82a6e2b1105536bb4"^^xsd:string ;
+    ns1:id "2"^^xsd:int .
+
+ns1:fileAccess3_a a prov:Activity,
+        "w+b"^^xsd:string ;
+    prov:atLocation "diff.jpg"^^xsd:string ;
+    prov:qualifiedCommunication ns1:fileAcc3AddAcc ;
+    prov:time "2020-03-20T13:11:04.248753"^^xsd:dateTime ;
+    ns1:buffering "default"^^xsd:string ;
+    ns1:contentHashAfter "bcfd7b62f302cec63c12a06befeb80ee76d43a48"^^xsd:string ;
+    ns1:id "3"^^xsd:int .
+
+ns1:fileAccess3_r a prov:Activity,
+        "w+b"^^xsd:string ;
+    prov:atLocation "diff.jpg"^^xsd:string ;
+    prov:qualifiedCommunication ns1:fileAcc3RemoveAcc ;
+    prov:time "2020-03-20T13:12:47.054734"^^xsd:dateTime ;
+    ns1:buffering "default"^^xsd:string ;
+    ns1:contentHashAfter "6a618c3ab17bf11c8d67727244b783dc9673d742"^^xsd:string ;
+    ns1:contentHashBefore "bcfd7b62f302cec63c12a06befeb80ee76d43a48"^^xsd:string ;
+    ns1:id "3"^^xsd:int .
+
+ns1:environmentAttribute222AddAttr a prov:Generation ;
+    prov:activity ns1:trial1Execution ;
+    prov:hadRole "environmentAttributeAddition"^^xsd:string .
+
+ns1:environmentAttribute222RemoveAttr a prov:Invalidation ;
+    prov:activity ns1:trial1Execution ;
+    prov:hadRole "environmentAttributeRemoval"^^xsd:string .
+
+ns1:environmentAttribute222_r a prov:Entity,
+        "environmentAttribute"^^xsd:string ;
+    rdfs:label "PID"^^xsd:string ;
+    prov:qualifiedInvalidation ns1:environmentAttribute222RemoveAttr ;
+    prov:value "74943"^^xsd:string ;
+    ns1:id "222"^^xsd:int .
+
+ns1:environmentAttribute75RemoveAttr a prov:Invalidation ;
+    prov:activity ns1:trial1Execution ;
+    prov:hadRole "environmentAttributeRemoval"^^xsd:string .
+
+ns1:environmentAttribute75_r a prov:Entity,
+        "environmentAttribute"^^xsd:string ;
+    rdfs:label "SC_AVPHYS_PAGES"^^xsd:string ;
+    prov:qualifiedInvalidation ns1:environmentAttribute75RemoveAttr ;
+    prov:value "813138"^^xsd:string ;
+    ns1:id "75"^^xsd:int .
+
+ns1:environmentAttribute98AddAttr a prov:Generation ;
+    prov:activity ns1:trial1Execution ;
+    prov:hadRole "environmentAttributeAddition"^^xsd:string .
+
+ns1:fileAcc2AddAcc a prov:Communication,
+        "fileAccessAddition"^^xsd:string ;
+    prov:activity ns1:trial1Execution .
+
+ns1:fileAcc2RemoveAcc a prov:Communication,
+        "fileAccessRemoval"^^xsd:string ;
+    prov:activity ns1:trial1Execution .
+
+ns1:fileAcc3AddAcc a prov:Communication,
+        "fileAccessAddition"^^xsd:string ;
+    prov:activity ns1:trial1Execution .
+
+ns1:fileAcc3RemoveAcc a prov:Communication,
+        "fileAccessRemoval"^^xsd:string ;
+    prov:activity ns1:trial1Execution .
+
+ns1:inst_m_py_1 a prov:Agent,
+        prov:SoftwareAgent ;
+    ns1:codeHash "3889367b0b9b9bdc1dfc7d7cc9056c028642a079"^^xsd:string ;
+    ns1:id "1"^^xsd:int ;
+    ns1:script "inst_m.py"^^xsd:string .
+
+ns1:inst_m_py_2 a prov:Agent,
+        prov:SoftwareAgent ;
+    ns1:codeHash "3889367b0b9b9bdc1dfc7d7cc9056c028642a079"^^xsd:string ;
+    ns1:id "2"^^xsd:int ;
+    ns1:script "inst_m.py"^^xsd:string .
+
+ns1:trial1ComparedTo2 a prov:Influence,
+        "comparison"^^xsd:string ;
+    prov:influencer ns1:trial2Execution .
+
+ns1:trial1ExecutionByScript a prov:Association ;
+    prov:agent ns1:inst_m_py_1 .
+
+ns1:trial2Execution a prov:Activity ;
+    prov:endedAtTime "2020-03-20T13:12:47.061016"^^xsd:dateTime ;
+    prov:qualifiedAssociation ns1:trial2ExecutionByScript ;
+    prov:startedAtTime "2020-03-20T13:12:08.379693"^^xsd:dateTime ;
+    ns1:nowCommand "run inst_m.py 6 in.jpg out.jpg diff.jpg"^^xsd:string ;
+    ns1:parentId "1"^^xsd:int .
+
+ns1:trial2ExecutionByScript a prov:Association ;
+    prov:agent ns1:inst_m_py_2 .
+
+ns1:trial1Execution a prov:Activity ;
+    prov:endedAtTime "2020-03-20T13:11:04.272031"^^xsd:dateTime ;
+    prov:qualifiedAssociation ns1:trial1ExecutionByScript ;
+    prov:qualifiedInfluence ns1:trial1ComparedTo2 ;
+    prov:startedAtTime "2020-03-20T13:10:10.457769"^^xsd:dateTime ;
+    ns1:nowCommand "run -v inst_m.py 4 in.jpg out.jpg diff.jpg"^^xsd:string .
+

@@ -1,0 +1,152 @@
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix yw: <http://yesworkflow.org/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+yw:diff_file__GEN__save_diff_image a prov:Generation ;
+	prov:activity yw:save_diff_image .
+
+yw:diff_file prov:qualifiedGeneration yw:diff_file__GEN__save_diff_image .
+
+yw:diff__USE__save_diff_image a prov:Usage ;
+	prov:entity yw:diff .
+
+yw:save_diff_image prov:qualifiedUsage yw:diff__USE__save_diff_image .
+
+yw:diff_image__GEN__calculate_differences a prov:Generation ;
+	prov:activity yw:calculate_differences .
+
+yw:diff_image prov:qualifiedGeneration yw:diff_image__GEN__calculate_differences .
+
+yw:blurred_image a prov:Entity .
+
+yw:out_file__GEN__save_out_file a prov:Generation ;
+	prov:activity yw:save_out_file .
+
+yw:out_file prov:qualifiedGeneration yw:out_file__GEN__save_out_file .
+
+yw:output_path__USE__inst_m.main a prov:Usage ;
+	prov:entity yw:output_path .
+
+yw:inst_m.main prov:qualifiedUsage yw:output_path__USE__inst_m.main .
+
+yw:diff__USE__inst_m.main a prov:Usage ;
+	prov:entity yw:diff .
+
+yw:inst_m.main prov:qualifiedUsage yw:diff__USE__inst_m.main .
+
+yw:output_path__USE__save_out_file a prov:Usage ;
+	prov:entity yw:output_path .
+
+yw:save_out_file prov:qualifiedUsage yw:output_path__USE__save_out_file .
+
+yw:input_file__GEN__read_input a prov:Generation ;
+	prov:activity yw:read_input .
+
+yw:input_file prov:qualifiedGeneration yw:input_file__GEN__read_input .
+
+yw:diff_image__USE__save_diff_image a prov:Usage ;
+	prov:entity yw:diff_image .
+
+yw:save_diff_image prov:qualifiedUsage yw:diff_image__USE__save_diff_image .
+
+yw:input_path__USE__inst_m.main a prov:Usage ;
+	prov:entity yw:input_path .
+
+yw:inst_m.main prov:qualifiedUsage yw:input_path__USE__inst_m.main .
+
+yw:input_path a prov:Entity ;
+	rdfs:label "input file" .
+
+yw:input_file__USE__apply_gauss a prov:Usage ;
+	prov:entity yw:input_file .
+
+yw:apply_gauss prov:qualifiedUsage yw:input_file__USE__apply_gauss .
+
+yw:save_diff_image a prov:Activity ;
+	rdfs:label "persist image with color differences" .
+
+yw:sigma__USE__inst_m.main a prov:Usage ;
+	prov:entity yw:sigma .
+
+yw:inst_m.main prov:qualifiedUsage yw:sigma__USE__inst_m.main .
+
+yw:input_path__USE__read_input a prov:Usage ;
+	prov:entity yw:input_path .
+
+yw:read_input prov:qualifiedUsage yw:input_path__USE__read_input .
+
+yw:diff a prov:Entity ;
+	rdfs:label "diff image file path" .
+
+yw:apply_gauss a prov:Activity ;
+	rdfs:label "apply gaussian blur with specified parameter to input file" .
+
+yw:blurred_image__USE__save_out_file a prov:Usage ;
+	prov:entity yw:blurred_image .
+
+yw:save_out_file prov:qualifiedUsage yw:blurred_image__USE__save_out_file .
+
+yw:blurred_image__USE__calculate_differences a prov:Usage ;
+	prov:entity yw:blurred_image .
+
+yw:calculate_differences prov:qualifiedUsage yw:blurred_image__USE__calculate_differences .
+
+yw:blurred_image__GEN__apply_gauss a prov:Generation ;
+	prov:activity yw:apply_gauss .
+
+yw:blurred_image prov:qualifiedGeneration yw:blurred_image__GEN__apply_gauss .
+
+yw:read_input a prov:Activity ;
+	rdfs:label "read image from input path" .
+
+yw:input_file__USE__calculate_differences a prov:Usage ;
+	prov:entity yw:input_file .
+
+yw:calculate_differences prov:qualifiedUsage yw:input_file__USE__calculate_differences .
+
+yw:diff_image a prov:Entity .
+
+yw:save_out_file a prov:Activity ;
+	rdfs:label "persist blurred image" , "log_out_file: Done saving output image" .
+
+yw:sigma a prov:Entity ;
+	rdfs:label "sigma for gauss filter" .
+
+yw:output_path a prov:Entity ;
+	rdfs:label "output image file path" .
+
+yw:inst_m.main a prov:Activity ;
+	rdfs:label "Blurs an image and computes the differences to the original" .
+
+yw:calculate_differences a prov:Activity ;
+	rdfs:label "compute color differences in pixels" , "log_diff_image: {percentage} % done" , "log_diff_image: Done calculating" .
+
+yw:diff_file a prov:Entity ;
+	rdfs:label "file:{diff}" .
+
+yw:sigma__USE__apply_gauss a prov:Usage ;
+	prov:entity yw:sigma .
+
+yw:apply_gauss prov:qualifiedUsage yw:sigma__USE__apply_gauss .
+
+yw:out_file__GEN__inst_m.main a prov:Generation ;
+	prov:activity yw:inst_m.main .
+
+yw:out_file prov:qualifiedGeneration yw:out_file__GEN__inst_m.main .
+
+yw:diff_file__GEN__inst_m.main a prov:Generation ;
+	prov:activity yw:inst_m.main .
+
+yw:diff_file prov:qualifiedGeneration yw:diff_file__GEN__inst_m.main .
+
+yw:input_file a prov:Entity .
+
+yw:out_file a prov:Entity ;
+	rdfs:label "file:{out}" .
+
+yw:output_path prov:alternateOf yw:out .
+
+yw:input_path prov:alternateOf yw:in .

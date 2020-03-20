@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<prov:document xmlns:prov="http://www.w3.org/ns/prov#" xmlns:ns2="http://openprovenance.org/prov/extension#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:yw="http://yesworkflow.org/">
+    <prov:used prov:id="yw:data____USE____get__logs">
+        <prov:activity prov:ref="yw:get__logs"/>
+        <prov:entity prov:ref="yw:data"/>
+    </prov:used>
+    <prov:used prov:id="yw:pid____USE____persist__conflict__report">
+        <prov:activity prov:ref="yw:persist__conflict__report"/>
+        <prov:entity prov:ref="yw:pid"/>
+    </prov:used>
+    <prov:entity prov:id="yw:resource__summary"/>
+    <prov:used prov:id="yw:data____USE____get__pids">
+        <prov:activity prov:ref="yw:get__pids"/>
+        <prov:entity prov:ref="yw:data"/>
+    </prov:used>
+    <prov:wasGeneratedBy prov:id="yw:resource__summary____GEN____get__resource__summary">
+        <prov:entity prov:ref="yw:resource__summary"/>
+        <prov:activity prov:ref="yw:get__resource__summary"/>
+    </prov:wasGeneratedBy>
+    <prov:used prov:id="yw:summary__plot____USE____inst__l.main">
+        <prov:activity prov:ref="yw:inst__l.main"/>
+        <prov:entity prov:ref="yw:summary__plot"/>
+    </prov:used>
+    <prov:wasGeneratedBy prov:id="yw:res__summary__plot____GEN____persist__res__summary">
+        <prov:entity prov:ref="yw:res__summary__plot"/>
+        <prov:activity prov:ref="yw:persist__res__summary"/>
+    </prov:wasGeneratedBy>
+    <prov:used prov:id="yw:conflicts____USE____inst__l.main">
+        <prov:activity prov:ref="yw:inst__l.main"/>
+        <prov:entity prov:ref="yw:conflicts"/>
+    </prov:used>
+    <prov:wasGeneratedBy prov:id="yw:res__conflicts____GEN____get__conflicts">
+        <prov:entity prov:ref="yw:res__conflicts"/>
+        <prov:activity prov:ref="yw:get__conflicts"/>
+    </prov:wasGeneratedBy>
+    <prov:entity prov:id="yw:conflicts">
+        <prov:label>persistence path for conflict report</prov:label>
+    </prov:entity>
+    <prov:activity prov:id="yw:get__pids">
+        <prov:label>determine PIDs stored in trace logs</prov:label>
+    </prov:activity>
+    <prov:used prov:id="yw:concurrent__accesses__per__resource____USE____get__resource__summary">
+        <prov:activity prov:ref="yw:get__resource__summary"/>
+        <prov:entity prov:ref="yw:concurrent__accesses__per__resource"/>
+    </prov:used>
+    <prov:used prov:id="yw:pid____USE____inst__l.main">
+        <prov:activity prov:ref="yw:inst__l.main"/>
+        <prov:entity prov:ref="yw:pid"/>
+    </prov:used>
+    <prov:used prov:id="yw:concurrent__executions____USE____get__resource__info">
+        <prov:activity prov:ref="yw:get__resource__info"/>
+        <prov:entity prov:ref="yw:concurrent__executions"/>
+    </prov:used>
+    <prov:entity prov:id="yw:res__summary__plot">
+        <prov:label>file:{summary_plot}</prov:label>
+    </prov:entity>
+    <prov:used prov:id="yw:distinct__pids____USE____provide__data__info">
+        <prov:activity prov:ref="yw:provide__data__info"/>
+        <prov:entity prov:ref="yw:distinct__pids"/>
+    </prov:used>
+    <prov:used prov:id="yw:pid____USE____get__logs">
+        <prov:activity prov:ref="yw:get__logs"/>
+        <prov:entity prov:ref="yw:pid"/>
+    </prov:used>
+    <prov:wasGeneratedBy prov:id="yw:conflict__report____GEN____inst__l.main">
+        <prov:entity prov:ref="yw:conflict__report"/>
+        <prov:activity prov:ref="yw:inst__l.main"/>
+    </prov:wasGeneratedBy>
+    <prov:activity prov:id="yw:get__conflicts">
+        <prov:label>determine write-write conflicts</prov:label>
+    </prov:activity>
+    <prov:activity prov:id="yw:get__resource__info">
+        <prov:label>determine usage and resource conflict infos</prov:label>
+    </prov:activity>
+    <prov:wasGeneratedBy prov:id="yw:res__summary__csv____GEN____persist__res__summary">
+        <prov:entity prov:ref="yw:res__summary__csv"/>
+        <prov:activity prov:ref="yw:persist__res__summary"/>
+    </prov:wasGeneratedBy>
+    <prov:activity prov:id="yw:persist__conflict__report">
+        <prov:label>save conflict report as JSON file</prov:label>
+    </prov:activity>
+    <prov:activity prov:id="yw:get__process__runtime">
+        <prov:label>compute total and average runtime</prov:label>
+    </prov:activity>
+    <prov:wasGeneratedBy prov:id="yw:overall__resource__accesses____GEN____get__overlaps">
+        <prov:entity prov:ref="yw:overall__resource__accesses"/>
+        <prov:activity prov:ref="yw:get__overlaps"/>
+    </prov:wasGeneratedBy>
+    <prov:entity prov:id="yw:frequency__plot">
+        <prov:label>file:{freqs}</prov:label>
+    </prov:entity>
+    <prov:entity prov:id="yw:avg__runtime"/>
+    <prov:entity prov:id="yw:overall__resource__accesses"/>
+    <prov:entity prov:id="yw:distinct__pids"/>
+    <prov:entity prov:id="yw:pid__logs"/>
+    <prov:entity prov:id="yw:total__runtime"/>
+    <prov:used prov:id="yw:summary__plot____USE____persist__res__summary">
+        <prov:activity prov:ref="yw:persist__res__summary"/>
+        <prov:entity prov:ref="yw:summary__plot"/>
+    </prov:used>
+    <prov:used prov:id="yw:conflicts____USE____persist__conflict__report">
+        <prov:activity prov:ref="yw:persist__conflict__report"/>
+        <prov:entity prov:ref="yw:conflicts"/>
+    </prov:used>
+    <prov:used prov:id="yw:pid__logs____USE____get__overlaps">
+        <prov:activity prov:ref="yw:get__overlaps"/>
+        <prov:entity prov:ref="yw:pid__logs"/>
+    </prov:used>
+    <prov:wasGeneratedBy prov:id="yw:all__pids____GEN____get__pids">
+        <prov:entity prov:ref="yw:all__pids"/>
+        <prov:activity prov:ref="yw:get__pids"/>
+    </prov:wasGeneratedBy>
+    <prov:wasGeneratedBy prov:id="yw:distinct__pids____GEN____get__pids">
+        <prov:entity prov:ref="yw:distinct__pids"/>
+        <prov:activity prov:ref="yw:get__pids"/>
+    </prov:wasGeneratedBy>
+    <prov:used prov:id="yw:res__conflicts____USE____persist__conflict__report">
+        <prov:activity prov:ref="yw:persist__conflict__report"/>
+        <prov:entity prov:ref="yw:res__conflicts"/>
+    </prov:used>
+    <prov:wasGeneratedBy prov:id="yw:res__summary__plot____GEN____inst__l.main">
+        <prov:entity prov:ref="yw:res__summary__plot"/>
+        <prov:activity prov:ref="yw:inst__l.main"/>
+    </prov:wasGeneratedBy>
+    <prov:entity prov:id="yw:conflicts__per__resource"/>
+    <prov:used prov:id="yw:traces____USE____inst__l.main">
+        <prov:activity prov:ref="yw:inst__l.main"/>
+        <prov:entity prov:ref="yw:traces"/>
+    </prov:used>
+    <prov:entity prov:id="yw:concurrent__executions"/>
+    <prov:wasGeneratedBy prov:id="yw:data____GEN____load__data">
+        <prov:entity prov:ref="yw:data"/>
+        <prov:activity prov:ref="yw:load__data"/>
+    </prov:wasGeneratedBy>
+    <prov:used prov:id="yw:summary__csv____USE____persist__res__summary">
+        <prov:activity prov:ref="yw:persist__res__summary"/>
+        <prov:entity prov:ref="yw:summary__csv"/>
+    </prov:used>
+    <prov:entity prov:id="yw:pid">
+        <prov:label>ID of process to analyze</prov:label>
+    </prov:entity>
+    <prov:wasGeneratedBy prov:id="yw:conflicts__per__resource____GEN____get__resource__info">
+        <prov:entity prov:ref="yw:conflicts__per__resource"/>
+        <prov:activity prov:ref="yw:get__resource__info"/>
+    </prov:wasGeneratedBy>
+    <prov:entity prov:id="yw:all__pids"/>
+    <prov:activity prov:id="yw:get__resource__summary">
+        <prov:label>get dict representation of resource summary</prov:label>
+    </prov:activity>
+    <prov:used prov:id="yw:resource__summary____USE____persist__res__summary">
+        <prov:activity prov:ref="yw:persist__res__summary"/>
+        <prov:entity prov:ref="yw:resource__summary"/>
+    </prov:used>
+    <prov:activity prov:id="yw:persist__res__summary">
+        <prov:label>save resource summary as CSV file and plot</prov:label>
+    </prov:activity>
+    <prov:wasGeneratedBy prov:id="yw:total__runtime____GEN____get__process__runtime">
+        <prov:entity prov:ref="yw:total__runtime"/>
+        <prov:activity prov:ref="yw:get__process__runtime"/>
+    </prov:wasGeneratedBy>
+    <prov:activity prov:id="yw:inst__l.main"/>
+    <prov:wasGeneratedBy prov:id="yw:frequency__plot____GEN____provide__data__info">
+        <prov:entity prov:ref="yw:frequency__plot"/>
+        <prov:activity prov:ref="yw:provide__data__info"/>
+    </prov:wasGeneratedBy>
+    <prov:entity prov:id="yw:summary__csv">
+        <prov:label>persistence path for csv summary</prov:label>
+    </prov:entity>
+    <prov:used prov:id="yw:freqs____USE____inst__l.main">
+        <prov:activity prov:ref="yw:inst__l.main"/>
+        <prov:entity prov:ref="yw:freqs"/>
+    </prov:used>
+    <prov:entity prov:id="yw:data"/>
+    <prov:used prov:id="yw:concurrent__executions____USE____get__conflicts">
+        <prov:activity prov:ref="yw:get__conflicts"/>
+        <prov:entity prov:ref="yw:concurrent__executions"/>
+    </prov:used>
+    <prov:wasGeneratedBy prov:id="yw:res__summary__csv____GEN____inst__l.main">
+        <prov:entity prov:ref="yw:res__summary__csv"/>
+        <prov:activity prov:ref="yw:inst__l.main"/>
+    </prov:wasGeneratedBy>
+    <prov:used prov:id="yw:pid____USE____persist__res__summary">
+        <prov:activity prov:ref="yw:persist__res__summary"/>
+        <prov:entity prov:ref="yw:pid"/>
+    </prov:used>
+    <prov:wasGeneratedBy prov:id="yw:count____GEN____get__pids">
+        <prov:entity prov:ref="yw:count"/>
+        <prov:activity prov:ref="yw:get__pids"/>
+    </prov:wasGeneratedBy>
+    <prov:activity prov:id="yw:provide__data__info">
+        <prov:label>print count and names of processes; save frequency plot</prov:label>
+    </prov:activity>
+    <prov:wasGeneratedBy prov:id="yw:pid__logs____GEN____get__logs">
+        <prov:entity prov:ref="yw:pid__logs"/>
+        <prov:activity prov:ref="yw:get__logs"/>
+    </prov:wasGeneratedBy>
+    <prov:wasGeneratedBy prov:id="yw:frequency__plot____GEN____inst__l.main">
+        <prov:entity prov:ref="yw:frequency__plot"/>
+        <prov:activity prov:ref="yw:inst__l.main"/>
+    </prov:wasGeneratedBy>
+    <prov:used prov:id="yw:all__pids____USE____provide__data__info">
+        <prov:activity prov:ref="yw:provide__data__info"/>
+        <prov:entity prov:ref="yw:all__pids"/>
+    </prov:used>
+    <prov:entity prov:id="yw:traces">
+        <prov:label>paths of process trace logs to analyze</prov:label>
+    </prov:entity>
+    <prov:used prov:id="yw:traces____USE____load__data">
+        <prov:activity prov:ref="yw:load__data"/>
+        <prov:entity prov:ref="yw:traces"/>
+    </prov:used>
+    <prov:entity prov:id="yw:count"/>
+    <prov:entity prov:id="yw:freqs">
+        <prov:label>persistence path for frequency plot</prov:label>
+    </prov:entity>
+    <prov:used prov:id="yw:freqs____USE____provide__data__info">
+        <prov:activity prov:ref="yw:provide__data__info"/>
+        <prov:entity prov:ref="yw:freqs"/>
+    </prov:used>
+    <prov:entity prov:id="yw:conflict__report">
+        <prov:label>file:{conflicts}</prov:label>
+    </prov:entity>
+    <prov:used prov:id="yw:count____USE____provide__data__info">
+        <prov:activity prov:ref="yw:provide__data__info"/>
+        <prov:entity prov:ref="yw:count"/>
+    </prov:used>
+    <prov:used prov:id="yw:total__runtime____USE____persist__conflict__report">
+        <prov:activity prov:ref="yw:persist__conflict__report"/>
+        <prov:entity prov:ref="yw:total__runtime"/>
+    </prov:used>
+    <prov:activity prov:id="yw:load__data">
+        <prov:label>read process trace logs</prov:label>
+    </prov:activity>
+    <prov:used prov:id="yw:summary__csv____USE____inst__l.main">
+        <prov:activity prov:ref="yw:inst__l.main"/>
+        <prov:entity prov:ref="yw:summary__csv"/>
+    </prov:used>
+    <prov:used prov:id="yw:pid__logs____USE____get__process__runtime">
+        <prov:activity prov:ref="yw:get__process__runtime"/>
+        <prov:entity prov:ref="yw:pid__logs"/>
+    </prov:used>
+    <prov:activity prov:id="yw:get__overlaps">
+        <prov:label>determine overlapping PID trace logs</prov:label>
+    </prov:activity>
+    <prov:entity prov:id="yw:res__conflicts"/>
+    <prov:entity prov:id="yw:summary__plot">
+        <prov:label>persistence path for plot summary</prov:label>
+    </prov:entity>
+    <prov:entity prov:id="yw:res__summary__csv">
+        <prov:label>file:{summary_csv}</prov:label>
+    </prov:entity>
+    <prov:used prov:id="yw:conflicts__per__resource____USE____get__resource__summary">
+        <prov:activity prov:ref="yw:get__resource__summary"/>
+        <prov:entity prov:ref="yw:conflicts__per__resource"/>
+    </prov:used>
+    <prov:wasGeneratedBy prov:id="yw:concurrent__accesses__per__resource____GEN____get__resource__info">
+        <prov:entity prov:ref="yw:concurrent__accesses__per__resource"/>
+        <prov:activity prov:ref="yw:get__resource__info"/>
+    </prov:wasGeneratedBy>
+    <prov:wasGeneratedBy prov:id="yw:avg__runtime____GEN____get__process__runtime">
+        <prov:entity prov:ref="yw:avg__runtime"/>
+        <prov:activity prov:ref="yw:get__process__runtime"/>
+    </prov:wasGeneratedBy>
+    <prov:used prov:id="yw:conflicts____USE____get__resource__info">
+        <prov:activity prov:ref="yw:get__resource__info"/>
+        <prov:entity prov:ref="yw:conflicts"/>
+    </prov:used>
+    <prov:wasGeneratedBy prov:id="yw:conflict__report____GEN____persist__conflict__report">
+        <prov:entity prov:ref="yw:conflict__report"/>
+        <prov:activity prov:ref="yw:persist__conflict__report"/>
+    </prov:wasGeneratedBy>
+    <prov:used prov:id="yw:avg__runtime____USE____persist__conflict__report">
+        <prov:activity prov:ref="yw:persist__conflict__report"/>
+        <prov:entity prov:ref="yw:avg__runtime"/>
+    </prov:used>
+    <prov:entity prov:id="yw:concurrent__accesses__per__resource"/>
+    <prov:wasGeneratedBy prov:id="yw:concurrent__executions____GEN____get__overlaps">
+        <prov:entity prov:ref="yw:concurrent__executions"/>
+        <prov:activity prov:ref="yw:get__overlaps"/>
+    </prov:wasGeneratedBy>
+    <prov:activity prov:id="yw:get__logs">
+        <prov:label>retrieve trace logs of specified process</prov:label>
+    </prov:activity>
+</prov:document>

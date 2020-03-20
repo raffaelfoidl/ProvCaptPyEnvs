@@ -1,0 +1,359 @@
+@prefix ns1: <https://github.com/gems-uff/noworkflow#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ns1:environmentAttribute14_a a prov:Entity,
+        "environmentAttribute"^^xsd:string ;
+    rdfs:label "SC_AVPHYS_PAGES"^^xsd:string ;
+    prov:qualifiedGeneration ns1:environmentAttribute14AddAttr ;
+    prov:qualifiedRevision [ a prov:Revision,
+                "environmentAttributeReplacement"^^xsd:string ;
+            prov:entity ns1:environmentAttribute18_r ;
+            prov:hadActivity ns1:trial5Execution ] ;
+    prov:value "1877836"^^xsd:string ;
+    ns1:id "14"^^xsd:int .
+
+ns1:environmentAttribute165_a a prov:Entity,
+        "environmentAttribute"^^xsd:string ;
+    rdfs:label "PYCHARM_DISPLAY_PORT"^^xsd:string ;
+    prov:qualifiedGeneration ns1:environmentAttribute165AddAttr ;
+    prov:qualifiedRevision [ a prov:Revision,
+                "environmentAttributeReplacement"^^xsd:string ;
+            prov:entity ns1:environmentAttribute172_r ;
+            prov:hadActivity ns1:trial5Execution ] ;
+    prov:value "63342"^^xsd:string ;
+    ns1:id "165"^^xsd:int .
+
+ns1:environmentAttribute190_a a prov:Entity,
+        "environmentAttribute"^^xsd:string ;
+    rdfs:label "INVOCATION_ID"^^xsd:string ;
+    prov:qualifiedGeneration ns1:environmentAttribute190AddAttr ;
+    prov:qualifiedRevision [ a prov:Revision,
+                "environmentAttributeReplacement"^^xsd:string ;
+            prov:entity ns1:environmentAttribute218_r ;
+            prov:hadActivity ns1:trial5Execution ] ;
+    prov:value "a642160088e44bb79c1bba55fb0b368d"^^xsd:string ;
+    ns1:id "190"^^xsd:int .
+
+ns1:environmentAttribute193_a a prov:Entity,
+        "environmentAttribute"^^xsd:string ;
+    rdfs:label "GIO_LAUNCHED_DESKTOP_FILE_PID"^^xsd:string ;
+    prov:qualifiedGeneration ns1:environmentAttribute193AddAttr ;
+    prov:qualifiedRevision [ a prov:Revision,
+                "environmentAttributeReplacement"^^xsd:string ;
+            prov:entity ns1:environmentAttribute181_r ;
+            prov:hadActivity ns1:trial5Execution ] ;
+    prov:value "2076"^^xsd:string ;
+    ns1:id "193"^^xsd:int .
+
+ns1:environmentAttribute211_a a prov:Entity,
+        "environmentAttribute"^^xsd:string ;
+    rdfs:label "JOURNAL_STREAM"^^xsd:string ;
+    prov:qualifiedGeneration ns1:environmentAttribute211AddAttr ;
+    prov:qualifiedRevision [ a prov:Revision,
+                "environmentAttributeReplacement"^^xsd:string ;
+            prov:entity ns1:environmentAttribute173_r ;
+            prov:hadActivity ns1:trial5Execution ] ;
+    prov:value "9:27722"^^xsd:string ;
+    ns1:id "211"^^xsd:int .
+
+ns1:environmentAttribute218_a a prov:Entity,
+        "environmentAttribute"^^xsd:string ;
+    rdfs:label "MANAGERPID"^^xsd:string ;
+    prov:qualifiedGeneration ns1:environmentAttribute218AddAttr ;
+    prov:qualifiedRevision [ a prov:Revision,
+                "environmentAttributeReplacement"^^xsd:string ;
+            prov:entity ns1:environmentAttribute191_r ;
+            prov:hadActivity ns1:trial5Execution ] ;
+    prov:value "1344"^^xsd:string ;
+    ns1:id "218"^^xsd:int .
+
+ns1:environmentAttribute219_a a prov:Entity,
+        "environmentAttribute"^^xsd:string ;
+    rdfs:label "SESSION_MANAGER"^^xsd:string ;
+    prov:qualifiedGeneration ns1:environmentAttribute219AddAttr ;
+    prov:qualifiedRevision [ a prov:Revision,
+                "environmentAttributeReplacement"^^xsd:string ;
+            prov:entity ns1:environmentAttribute219_r ;
+            prov:hadActivity ns1:trial5Execution ] ;
+    prov:value "local/raffa-pc:@/tmp/.ICE-unix/1412,unix/raffa-pc:/tmp/.ICE-unix/1412"^^xsd:string ;
+    ns1:id "219"^^xsd:int .
+
+ns1:environmentAttribute222_a a prov:Entity,
+        "environmentAttribute"^^xsd:string ;
+    rdfs:label "PID"^^xsd:string ;
+    prov:qualifiedGeneration ns1:environmentAttribute222AddAttr ;
+    prov:qualifiedRevision [ a prov:Revision,
+                "environmentAttributeReplacement"^^xsd:string ;
+            prov:entity ns1:environmentAttribute222_r ;
+            prov:hadActivity ns1:trial5Execution ] ;
+    prov:value "13361"^^xsd:string ;
+    ns1:id "222"^^xsd:int .
+
+ns1:environmentAttribute97_a a prov:Entity,
+        "environmentAttribute"^^xsd:string ;
+    rdfs:label "SC_PHYS_PAGES"^^xsd:string ;
+    prov:qualifiedGeneration ns1:environmentAttribute97AddAttr ;
+    prov:qualifiedRevision [ a prov:Revision,
+                "environmentAttributeReplacement"^^xsd:string ;
+            prov:entity ns1:environmentAttribute57_r ;
+            prov:hadActivity ns1:trial5Execution ] ;
+    prov:value "4075191"^^xsd:string ;
+    ns1:id "97"^^xsd:int .
+
+ns1:fileAccess2_a a prov:Activity,
+        "r"^^xsd:string ;
+    prov:atLocation "data_medium.csv"^^xsd:string ;
+    prov:qualifiedCommunication ns1:fileAcc2AddAcc ;
+    prov:time "2020-03-20T14:36:35.396158"^^xsd:dateTime ;
+    ns1:buffering "default"^^xsd:string ;
+    ns1:contentHashAfter "b55e766ee2872d0fb024779ab4425d20e6eba18d"^^xsd:string ;
+    ns1:contentHashBefore "b55e766ee2872d0fb024779ab4425d20e6eba18d"^^xsd:string ;
+    ns1:id "2"^^xsd:int .
+
+ns1:fileAccess2_r a prov:Activity,
+        "r"^^xsd:string ;
+    prov:atLocation "data_small.csv"^^xsd:string ;
+    prov:qualifiedCommunication ns1:fileAcc2RemoveAcc ;
+    prov:time "2020-03-20T13:09:21.420557"^^xsd:dateTime ;
+    ns1:buffering "default"^^xsd:string ;
+    ns1:contentHashAfter "fec85a58f51dbf9528c616dc1c8a1b9c33e9b7f9"^^xsd:string ;
+    ns1:contentHashBefore "fec85a58f51dbf9528c616dc1c8a1b9c33e9b7f9"^^xsd:string ;
+    ns1:id "2"^^xsd:int .
+
+ns1:fileAccess3_a a prov:Activity,
+        "w"^^xsd:string ;
+    prov:atLocation "/mnt/2A96E79A96E764B3/Universitaet/Bachelorarbeit/noworkflow/instances/small/by_country.json"^^xsd:string ;
+    prov:qualifiedCommunication ns1:fileAcc3AddAcc ;
+    prov:time "2020-03-20T14:36:35.459719"^^xsd:dateTime ;
+    ns1:buffering "default"^^xsd:string ;
+    ns1:contentHashAfter "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"^^xsd:string ;
+    ns1:contentHashBefore "9672306cb4cf67afd9807ca3e2b87fb8c6badcbc"^^xsd:string ;
+    ns1:id "3"^^xsd:int .
+
+ns1:fileAccess3_r a prov:Activity,
+        "w"^^xsd:string ;
+    prov:atLocation "/mnt/2A96E79A96E764B3/Universitaet/Bachelorarbeit/noworkflow/instances/small/by_country.json"^^xsd:string ;
+    prov:qualifiedCommunication ns1:fileAcc3RemoveAcc ;
+    prov:time "2020-03-20T13:09:21.426650"^^xsd:dateTime ;
+    ns1:buffering "default"^^xsd:string ;
+    ns1:contentHashAfter "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"^^xsd:string ;
+    ns1:id "3"^^xsd:int .
+
+ns1:fileAccess4_a a prov:Activity,
+        "w"^^xsd:string ;
+    prov:atLocation "/mnt/2A96E79A96E764B3/Universitaet/Bachelorarbeit/noworkflow/instances/small/overall.json"^^xsd:string ;
+    prov:qualifiedCommunication ns1:fileAcc4AddAcc ;
+    prov:time "2020-03-20T14:36:35.475263"^^xsd:dateTime ;
+    ns1:buffering "default"^^xsd:string ;
+    ns1:contentHashAfter "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"^^xsd:string ;
+    ns1:contentHashBefore "3a25b1ac895eb82cb071ff49dfeedd1ce07eeb41"^^xsd:string ;
+    ns1:id "4"^^xsd:int .
+
+ns1:fileAccess4_r a prov:Activity,
+        "w"^^xsd:string ;
+    prov:atLocation "/mnt/2A96E79A96E764B3/Universitaet/Bachelorarbeit/noworkflow/instances/small/overall.json"^^xsd:string ;
+    prov:qualifiedCommunication ns1:fileAcc4RemoveAcc ;
+    prov:time "2020-03-20T13:09:21.435049"^^xsd:dateTime ;
+    ns1:buffering "default"^^xsd:string ;
+    ns1:contentHashAfter "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"^^xsd:string ;
+    ns1:id "4"^^xsd:int .
+
+ns1:environmentAttribute14AddAttr a prov:Generation ;
+    prov:activity ns1:trial5Execution ;
+    prov:hadRole "environmentAttributeAddition"^^xsd:string .
+
+ns1:environmentAttribute165AddAttr a prov:Generation ;
+    prov:activity ns1:trial5Execution ;
+    prov:hadRole "environmentAttributeAddition"^^xsd:string .
+
+ns1:environmentAttribute172RemoveAttr a prov:Invalidation ;
+    prov:activity ns1:trial5Execution ;
+    prov:hadRole "environmentAttributeRemoval"^^xsd:string .
+
+ns1:environmentAttribute172_r a prov:Entity,
+        "environmentAttribute"^^xsd:string ;
+    rdfs:label "PYCHARM_DISPLAY_PORT"^^xsd:string ;
+    prov:qualifiedInvalidation ns1:environmentAttribute172RemoveAttr ;
+    prov:value "63343"^^xsd:string ;
+    ns1:id "172"^^xsd:int .
+
+ns1:environmentAttribute173RemoveAttr a prov:Invalidation ;
+    prov:activity ns1:trial5Execution ;
+    prov:hadRole "environmentAttributeRemoval"^^xsd:string .
+
+ns1:environmentAttribute173_r a prov:Entity,
+        "environmentAttribute"^^xsd:string ;
+    rdfs:label "JOURNAL_STREAM"^^xsd:string ;
+    prov:qualifiedInvalidation ns1:environmentAttribute173RemoveAttr ;
+    prov:value "9:28871"^^xsd:string ;
+    ns1:id "173"^^xsd:int .
+
+ns1:environmentAttribute181RemoveAttr a prov:Invalidation ;
+    prov:activity ns1:trial5Execution ;
+    prov:hadRole "environmentAttributeRemoval"^^xsd:string .
+
+ns1:environmentAttribute181_r a prov:Entity,
+        "environmentAttribute"^^xsd:string ;
+    rdfs:label "GIO_LAUNCHED_DESKTOP_FILE_PID"^^xsd:string ;
+    prov:qualifiedInvalidation ns1:environmentAttribute181RemoveAttr ;
+    prov:value "24428"^^xsd:string ;
+    ns1:id "181"^^xsd:int .
+
+ns1:environmentAttribute18RemoveAttr a prov:Invalidation ;
+    prov:activity ns1:trial5Execution ;
+    prov:hadRole "environmentAttributeRemoval"^^xsd:string .
+
+ns1:environmentAttribute18_r a prov:Entity,
+        "environmentAttribute"^^xsd:string ;
+    rdfs:label "SC_AVPHYS_PAGES"^^xsd:string ;
+    prov:qualifiedInvalidation ns1:environmentAttribute18RemoveAttr ;
+    prov:value "873569"^^xsd:string ;
+    ns1:id "18"^^xsd:int .
+
+ns1:environmentAttribute190AddAttr a prov:Generation ;
+    prov:activity ns1:trial5Execution ;
+    prov:hadRole "environmentAttributeAddition"^^xsd:string .
+
+ns1:environmentAttribute191RemoveAttr a prov:Invalidation ;
+    prov:activity ns1:trial5Execution ;
+    prov:hadRole "environmentAttributeRemoval"^^xsd:string .
+
+ns1:environmentAttribute191_r a prov:Entity,
+        "environmentAttribute"^^xsd:string ;
+    rdfs:label "MANAGERPID"^^xsd:string ;
+    prov:qualifiedInvalidation ns1:environmentAttribute191RemoveAttr ;
+    prov:value "1334"^^xsd:string ;
+    ns1:id "191"^^xsd:int .
+
+ns1:environmentAttribute193AddAttr a prov:Generation ;
+    prov:activity ns1:trial5Execution ;
+    prov:hadRole "environmentAttributeAddition"^^xsd:string .
+
+ns1:environmentAttribute211AddAttr a prov:Generation ;
+    prov:activity ns1:trial5Execution ;
+    prov:hadRole "environmentAttributeAddition"^^xsd:string .
+
+ns1:environmentAttribute218AddAttr a prov:Generation ;
+    prov:activity ns1:trial5Execution ;
+    prov:hadRole "environmentAttributeAddition"^^xsd:string .
+
+ns1:environmentAttribute218RemoveAttr a prov:Invalidation ;
+    prov:activity ns1:trial5Execution ;
+    prov:hadRole "environmentAttributeRemoval"^^xsd:string .
+
+ns1:environmentAttribute218_r a prov:Entity,
+        "environmentAttribute"^^xsd:string ;
+    rdfs:label "INVOCATION_ID"^^xsd:string ;
+    prov:qualifiedInvalidation ns1:environmentAttribute218RemoveAttr ;
+    prov:value "af58dd3d1ef247aeaf4be0ad3311a3a7"^^xsd:string ;
+    ns1:id "218"^^xsd:int .
+
+ns1:environmentAttribute219AddAttr a prov:Generation ;
+    prov:activity ns1:trial5Execution ;
+    prov:hadRole "environmentAttributeAddition"^^xsd:string .
+
+ns1:environmentAttribute219RemoveAttr a prov:Invalidation ;
+    prov:activity ns1:trial5Execution ;
+    prov:hadRole "environmentAttributeRemoval"^^xsd:string .
+
+ns1:environmentAttribute219_r a prov:Entity,
+        "environmentAttribute"^^xsd:string ;
+    rdfs:label "SESSION_MANAGER"^^xsd:string ;
+    prov:qualifiedInvalidation ns1:environmentAttribute219RemoveAttr ;
+    prov:value "local/raffa-pc:@/tmp/.ICE-unix/1409,unix/raffa-pc:/tmp/.ICE-unix/1409"^^xsd:string ;
+    ns1:id "219"^^xsd:int .
+
+ns1:environmentAttribute222AddAttr a prov:Generation ;
+    prov:activity ns1:trial5Execution ;
+    prov:hadRole "environmentAttributeAddition"^^xsd:string .
+
+ns1:environmentAttribute222RemoveAttr a prov:Invalidation ;
+    prov:activity ns1:trial5Execution ;
+    prov:hadRole "environmentAttributeRemoval"^^xsd:string .
+
+ns1:environmentAttribute222_r a prov:Entity,
+        "environmentAttribute"^^xsd:string ;
+    rdfs:label "PID"^^xsd:string ;
+    prov:qualifiedInvalidation ns1:environmentAttribute222RemoveAttr ;
+    prov:value "69920"^^xsd:string ;
+    ns1:id "222"^^xsd:int .
+
+ns1:environmentAttribute57RemoveAttr a prov:Invalidation ;
+    prov:activity ns1:trial5Execution ;
+    prov:hadRole "environmentAttributeRemoval"^^xsd:string .
+
+ns1:environmentAttribute57_r a prov:Entity,
+        "environmentAttribute"^^xsd:string ;
+    rdfs:label "SC_PHYS_PAGES"^^xsd:string ;
+    prov:qualifiedInvalidation ns1:environmentAttribute57RemoveAttr ;
+    prov:value "4075193"^^xsd:string ;
+    ns1:id "57"^^xsd:int .
+
+ns1:environmentAttribute97AddAttr a prov:Generation ;
+    prov:activity ns1:trial5Execution ;
+    prov:hadRole "environmentAttributeAddition"^^xsd:string .
+
+ns1:fileAcc2AddAcc a prov:Communication,
+        "fileAccessAddition"^^xsd:string ;
+    prov:activity ns1:trial5Execution .
+
+ns1:fileAcc2RemoveAcc a prov:Communication,
+        "fileAccessRemoval"^^xsd:string ;
+    prov:activity ns1:trial5Execution .
+
+ns1:fileAcc3AddAcc a prov:Communication,
+        "fileAccessAddition"^^xsd:string ;
+    prov:activity ns1:trial5Execution .
+
+ns1:fileAcc3RemoveAcc a prov:Communication,
+        "fileAccessRemoval"^^xsd:string ;
+    prov:activity ns1:trial5Execution .
+
+ns1:fileAcc4AddAcc a prov:Communication,
+        "fileAccessAddition"^^xsd:string ;
+    prov:activity ns1:trial5Execution .
+
+ns1:fileAcc4RemoveAcc a prov:Communication,
+        "fileAccessRemoval"^^xsd:string ;
+    prov:activity ns1:trial5Execution .
+
+ns1:inst_s_py_1 a prov:Agent,
+        prov:SoftwareAgent ;
+    ns1:codeHash "5b62cd5eaf5a0471ba9e42d435db8da0318755ce"^^xsd:string ;
+    ns1:id "1"^^xsd:int ;
+    ns1:script "inst_s.py"^^xsd:string .
+
+ns1:inst_s_py_5 a prov:Agent,
+        prov:SoftwareAgent ;
+    ns1:codeHash "5b62cd5eaf5a0471ba9e42d435db8da0318755ce"^^xsd:string ;
+    ns1:id "5"^^xsd:int ;
+    ns1:script "inst_s.py"^^xsd:string .
+
+ns1:trial1Execution a prov:Activity ;
+    prov:endedAtTime "2020-03-20T13:09:21.444280"^^xsd:dateTime ;
+    prov:qualifiedAssociation ns1:trial1ExecutionByScript ;
+    prov:startedAtTime "2020-03-20T13:09:17.424445"^^xsd:dateTime ;
+    ns1:nowCommand "run -v inst_s.py data_small.csv"^^xsd:string .
+
+ns1:trial1ExecutionByScript a prov:Association ;
+    prov:agent ns1:inst_s_py_1 .
+
+ns1:trial5ComparedTo1 a prov:Influence,
+        "comparison"^^xsd:string ;
+    prov:influencer ns1:trial1Execution .
+
+ns1:trial5ExecutionByScript a prov:Association ;
+    prov:agent ns1:inst_s_py_5 .
+
+ns1:trial5Execution a prov:Activity ;
+    prov:endedAtTime "2020-03-20T14:36:35.483923"^^xsd:dateTime ;
+    prov:qualifiedAssociation ns1:trial5ExecutionByScript ;
+    prov:qualifiedInfluence ns1:trial5ComparedTo1 ;
+    prov:startedAtTime "2020-03-20T14:36:31.995122"^^xsd:dateTime ;
+    ns1:nowCommand "run inst_s.py data_medium.csv"^^xsd:string ;
+    ns1:parentId "4"^^xsd:int .
+

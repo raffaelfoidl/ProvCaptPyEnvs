@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:prov="http://www.w3.org/ns/prov#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:yw="http://yesworkflow.org/"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+
+<rdf:Description rdf:about="http://yesworkflow.org/data_by_country">
+	<rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[output] contries grouped by country (list of sublists)</rdfs:label>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[input] country-grouped data</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/data_by_country__GEN__group_data_by_country">
+	<rdf:type rdf:resource="http://www.w3.org/ns/prov#Generation"/>
+	<prov:activity rdf:resource="http://yesworkflow.org/group_data_by_country"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/data_by_country">
+	<prov:qualifiedGeneration rdf:resource="http://yesworkflow.org/data_by_country__GEN__group_data_by_country"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/get_top_ten_overall">
+	<rdf:type rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sort by wind speed, return first 10 items</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/summary_overall__GEN__inst_s.main">
+	<rdf:type rdf:resource="http://www.w3.org/ns/prov#Generation"/>
+	<prov:activity rdf:resource="http://yesworkflow.org/inst_s.main"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/summary_overall">
+	<prov:qualifiedGeneration rdf:resource="http://yesworkflow.org/summary_overall__GEN__inst_s.main"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/data_parsed__GEN__read_file">
+	<rdf:type rdf:resource="http://www.w3.org/ns/prov#Generation"/>
+	<prov:activity rdf:resource="http://yesworkflow.org/read_file"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/data_parsed">
+	<prov:qualifiedGeneration rdf:resource="http://yesworkflow.org/data_parsed__GEN__read_file"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/country_top_ten">
+	<rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/data">
+	<rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CSV file with country, code, city, wind_speed as columns</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/read_file">
+	<rdf:type rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">read CSV data as NamedTuple</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/data_parsed">
+	<rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CSV data as NamedTuple</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/overall_top_ten">
+	<rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/country_top_ten__USE__persist_top_ten_by_country">
+	<rdf:type rdf:resource="http://www.w3.org/ns/prov#Usage"/>
+	<prov:entity rdf:resource="http://yesworkflow.org/country_top_ten"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/persist_top_ten_by_country">
+	<prov:qualifiedUsage rdf:resource="http://yesworkflow.org/country_top_ten__USE__persist_top_ten_by_country"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/get_classification__CALL__persist_top_ten_overall">
+	<rdf:type rdf:resource="http://www.w3.org/ns/prov#Usage"/>
+	<prov:entity rdf:resource="http://yesworkflow.org/get_classification"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/persist_top_ten_overall">
+	<prov:qualifiedUsage rdf:resource="http://yesworkflow.org/get_classification__CALL__persist_top_ten_overall"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/get_classification__CALL__persist_top_ten_overall">
+	<rdf:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">call</rdf:type>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/get_classification">
+	<rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+	<rdf:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">calledFunction</rdf:type>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">maps wind speed to Beaufort scale</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/overall_top_ten__GEN__get_top_ten_overall">
+	<rdf:type rdf:resource="http://www.w3.org/ns/prov#Generation"/>
+	<prov:activity rdf:resource="http://yesworkflow.org/get_top_ten_overall"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/overall_top_ten">
+	<prov:qualifiedGeneration rdf:resource="http://yesworkflow.org/overall_top_ten__GEN__get_top_ten_overall"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/overall_top_ten__USE__persist_top_ten_overall">
+	<rdf:type rdf:resource="http://www.w3.org/ns/prov#Usage"/>
+	<prov:entity rdf:resource="http://yesworkflow.org/overall_top_ten"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/persist_top_ten_overall">
+	<prov:qualifiedUsage rdf:resource="http://yesworkflow.org/overall_top_ten__USE__persist_top_ten_overall"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/data__USE__read_file">
+	<rdf:type rdf:resource="http://www.w3.org/ns/prov#Usage"/>
+	<prov:entity rdf:resource="http://yesworkflow.org/data"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/read_file">
+	<prov:qualifiedUsage rdf:resource="http://yesworkflow.org/data__USE__read_file"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/data__USE__inst_s.main">
+	<rdf:type rdf:resource="http://www.w3.org/ns/prov#Usage"/>
+	<prov:entity rdf:resource="http://yesworkflow.org/data"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/inst_s.main">
+	<prov:qualifiedUsage rdf:resource="http://yesworkflow.org/data__USE__inst_s.main"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/summary_by_country">
+	<rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">file:by_country.json</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/inst_s.main">
+	<rdf:type rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Processes a list of wind speed measurements</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/summary_overall">
+	<rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">file:overall.json</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/group_data_by_country">
+	<rdf:type rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">split data by country</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/summary_by_country__GEN__persist_top_ten_by_country">
+	<rdf:type rdf:resource="http://www.w3.org/ns/prov#Generation"/>
+	<prov:activity rdf:resource="http://yesworkflow.org/persist_top_ten_by_country"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/summary_by_country">
+	<prov:qualifiedGeneration rdf:resource="http://yesworkflow.org/summary_by_country__GEN__persist_top_ten_by_country"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/summary_overall__GEN__persist_top_ten_overall">
+	<rdf:type rdf:resource="http://www.w3.org/ns/prov#Generation"/>
+	<prov:activity rdf:resource="http://yesworkflow.org/persist_top_ten_overall"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/summary_overall">
+	<prov:qualifiedGeneration rdf:resource="http://yesworkflow.org/summary_overall__GEN__persist_top_ten_overall"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/summary_by_country__GEN__inst_s.main">
+	<rdf:type rdf:resource="http://www.w3.org/ns/prov#Generation"/>
+	<prov:activity rdf:resource="http://yesworkflow.org/inst_s.main"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/summary_by_country">
+	<prov:qualifiedGeneration rdf:resource="http://yesworkflow.org/summary_by_country__GEN__inst_s.main"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/persist_top_ten_by_country">
+	<rdf:type rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/persist_top_ten_overall">
+	<rdf:type rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/data_by_country__USE__get_top_ten_by_country">
+	<rdf:type rdf:resource="http://www.w3.org/ns/prov#Usage"/>
+	<prov:entity rdf:resource="http://yesworkflow.org/data_by_country"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/get_top_ten_by_country">
+	<prov:qualifiedUsage rdf:resource="http://yesworkflow.org/data_by_country__USE__get_top_ten_by_country"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/data_parsed__USE__get_top_ten_overall">
+	<rdf:type rdf:resource="http://www.w3.org/ns/prov#Usage"/>
+	<prov:entity rdf:resource="http://yesworkflow.org/data_parsed"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/get_top_ten_overall">
+	<prov:qualifiedUsage rdf:resource="http://yesworkflow.org/data_parsed__USE__get_top_ten_overall"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/get_classification__CALL__persist_top_ten_by_country">
+	<rdf:type rdf:resource="http://www.w3.org/ns/prov#Usage"/>
+	<prov:entity rdf:resource="http://yesworkflow.org/get_classification"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/persist_top_ten_by_country">
+	<prov:qualifiedUsage rdf:resource="http://yesworkflow.org/get_classification__CALL__persist_top_ten_by_country"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/get_classification__CALL__persist_top_ten_by_country">
+	<rdf:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">call</rdf:type>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/data_parsed__USE__group_data_by_country">
+	<rdf:type rdf:resource="http://www.w3.org/ns/prov#Usage"/>
+	<prov:entity rdf:resource="http://yesworkflow.org/data_parsed"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/group_data_by_country">
+	<prov:qualifiedUsage rdf:resource="http://yesworkflow.org/data_parsed__USE__group_data_by_country"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/country_top_ten__GEN__get_top_ten_by_country">
+	<rdf:type rdf:resource="http://www.w3.org/ns/prov#Generation"/>
+	<prov:activity rdf:resource="http://yesworkflow.org/get_top_ten_by_country"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/country_top_ten">
+	<prov:qualifiedGeneration rdf:resource="http://yesworkflow.org/country_top_ten__GEN__get_top_ten_by_country"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/get_top_ten_by_country">
+	<rdf:type rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10 countries with highest avg wind speed</rdfs:label>
+</rdf:Description>
+
+</rdf:RDF>

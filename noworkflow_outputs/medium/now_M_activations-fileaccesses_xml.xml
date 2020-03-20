@@ -1,0 +1,607 @@
+<?xml version='1.0' encoding='ASCII'?>
+<prov:document xmlns:prov="http://www.w3.org/ns/prov#" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://github.com/gems-uff/noworkflow#">
+  <prov:collection prov:id="trial2Prov">
+    <prov:label>provenance collected by noworfklow</prov:label>
+  </prov:collection>
+  <prov:softwareAgent prov:id="inst_m_py">
+    <codeHash>3889367b0b9b9bdc1dfc7d7cc9056c028642a079</codeHash>
+    <id xsi:type="xsd:int">2</id>
+    <script>inst_m.py</script>
+  </prov:softwareAgent>
+  <prov:activity prov:id="trial2Execution">
+    <prov:startTime>2020-03-20T13:12:08.379693</prov:startTime>
+    <prov:endTime>2020-03-20T13:12:47.061016</prov:endTime>
+    <nowCommand>run inst_m.py 6 in.jpg out.jpg diff.jpg</nowCommand>
+    <parentId xsi:type="xsd:int">1</parentId>
+  </prov:activity>
+  <prov:wasAssociatedWith prov:id="trial2ExecutionByScript">
+    <prov:activity prov:ref="trial2Execution"/>
+    <prov:agent prov:ref="inst_m_py"/>
+  </prov:wasAssociatedWith>
+  <prov:hadMember>
+    <prov:collection prov:ref="trial2Prov"/>
+    <prov:entity prov:ref="trial2ExecutionProv"/>
+  </prov:hadMember>
+  <prov:wasGeneratedBy>
+    <prov:entity prov:ref="trial2ExecutionProv"/>
+    <prov:activity prov:ref="trial2Execution"/>
+  </prov:wasGeneratedBy>
+  <prov:bundleContent prov:id="trial2ExecutionProv">
+    <prov:activity prov:id="functionActivation1">
+      <prov:startTime>2020-03-20T13:12:37.194785</prov:startTime>
+      <prov:endTime>2020-03-20T13:12:47.060912</prov:endTime>
+      <prov:label>/mnt/2A96E79A96E764B3/Universitaet/Bachelorarbeit/noworkflow/instances/medium/inst_m.py</prov:label>
+      <prov:type xsi:type="xsd:string">functionActivation</prov:type>
+      <depth xsi:type="xsd:int">1</depth>
+      <line xsi:type="xsd:int">61</line>
+    </prov:activity>
+    <prov:activity prov:id="functionActivation2">
+      <prov:startTime>2020-03-20T13:12:37.194844</prov:startTime>
+      <prov:endTime>2020-03-20T13:12:37.194885</prov:endTime>
+      <prov:label>split</prov:label>
+      <prov:type xsi:type="xsd:string">functionActivation</prov:type>
+      <depth xsi:type="xsd:int">2</depth>
+      <line xsi:type="xsd:int">8</line>
+    </prov:activity>
+    <prov:wasInformedBy prov:id="funcAct2CalledBy1">
+      <prov:informed prov:ref="functionActivation2"/>
+      <prov:informant prov:ref="functionActivation1"/>
+      <prov:type xsi:type="xsd:string">callActivation</prov:type>
+    </prov:wasInformedBy>
+    <prov:entity prov:id="argumentActivation1">
+      <prov:label>p</prov:label>
+      <prov:type xsi:type="xsd:string">argumentActivation</prov:type>
+      <prov:value xsi:type="xsd:string">'/mnt/2A96E79A96E764B3/Universitaet/Bachelorarbeit/noworkflow/instances/medium/inst_m.py'</prov:value>
+    </prov:entity>
+    <prov:used prov:id="funcAct2UsedArgAct1">
+      <prov:activity prov:ref="functionActivation2"/>
+      <prov:entity prov:ref="argumentActivation1"/>
+      <prov:time>2020-03-20T13:12:37.194844</prov:time>
+      <prov:role>argument</prov:role>
+      <prov:type xsi:type="xsd:string">argumentActivation</prov:type>
+    </prov:used>
+    <prov:entity prov:id="funcAct2ReturnValue">
+      <prov:type xsi:type="xsd:string">returnValue</prov:type>
+      <prov:value xsi:type="xsd:string">('/mnt/2A96E79A96E764B3/Universitaet/Bachelorarbeit/noworkflow/instances/medium', 'inst_m.py')</prov:value>
+    </prov:entity>
+    <prov:wasGeneratedBy prov:id="funcAct2RetValGeneration">
+      <prov:entity prov:ref="funcAct2ReturnValue"/>
+      <prov:activity prov:ref="functionActivation2"/>
+      <prov:time>2020-03-20T13:12:37.194885</prov:time>
+    </prov:wasGeneratedBy>
+    <prov:activity prov:id="functionActivation3">
+      <prov:startTime>2020-03-20T13:12:37.194918</prov:startTime>
+      <prov:endTime>2020-03-20T13:12:37.194956</prov:endTime>
+      <prov:label>join</prov:label>
+      <prov:type xsi:type="xsd:string">functionActivation</prov:type>
+      <depth xsi:type="xsd:int">2</depth>
+      <line xsi:type="xsd:int">9</line>
+    </prov:activity>
+    <prov:wasInformedBy prov:id="funcAct3CalledBy1">
+      <prov:informed prov:ref="functionActivation3"/>
+      <prov:informant prov:ref="functionActivation1"/>
+      <prov:type xsi:type="xsd:string">callActivation</prov:type>
+    </prov:wasInformedBy>
+    <prov:entity prov:id="argumentActivation2">
+      <prov:label>a</prov:label>
+      <prov:type xsi:type="xsd:string">argumentActivation</prov:type>
+      <prov:value xsi:type="xsd:string">'/mnt/2A96E79A96E764B3/Universitaet/Bachelorarbeit/noworkflow/instances/medium'</prov:value>
+    </prov:entity>
+    <prov:used prov:id="funcAct3UsedArgAct2">
+      <prov:activity prov:ref="functionActivation3"/>
+      <prov:entity prov:ref="argumentActivation2"/>
+      <prov:time>2020-03-20T13:12:37.194918</prov:time>
+      <prov:role>argument</prov:role>
+      <prov:type xsi:type="xsd:string">argumentActivation</prov:type>
+    </prov:used>
+    <prov:entity prov:id="argumentActivation3">
+      <prov:label>p</prov:label>
+      <prov:type xsi:type="xsd:string">argumentActivation</prov:type>
+      <prov:value xsi:type="xsd:string">('in.jpg',)</prov:value>
+    </prov:entity>
+    <prov:used prov:id="funcAct3UsedArgAct3">
+      <prov:activity prov:ref="functionActivation3"/>
+      <prov:entity prov:ref="argumentActivation3"/>
+      <prov:time>2020-03-20T13:12:37.194918</prov:time>
+      <prov:role>argument</prov:role>
+      <prov:type xsi:type="xsd:string">argumentActivation</prov:type>
+    </prov:used>
+    <prov:entity prov:id="funcAct3ReturnValue">
+      <prov:type xsi:type="xsd:string">returnValue</prov:type>
+      <prov:value xsi:type="xsd:string">'/mnt/2A96E79A96E764B3/Universitaet/Bachelorarbeit/noworkflow/instances/medium/in.jpg'</prov:value>
+    </prov:entity>
+    <prov:wasGeneratedBy prov:id="funcAct3RetValGeneration">
+      <prov:entity prov:ref="funcAct3ReturnValue"/>
+      <prov:activity prov:ref="functionActivation3"/>
+      <prov:time>2020-03-20T13:12:37.194956</prov:time>
+    </prov:wasGeneratedBy>
+    <prov:activity prov:id="functionActivation4">
+      <prov:startTime>2020-03-20T13:12:37.194999</prov:startTime>
+      <prov:endTime>2020-03-20T13:12:47.058815</prov:endTime>
+      <prov:label>main</prov:label>
+      <prov:type xsi:type="xsd:string">functionActivation</prov:type>
+      <depth xsi:type="xsd:int">2</depth>
+      <line xsi:type="xsd:int">157</line>
+    </prov:activity>
+    <prov:wasInformedBy prov:id="funcAct4CalledBy1">
+      <prov:informed prov:ref="functionActivation4"/>
+      <prov:informant prov:ref="functionActivation1"/>
+      <prov:type xsi:type="xsd:string">callActivation</prov:type>
+    </prov:wasInformedBy>
+    <prov:activity prov:id="functionActivation5">
+      <prov:startTime>2020-03-20T13:12:37.195030</prov:startTime>
+      <prov:endTime>2020-03-20T13:12:37.205258</prov:endTime>
+      <prov:label>parse_args</prov:label>
+      <prov:type xsi:type="xsd:string">functionActivation</prov:type>
+      <depth xsi:type="xsd:int">3</depth>
+      <line xsi:type="xsd:int">78</line>
+    </prov:activity>
+    <prov:wasInformedBy prov:id="funcAct5CalledBy4">
+      <prov:informed prov:ref="functionActivation5"/>
+      <prov:informant prov:ref="functionActivation4"/>
+      <prov:type xsi:type="xsd:string">callActivation</prov:type>
+    </prov:wasInformedBy>
+    <prov:entity prov:id="funcAct5ReturnValue">
+      <prov:type xsi:type="xsd:string">returnValue</prov:type>
+      <prov:value xsi:type="xsd:string">Namespace(diff='diff.jpg', input='in.jpg', output='out.jpg', sigma=6)</prov:value>
+    </prov:entity>
+    <prov:wasGeneratedBy prov:id="funcAct5RetValGeneration">
+      <prov:entity prov:ref="funcAct5ReturnValue"/>
+      <prov:activity prov:ref="functionActivation5"/>
+      <prov:time>2020-03-20T13:12:37.205258</prov:time>
+    </prov:wasGeneratedBy>
+    <prov:activity prov:id="functionActivation12">
+      <prov:startTime>2020-03-20T13:12:37.205346</prov:startTime>
+      <prov:endTime>2020-03-20T13:12:37.205484</prov:endTime>
+      <prov:label>exists</prov:label>
+      <prov:type xsi:type="xsd:string">functionActivation</prov:type>
+      <depth xsi:type="xsd:int">3</depth>
+      <line xsi:type="xsd:int">80</line>
+    </prov:activity>
+    <prov:wasInformedBy prov:id="funcAct12CalledBy4">
+      <prov:informed prov:ref="functionActivation12"/>
+      <prov:informant prov:ref="functionActivation4"/>
+      <prov:type xsi:type="xsd:string">callActivation</prov:type>
+    </prov:wasInformedBy>
+    <prov:entity prov:id="argumentActivation39">
+      <prov:label>path</prov:label>
+      <prov:type xsi:type="xsd:string">argumentActivation</prov:type>
+      <prov:value xsi:type="xsd:string">'in.jpg'</prov:value>
+    </prov:entity>
+    <prov:used prov:id="funcAct12UsedArgAct39">
+      <prov:activity prov:ref="functionActivation12"/>
+      <prov:entity prov:ref="argumentActivation39"/>
+      <prov:time>2020-03-20T13:12:37.205346</prov:time>
+      <prov:role>argument</prov:role>
+      <prov:type xsi:type="xsd:string">argumentActivation</prov:type>
+    </prov:used>
+    <prov:entity prov:id="funcAct12ReturnValue">
+      <prov:type xsi:type="xsd:string">returnValue</prov:type>
+      <prov:value xsi:type="xsd:string">True</prov:value>
+    </prov:entity>
+    <prov:wasGeneratedBy prov:id="funcAct12RetValGeneration">
+      <prov:entity prov:ref="funcAct12ReturnValue"/>
+      <prov:activity prov:ref="functionActivation12"/>
+      <prov:time>2020-03-20T13:12:37.205484</prov:time>
+    </prov:wasGeneratedBy>
+    <prov:activity prov:id="functionActivation13">
+      <prov:startTime>2020-03-20T13:12:37.205514</prov:startTime>
+      <prov:endTime>2020-03-20T13:12:37.205568</prov:endTime>
+      <prov:label>module.print</prov:label>
+      <prov:type xsi:type="xsd:string">functionActivation</prov:type>
+      <depth xsi:type="xsd:int">3</depth>
+      <line xsi:type="xsd:int">89</line>
+    </prov:activity>
+    <prov:wasInformedBy prov:id="funcAct13CalledBy4">
+      <prov:informed prov:ref="functionActivation13"/>
+      <prov:informant prov:ref="functionActivation4"/>
+      <prov:type xsi:type="xsd:string">callActivation</prov:type>
+    </prov:wasInformedBy>
+    <prov:activity prov:id="functionActivation14">
+      <prov:startTime>2020-03-20T13:12:37.205623</prov:startTime>
+      <prov:endTime>2020-03-20T13:12:37.210304</prov:endTime>
+      <prov:label>imread</prov:label>
+      <prov:type xsi:type="xsd:string">functionActivation</prov:type>
+      <depth xsi:type="xsd:int">3</depth>
+      <line xsi:type="xsd:int">90</line>
+    </prov:activity>
+    <prov:wasInformedBy prov:id="funcAct14CalledBy4">
+      <prov:informed prov:ref="functionActivation14"/>
+      <prov:informant prov:ref="functionActivation4"/>
+      <prov:type xsi:type="xsd:string">callActivation</prov:type>
+    </prov:wasInformedBy>
+    <prov:entity prov:id="argumentActivation40">
+      <prov:label>fname</prov:label>
+      <prov:type xsi:type="xsd:string">argumentActivation</prov:type>
+      <prov:value xsi:type="xsd:string">'in.jpg'</prov:value>
+    </prov:entity>
+    <prov:used prov:id="funcAct14UsedArgAct40">
+      <prov:activity prov:ref="functionActivation14"/>
+      <prov:entity prov:ref="argumentActivation40"/>
+      <prov:time>2020-03-20T13:12:37.205623</prov:time>
+      <prov:role>argument</prov:role>
+      <prov:type xsi:type="xsd:string">argumentActivation</prov:type>
+    </prov:used>
+    <prov:entity prov:id="argumentActivation41">
+      <prov:label>format</prov:label>
+      <prov:type xsi:type="xsd:string">argumentActivation</prov:type>
+      <prov:value xsi:type="xsd:string">None</prov:value>
+    </prov:entity>
+    <prov:used prov:id="funcAct14UsedArgAct41">
+      <prov:activity prov:ref="functionActivation14"/>
+      <prov:entity prov:ref="argumentActivation41"/>
+      <prov:time>2020-03-20T13:12:37.205623</prov:time>
+      <prov:role>argument</prov:role>
+      <prov:type xsi:type="xsd:string">argumentActivation</prov:type>
+    </prov:used>
+    <prov:entity prov:id="funcAct14ReturnValue">
+      <prov:type xsi:type="xsd:string">returnValue</prov:type>
+      <prov:value xsi:type="xsd:string">array([[[224, 185,  54],
+        [221, 173,  39],
+        [217, 161,  26],
+...128, 225],
+        [ 30, 129, 222],
+        [ 21, 115, 203]]], dtype=uint8)</prov:value>
+    </prov:entity>
+    <prov:wasGeneratedBy prov:id="funcAct14RetValGeneration">
+      <prov:entity prov:ref="funcAct14ReturnValue"/>
+      <prov:activity prov:ref="functionActivation14"/>
+      <prov:time>2020-03-20T13:12:37.210304</prov:time>
+    </prov:wasGeneratedBy>
+    <prov:activity prov:id="functionActivation15">
+      <prov:startTime>2020-03-20T13:12:37.211473</prov:startTime>
+      <prov:endTime>2020-03-20T13:12:37.211583</prov:endTime>
+      <prov:label>module.print</prov:label>
+      <prov:type xsi:type="xsd:string">functionActivation</prov:type>
+      <depth xsi:type="xsd:int">3</depth>
+      <line xsi:type="xsd:int">91</line>
+    </prov:activity>
+    <prov:wasInformedBy prov:id="funcAct15CalledBy4">
+      <prov:informed prov:ref="functionActivation15"/>
+      <prov:informant prov:ref="functionActivation4"/>
+      <prov:type xsi:type="xsd:string">callActivation</prov:type>
+    </prov:wasInformedBy>
+    <prov:activity prov:id="functionActivation16">
+      <prov:startTime>2020-03-20T13:12:37.211641</prov:startTime>
+      <prov:endTime>2020-03-20T13:12:37.211656</prov:endTime>
+      <prov:label>str.format</prov:label>
+      <prov:type xsi:type="xsd:string">functionActivation</prov:type>
+      <depth xsi:type="xsd:int">3</depth>
+      <line xsi:type="xsd:int">102</line>
+    </prov:activity>
+    <prov:wasInformedBy prov:id="funcAct16CalledBy4">
+      <prov:informed prov:ref="functionActivation16"/>
+      <prov:informant prov:ref="functionActivation4"/>
+      <prov:type xsi:type="xsd:string">callActivation</prov:type>
+    </prov:wasInformedBy>
+    <prov:activity prov:id="functionActivation17">
+      <prov:startTime>2020-03-20T13:12:37.211665</prov:startTime>
+      <prov:endTime>2020-03-20T13:12:37.211695</prov:endTime>
+      <prov:label>module.print</prov:label>
+      <prov:type xsi:type="xsd:string">functionActivation</prov:type>
+      <depth xsi:type="xsd:int">3</depth>
+      <line xsi:type="xsd:int">102</line>
+    </prov:activity>
+    <prov:wasInformedBy prov:id="funcAct17CalledBy4">
+      <prov:informed prov:ref="functionActivation17"/>
+      <prov:informant prov:ref="functionActivation4"/>
+      <prov:type xsi:type="xsd:string">callActivation</prov:type>
+    </prov:wasInformedBy>
+    <prov:activity prov:id="functionActivation18">
+      <prov:startTime>2020-03-20T13:12:37.212269</prov:startTime>
+      <prov:endTime>2020-03-20T13:12:37.221844</prov:endTime>
+      <prov:label>blur_image</prov:label>
+      <prov:type xsi:type="xsd:string">functionActivation</prov:type>
+      <depth xsi:type="xsd:int">3</depth>
+      <line xsi:type="xsd:int">103</line>
+    </prov:activity>
+    <prov:wasInformedBy prov:id="funcAct18CalledBy4">
+      <prov:informed prov:ref="functionActivation18"/>
+      <prov:informant prov:ref="functionActivation4"/>
+      <prov:type xsi:type="xsd:string">callActivation</prov:type>
+    </prov:wasInformedBy>
+    <prov:entity prov:id="argumentActivation42">
+      <prov:label>img</prov:label>
+      <prov:type xsi:type="xsd:string">argumentActivation</prov:type>
+      <prov:value xsi:type="xsd:string">array([[[224, 185,  54],
+        [221, 173,  39],
+        [217, 161,  26],
+...128, 225],
+        [ 30, 129, 222],
+        [ 21, 115, 203]]], dtype=uint8)</prov:value>
+    </prov:entity>
+    <prov:used prov:id="funcAct18UsedArgAct42">
+      <prov:activity prov:ref="functionActivation18"/>
+      <prov:entity prov:ref="argumentActivation42"/>
+      <prov:time>2020-03-20T13:12:37.212269</prov:time>
+      <prov:role>argument</prov:role>
+      <prov:type xsi:type="xsd:string">argumentActivation</prov:type>
+    </prov:used>
+    <prov:entity prov:id="argumentActivation43">
+      <prov:label>sigma</prov:label>
+      <prov:type xsi:type="xsd:string">argumentActivation</prov:type>
+      <prov:value xsi:type="xsd:string">6</prov:value>
+    </prov:entity>
+    <prov:used prov:id="funcAct18UsedArgAct43">
+      <prov:activity prov:ref="functionActivation18"/>
+      <prov:entity prov:ref="argumentActivation43"/>
+      <prov:time>2020-03-20T13:12:37.212269</prov:time>
+      <prov:role>argument</prov:role>
+      <prov:type xsi:type="xsd:string">argumentActivation</prov:type>
+    </prov:used>
+    <prov:entity prov:id="funcAct18ReturnValue">
+      <prov:type xsi:type="xsd:string">returnValue</prov:type>
+      <prov:value xsi:type="xsd:string">array([[[203, 169,  65],
+        [202, 169,  65],
+        [201, 167,  64],
+...122, 200],
+        [ 30, 121, 200],
+        [ 29, 120, 199]]], dtype=uint8)</prov:value>
+    </prov:entity>
+    <prov:wasGeneratedBy prov:id="funcAct18RetValGeneration">
+      <prov:entity prov:ref="funcAct18ReturnValue"/>
+      <prov:activity prov:ref="functionActivation18"/>
+      <prov:time>2020-03-20T13:12:37.221844</prov:time>
+    </prov:wasGeneratedBy>
+    <prov:activity prov:id="functionActivation20">
+      <prov:startTime>2020-03-20T13:12:37.222686</prov:startTime>
+      <prov:endTime>2020-03-20T13:12:37.222751</prov:endTime>
+      <prov:label>module.print</prov:label>
+      <prov:type xsi:type="xsd:string">functionActivation</prov:type>
+      <depth xsi:type="xsd:int">3</depth>
+      <line xsi:type="xsd:int">104</line>
+    </prov:activity>
+    <prov:wasInformedBy prov:id="funcAct20CalledBy4">
+      <prov:informed prov:ref="functionActivation20"/>
+      <prov:informant prov:ref="functionActivation4"/>
+      <prov:type xsi:type="xsd:string">callActivation</prov:type>
+    </prov:wasInformedBy>
+    <prov:activity prov:id="functionActivation21">
+      <prov:startTime>2020-03-20T13:12:37.222766</prov:startTime>
+      <prov:endTime>2020-03-20T13:12:37.222779</prov:endTime>
+      <prov:label>module.print</prov:label>
+      <prov:type xsi:type="xsd:string">functionActivation</prov:type>
+      <depth xsi:type="xsd:int">3</depth>
+      <line xsi:type="xsd:int">116</line>
+    </prov:activity>
+    <prov:wasInformedBy prov:id="funcAct21CalledBy4">
+      <prov:informed prov:ref="functionActivation21"/>
+      <prov:informant prov:ref="functionActivation4"/>
+      <prov:type xsi:type="xsd:string">callActivation</prov:type>
+    </prov:wasInformedBy>
+    <prov:activity prov:id="functionActivation22">
+      <prov:startTime>2020-03-20T13:12:37.223368</prov:startTime>
+      <prov:endTime>2020-03-20T13:12:37.238144</prov:endTime>
+      <prov:label>imsave</prov:label>
+      <prov:type xsi:type="xsd:string">functionActivation</prov:type>
+      <depth xsi:type="xsd:int">3</depth>
+      <line xsi:type="xsd:int">117</line>
+    </prov:activity>
+    <prov:wasInformedBy prov:id="funcAct22CalledBy4">
+      <prov:informed prov:ref="functionActivation22"/>
+      <prov:informant prov:ref="functionActivation4"/>
+      <prov:type xsi:type="xsd:string">callActivation</prov:type>
+    </prov:wasInformedBy>
+    <prov:entity prov:id="argumentActivation51">
+      <prov:label>fname</prov:label>
+      <prov:type xsi:type="xsd:string">argumentActivation</prov:type>
+      <prov:value xsi:type="xsd:string">'out.jpg'</prov:value>
+    </prov:entity>
+    <prov:used prov:id="funcAct22UsedArgAct51">
+      <prov:activity prov:ref="functionActivation22"/>
+      <prov:entity prov:ref="argumentActivation51"/>
+      <prov:time>2020-03-20T13:12:37.223368</prov:time>
+      <prov:role>argument</prov:role>
+      <prov:type xsi:type="xsd:string">argumentActivation</prov:type>
+    </prov:used>
+    <prov:entity prov:id="argumentActivation52">
+      <prov:label>arr</prov:label>
+      <prov:type xsi:type="xsd:string">argumentActivation</prov:type>
+      <prov:value xsi:type="xsd:string">array([[[203, 169,  65],
+        [202, 169,  65],
+        [201, 167,  64],
+...122, 200],
+        [ 30, 121, 200],
+        [ 29, 120, 199]]], dtype=uint8)</prov:value>
+    </prov:entity>
+    <prov:used prov:id="funcAct22UsedArgAct52">
+      <prov:activity prov:ref="functionActivation22"/>
+      <prov:entity prov:ref="argumentActivation52"/>
+      <prov:time>2020-03-20T13:12:37.223368</prov:time>
+      <prov:role>argument</prov:role>
+      <prov:type xsi:type="xsd:string">argumentActivation</prov:type>
+    </prov:used>
+    <prov:activity prov:id="functionActivation23">
+      <prov:startTime>2020-03-20T13:12:37.238719</prov:startTime>
+      <prov:endTime>2020-03-20T13:12:37.238780</prov:endTime>
+      <prov:label>module.print</prov:label>
+      <prov:type xsi:type="xsd:string">functionActivation</prov:type>
+      <depth xsi:type="xsd:int">3</depth>
+      <line xsi:type="xsd:int">118</line>
+    </prov:activity>
+    <prov:wasInformedBy prov:id="funcAct23CalledBy4">
+      <prov:informed prov:ref="functionActivation23"/>
+      <prov:informant prov:ref="functionActivation4"/>
+      <prov:type xsi:type="xsd:string">callActivation</prov:type>
+    </prov:wasInformedBy>
+    <prov:activity prov:id="functionActivation24">
+      <prov:startTime>2020-03-20T13:12:37.238801</prov:startTime>
+      <prov:endTime>2020-03-20T13:12:37.238866</prov:endTime>
+      <prov:label>module.print</prov:label>
+      <prov:type xsi:type="xsd:string">functionActivation</prov:type>
+      <depth xsi:type="xsd:int">3</depth>
+      <line xsi:type="xsd:int">131</line>
+    </prov:activity>
+    <prov:wasInformedBy prov:id="funcAct24CalledBy4">
+      <prov:informed prov:ref="functionActivation24"/>
+      <prov:informant prov:ref="functionActivation4"/>
+      <prov:type xsi:type="xsd:string">callActivation</prov:type>
+    </prov:wasInformedBy>
+    <prov:activity prov:id="functionActivation25">
+      <prov:startTime>2020-03-20T13:12:37.240320</prov:startTime>
+      <prov:endTime>2020-03-20T13:12:47.010305</prov:endTime>
+      <prov:label>get_diff</prov:label>
+      <prov:type xsi:type="xsd:string">functionActivation</prov:type>
+      <depth xsi:type="xsd:int">3</depth>
+      <line xsi:type="xsd:int">132</line>
+    </prov:activity>
+    <prov:wasInformedBy prov:id="funcAct25CalledBy4">
+      <prov:informed prov:ref="functionActivation25"/>
+      <prov:informant prov:ref="functionActivation4"/>
+      <prov:type xsi:type="xsd:string">callActivation</prov:type>
+    </prov:wasInformedBy>
+    <prov:entity prov:id="argumentActivation53">
+      <prov:label>img1</prov:label>
+      <prov:type xsi:type="xsd:string">argumentActivation</prov:type>
+      <prov:value xsi:type="xsd:string">array([[[224, 185,  54],
+        [221, 173,  39],
+        [217, 161,  26],
+...128, 225],
+        [ 30, 129, 222],
+        [ 21, 115, 203]]], dtype=uint8)</prov:value>
+    </prov:entity>
+    <prov:used prov:id="funcAct25UsedArgAct53">
+      <prov:activity prov:ref="functionActivation25"/>
+      <prov:entity prov:ref="argumentActivation53"/>
+      <prov:time>2020-03-20T13:12:37.240320</prov:time>
+      <prov:role>argument</prov:role>
+      <prov:type xsi:type="xsd:string">argumentActivation</prov:type>
+    </prov:used>
+    <prov:entity prov:id="argumentActivation54">
+      <prov:label>img2</prov:label>
+      <prov:type xsi:type="xsd:string">argumentActivation</prov:type>
+      <prov:value xsi:type="xsd:string">array([[[203, 169,  65],
+        [202, 169,  65],
+        [201, 167,  64],
+...122, 200],
+        [ 30, 121, 200],
+        [ 29, 120, 199]]], dtype=uint8)</prov:value>
+    </prov:entity>
+    <prov:used prov:id="funcAct25UsedArgAct54">
+      <prov:activity prov:ref="functionActivation25"/>
+      <prov:entity prov:ref="argumentActivation54"/>
+      <prov:time>2020-03-20T13:12:37.240320</prov:time>
+      <prov:role>argument</prov:role>
+      <prov:type xsi:type="xsd:string">argumentActivation</prov:type>
+    </prov:used>
+    <prov:entity prov:id="funcAct25ReturnValue">
+      <prov:type xsi:type="xsd:string">returnValue</prov:type>
+      <prov:value xsi:type="xsd:string">[[48, 49, 60, 62, 44, 46, 114, 151, 192, 133, 50, 28, 33, 60, 60, 68, 72, 6..., 3, 4, 5, 19, 13, 24, 33, 26, 27, 36, 36, 55, 56, 61, 39, 34, 38, 30, 17]]</prov:value>
+    </prov:entity>
+    <prov:wasGeneratedBy prov:id="funcAct25RetValGeneration">
+      <prov:entity prov:ref="funcAct25ReturnValue"/>
+      <prov:activity prov:ref="functionActivation25"/>
+      <prov:time>2020-03-20T13:12:47.010305</prov:time>
+    </prov:wasGeneratedBy>
+    <prov:activity prov:id="functionActivation154125">
+      <prov:startTime>2020-03-20T13:12:47.024938</prov:startTime>
+      <prov:endTime>2020-03-20T13:12:47.024979</prov:endTime>
+      <prov:label>module.print</prov:label>
+      <prov:type xsi:type="xsd:string">functionActivation</prov:type>
+      <depth xsi:type="xsd:int">3</depth>
+      <line xsi:type="xsd:int">133</line>
+    </prov:activity>
+    <prov:wasInformedBy prov:id="funcAct154125CalledBy4">
+      <prov:informed prov:ref="functionActivation154125"/>
+      <prov:informant prov:ref="functionActivation4"/>
+      <prov:type xsi:type="xsd:string">callActivation</prov:type>
+    </prov:wasInformedBy>
+    <prov:activity prov:id="functionActivation154126">
+      <prov:startTime>2020-03-20T13:12:47.024990</prov:startTime>
+      <prov:endTime>2020-03-20T13:12:47.025003</prov:endTime>
+      <prov:label>module.print</prov:label>
+      <prov:type xsi:type="xsd:string">functionActivation</prov:type>
+      <depth xsi:type="xsd:int">3</depth>
+      <line xsi:type="xsd:int">144</line>
+    </prov:activity>
+    <prov:wasInformedBy prov:id="funcAct154126CalledBy4">
+      <prov:informed prov:ref="functionActivation154126"/>
+      <prov:informant prov:ref="functionActivation4"/>
+      <prov:type xsi:type="xsd:string">callActivation</prov:type>
+    </prov:wasInformedBy>
+    <prov:activity prov:id="functionActivation154127">
+      <prov:startTime>2020-03-20T13:12:47.039596</prov:startTime>
+      <prov:endTime>2020-03-20T13:12:47.058757</prov:endTime>
+      <prov:label>save_diff_image</prov:label>
+      <prov:type xsi:type="xsd:string">functionActivation</prov:type>
+      <depth xsi:type="xsd:int">3</depth>
+      <line xsi:type="xsd:int">145</line>
+    </prov:activity>
+    <prov:wasInformedBy prov:id="funcAct154127CalledBy4">
+      <prov:informed prov:ref="functionActivation154127"/>
+      <prov:informant prov:ref="functionActivation4"/>
+      <prov:type xsi:type="xsd:string">callActivation</prov:type>
+    </prov:wasInformedBy>
+    <prov:entity prov:id="argumentActivation296">
+      <prov:label>path</prov:label>
+      <prov:type xsi:type="xsd:string">argumentActivation</prov:type>
+      <prov:value xsi:type="xsd:string">'diff.jpg'</prov:value>
+    </prov:entity>
+    <prov:used prov:id="funcAct154127UsedArgAct296">
+      <prov:activity prov:ref="functionActivation154127"/>
+      <prov:entity prov:ref="argumentActivation296"/>
+      <prov:time>2020-03-20T13:12:47.039596</prov:time>
+      <prov:role>argument</prov:role>
+      <prov:type xsi:type="xsd:string">argumentActivation</prov:type>
+    </prov:used>
+    <prov:entity prov:id="argumentActivation297">
+      <prov:label>diffs</prov:label>
+      <prov:type xsi:type="xsd:string">argumentActivation</prov:type>
+      <prov:value xsi:type="xsd:string">[[48, 49, 60, 62, 44, 46, 114, 151, 192, 133, 50, 28, 33, 60, 60, 68, 72, 6..., 3, 4, 5, 19, 13, 24, 33, 26, 27, 36, 36, 55, 56, 61, 39, 34, 38, 30, 17]]</prov:value>
+    </prov:entity>
+    <prov:used prov:id="funcAct154127UsedArgAct297">
+      <prov:activity prov:ref="functionActivation154127"/>
+      <prov:entity prov:ref="argumentActivation297"/>
+      <prov:time>2020-03-20T13:12:47.039596</prov:time>
+      <prov:role>argument</prov:role>
+      <prov:type xsi:type="xsd:string">argumentActivation</prov:type>
+    </prov:used>
+    <prov:activity prov:id="functionActivation154131">
+      <prov:startTime>2020-03-20T13:12:47.058784</prov:startTime>
+      <prov:endTime>2020-03-20T13:12:47.058808</prov:endTime>
+      <prov:label>module.print</prov:label>
+      <prov:type xsi:type="xsd:string">functionActivation</prov:type>
+      <depth xsi:type="xsd:int">3</depth>
+      <line xsi:type="xsd:int">149</line>
+    </prov:activity>
+    <prov:wasInformedBy prov:id="funcAct154131CalledBy4">
+      <prov:informed prov:ref="functionActivation154131"/>
+      <prov:informant prov:ref="functionActivation4"/>
+      <prov:type xsi:type="xsd:string">callActivation</prov:type>
+    </prov:wasInformedBy>
+    <prov:activity prov:id="fileAccess1">
+      <prov:location xsi:type="xsd:string">in.jpg</prov:location>
+      <prov:type xsi:type="xsd:string">rb</prov:type>
+      <buffering>default</buffering>
+      <contentHashAfter>a97c3acb8fbf13348d617b16c5e7ab3b5495df73</contentHashAfter>
+      <contentHashBefore>a97c3acb8fbf13348d617b16c5e7ab3b5495df73</contentHashBefore>
+      <prov:time>2020-03-20T13:12:37.205907</prov:time>
+    </prov:activity>
+    <prov:wasInformedBy prov:id="fileAcc1ByFuncAct14">
+      <prov:informed prov:ref="fileAccess1"/>
+      <prov:informant prov:ref="functionActivation14"/>
+      <prov:type xsi:type="xsd:string">fileAccess</prov:type>
+    </prov:wasInformedBy>
+    <prov:activity prov:id="fileAccess2">
+      <prov:location xsi:type="xsd:string">out.jpg</prov:location>
+      <prov:type xsi:type="xsd:string">w+b</prov:type>
+      <buffering>default</buffering>
+      <contentHashAfter>3ed582a2ed5babd64f4d8e2ba556c65d0ddf1587</contentHashAfter>
+      <contentHashBefore>ce9ffaace5809b23a8b5ddf82a6e2b1105536bb4</contentHashBefore>
+      <prov:time>2020-03-20T13:12:37.232728</prov:time>
+    </prov:activity>
+    <prov:wasInformedBy prov:id="fileAcc2ByFuncAct22">
+      <prov:informed prov:ref="fileAccess2"/>
+      <prov:informant prov:ref="functionActivation22"/>
+      <prov:type xsi:type="xsd:string">fileAccess</prov:type>
+    </prov:wasInformedBy>
+    <prov:activity prov:id="fileAccess3">
+      <prov:location xsi:type="xsd:string">diff.jpg</prov:location>
+      <prov:type xsi:type="xsd:string">w+b</prov:type>
+      <buffering>default</buffering>
+      <contentHashAfter>6a618c3ab17bf11c8d67727244b783dc9673d742</contentHashAfter>
+      <contentHashBefore>bcfd7b62f302cec63c12a06befeb80ee76d43a48</contentHashBefore>
+      <prov:time>2020-03-20T13:12:47.054734</prov:time>
+    </prov:activity>
+  </prov:bundleContent>
+</prov:document>

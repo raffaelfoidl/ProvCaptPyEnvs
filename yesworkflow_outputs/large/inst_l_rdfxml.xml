@@ -1,0 +1,626 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:prov="http://www.w3.org/ns/prov#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:yw="http://yesworkflow.org/"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+
+<rdf:Description rdf:about="http://yesworkflow.org/data__USE__get_logs">
+	<rdf:type rdf:resource="http://www.w3.org/ns/prov#Usage"/>
+	<prov:entity rdf:resource="http://yesworkflow.org/data"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/get_logs">
+	<prov:qualifiedUsage rdf:resource="http://yesworkflow.org/data__USE__get_logs"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/pid__USE__persist_conflict_report">
+	<rdf:type rdf:resource="http://www.w3.org/ns/prov#Usage"/>
+	<prov:entity rdf:resource="http://yesworkflow.org/pid"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/persist_conflict_report">
+	<prov:qualifiedUsage rdf:resource="http://yesworkflow.org/pid__USE__persist_conflict_report"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/resource_summary">
+	<rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/data__USE__get_pids">
+	<rdf:type rdf:resource="http://www.w3.org/ns/prov#Usage"/>
+	<prov:entity rdf:resource="http://yesworkflow.org/data"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/get_pids">
+	<prov:qualifiedUsage rdf:resource="http://yesworkflow.org/data__USE__get_pids"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/resource_summary__GEN__get_resource_summary">
+	<rdf:type rdf:resource="http://www.w3.org/ns/prov#Generation"/>
+	<prov:activity rdf:resource="http://yesworkflow.org/get_resource_summary"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/resource_summary">
+	<prov:qualifiedGeneration rdf:resource="http://yesworkflow.org/resource_summary__GEN__get_resource_summary"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/summary_plot__USE__inst_l.main">
+	<rdf:type rdf:resource="http://www.w3.org/ns/prov#Usage"/>
+	<prov:entity rdf:resource="http://yesworkflow.org/summary_plot"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/inst_l.main">
+	<prov:qualifiedUsage rdf:resource="http://yesworkflow.org/summary_plot__USE__inst_l.main"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/res_summary_plot__GEN__persist_res_summary">
+	<rdf:type rdf:resource="http://www.w3.org/ns/prov#Generation"/>
+	<prov:activity rdf:resource="http://yesworkflow.org/persist_res_summary"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/res_summary_plot">
+	<prov:qualifiedGeneration rdf:resource="http://yesworkflow.org/res_summary_plot__GEN__persist_res_summary"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/conflicts__USE__inst_l.main">
+	<rdf:type rdf:resource="http://www.w3.org/ns/prov#Usage"/>
+	<prov:entity rdf:resource="http://yesworkflow.org/conflicts"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/inst_l.main">
+	<prov:qualifiedUsage rdf:resource="http://yesworkflow.org/conflicts__USE__inst_l.main"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/res_conflicts__GEN__get_conflicts">
+	<rdf:type rdf:resource="http://www.w3.org/ns/prov#Generation"/>
+	<prov:activity rdf:resource="http://yesworkflow.org/get_conflicts"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/res_conflicts">
+	<prov:qualifiedGeneration rdf:resource="http://yesworkflow.org/res_conflicts__GEN__get_conflicts"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/conflicts">
+	<rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">persistence path for conflict report</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/get_pids">
+	<rdf:type rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">determine PIDs stored in trace logs</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/concurrent_accesses_per_resource__USE__get_resource_summary">
+	<rdf:type rdf:resource="http://www.w3.org/ns/prov#Usage"/>
+	<prov:entity rdf:resource="http://yesworkflow.org/concurrent_accesses_per_resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/get_resource_summary">
+	<prov:qualifiedUsage rdf:resource="http://yesworkflow.org/concurrent_accesses_per_resource__USE__get_resource_summary"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/pid__USE__inst_l.main">
+	<rdf:type rdf:resource="http://www.w3.org/ns/prov#Usage"/>
+	<prov:entity rdf:resource="http://yesworkflow.org/pid"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/inst_l.main">
+	<prov:qualifiedUsage rdf:resource="http://yesworkflow.org/pid__USE__inst_l.main"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/concurrent_executions__USE__get_resource_info">
+	<rdf:type rdf:resource="http://www.w3.org/ns/prov#Usage"/>
+	<prov:entity rdf:resource="http://yesworkflow.org/concurrent_executions"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/get_resource_info">
+	<prov:qualifiedUsage rdf:resource="http://yesworkflow.org/concurrent_executions__USE__get_resource_info"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/res_summary_plot">
+	<rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">file:{summary_plot}</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/distinct_pids__USE__provide_data_info">
+	<rdf:type rdf:resource="http://www.w3.org/ns/prov#Usage"/>
+	<prov:entity rdf:resource="http://yesworkflow.org/distinct_pids"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/provide_data_info">
+	<prov:qualifiedUsage rdf:resource="http://yesworkflow.org/distinct_pids__USE__provide_data_info"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/pid__USE__get_logs">
+	<rdf:type rdf:resource="http://www.w3.org/ns/prov#Usage"/>
+	<prov:entity rdf:resource="http://yesworkflow.org/pid"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/get_logs">
+	<prov:qualifiedUsage rdf:resource="http://yesworkflow.org/pid__USE__get_logs"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/conflict_report__GEN__inst_l.main">
+	<rdf:type rdf:resource="http://www.w3.org/ns/prov#Generation"/>
+	<prov:activity rdf:resource="http://yesworkflow.org/inst_l.main"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/conflict_report">
+	<prov:qualifiedGeneration rdf:resource="http://yesworkflow.org/conflict_report__GEN__inst_l.main"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/get_conflicts">
+	<rdf:type rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">determine write-write conflicts</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/get_resource_info">
+	<rdf:type rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">determine usage and resource conflict infos</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/res_summary_csv__GEN__persist_res_summary">
+	<rdf:type rdf:resource="http://www.w3.org/ns/prov#Generation"/>
+	<prov:activity rdf:resource="http://yesworkflow.org/persist_res_summary"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/res_summary_csv">
+	<prov:qualifiedGeneration rdf:resource="http://yesworkflow.org/res_summary_csv__GEN__persist_res_summary"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/persist_conflict_report">
+	<rdf:type rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">save conflict report as JSON file</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/get_process_runtime">
+	<rdf:type rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">compute total and average runtime</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/overall_resource_accesses__GEN__get_overlaps">
+	<rdf:type rdf:resource="http://www.w3.org/ns/prov#Generation"/>
+	<prov:activity rdf:resource="http://yesworkflow.org/get_overlaps"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/overall_resource_accesses">
+	<prov:qualifiedGeneration rdf:resource="http://yesworkflow.org/overall_resource_accesses__GEN__get_overlaps"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/frequency_plot">
+	<rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">file:{freqs}</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/avg_runtime">
+	<rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/overall_resource_accesses">
+	<rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/distinct_pids">
+	<rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/pid_logs">
+	<rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/total_runtime">
+	<rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/summary_plot__USE__persist_res_summary">
+	<rdf:type rdf:resource="http://www.w3.org/ns/prov#Usage"/>
+	<prov:entity rdf:resource="http://yesworkflow.org/summary_plot"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/persist_res_summary">
+	<prov:qualifiedUsage rdf:resource="http://yesworkflow.org/summary_plot__USE__persist_res_summary"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/conflicts__USE__persist_conflict_report">
+	<rdf:type rdf:resource="http://www.w3.org/ns/prov#Usage"/>
+	<prov:entity rdf:resource="http://yesworkflow.org/conflicts"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/persist_conflict_report">
+	<prov:qualifiedUsage rdf:resource="http://yesworkflow.org/conflicts__USE__persist_conflict_report"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/pid_logs__USE__get_overlaps">
+	<rdf:type rdf:resource="http://www.w3.org/ns/prov#Usage"/>
+	<prov:entity rdf:resource="http://yesworkflow.org/pid_logs"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/get_overlaps">
+	<prov:qualifiedUsage rdf:resource="http://yesworkflow.org/pid_logs__USE__get_overlaps"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/all_pids__GEN__get_pids">
+	<rdf:type rdf:resource="http://www.w3.org/ns/prov#Generation"/>
+	<prov:activity rdf:resource="http://yesworkflow.org/get_pids"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/all_pids">
+	<prov:qualifiedGeneration rdf:resource="http://yesworkflow.org/all_pids__GEN__get_pids"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/distinct_pids__GEN__get_pids">
+	<rdf:type rdf:resource="http://www.w3.org/ns/prov#Generation"/>
+	<prov:activity rdf:resource="http://yesworkflow.org/get_pids"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/distinct_pids">
+	<prov:qualifiedGeneration rdf:resource="http://yesworkflow.org/distinct_pids__GEN__get_pids"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/res_conflicts__USE__persist_conflict_report">
+	<rdf:type rdf:resource="http://www.w3.org/ns/prov#Usage"/>
+	<prov:entity rdf:resource="http://yesworkflow.org/res_conflicts"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/persist_conflict_report">
+	<prov:qualifiedUsage rdf:resource="http://yesworkflow.org/res_conflicts__USE__persist_conflict_report"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/res_summary_plot__GEN__inst_l.main">
+	<rdf:type rdf:resource="http://www.w3.org/ns/prov#Generation"/>
+	<prov:activity rdf:resource="http://yesworkflow.org/inst_l.main"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/res_summary_plot">
+	<prov:qualifiedGeneration rdf:resource="http://yesworkflow.org/res_summary_plot__GEN__inst_l.main"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/conflicts_per_resource">
+	<rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/traces__USE__inst_l.main">
+	<rdf:type rdf:resource="http://www.w3.org/ns/prov#Usage"/>
+	<prov:entity rdf:resource="http://yesworkflow.org/traces"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/inst_l.main">
+	<prov:qualifiedUsage rdf:resource="http://yesworkflow.org/traces__USE__inst_l.main"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/concurrent_executions">
+	<rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/data__GEN__load_data">
+	<rdf:type rdf:resource="http://www.w3.org/ns/prov#Generation"/>
+	<prov:activity rdf:resource="http://yesworkflow.org/load_data"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/data">
+	<prov:qualifiedGeneration rdf:resource="http://yesworkflow.org/data__GEN__load_data"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/summary_csv__USE__persist_res_summary">
+	<rdf:type rdf:resource="http://www.w3.org/ns/prov#Usage"/>
+	<prov:entity rdf:resource="http://yesworkflow.org/summary_csv"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/persist_res_summary">
+	<prov:qualifiedUsage rdf:resource="http://yesworkflow.org/summary_csv__USE__persist_res_summary"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/pid">
+	<rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ID of process to analyze</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/conflicts_per_resource__GEN__get_resource_info">
+	<rdf:type rdf:resource="http://www.w3.org/ns/prov#Generation"/>
+	<prov:activity rdf:resource="http://yesworkflow.org/get_resource_info"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/conflicts_per_resource">
+	<prov:qualifiedGeneration rdf:resource="http://yesworkflow.org/conflicts_per_resource__GEN__get_resource_info"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/all_pids">
+	<rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/get_resource_summary">
+	<rdf:type rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">get dict representation of resource summary</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/resource_summary__USE__persist_res_summary">
+	<rdf:type rdf:resource="http://www.w3.org/ns/prov#Usage"/>
+	<prov:entity rdf:resource="http://yesworkflow.org/resource_summary"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/persist_res_summary">
+	<prov:qualifiedUsage rdf:resource="http://yesworkflow.org/resource_summary__USE__persist_res_summary"/>
+	<rdf:type rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">save resource summary as CSV file and plot</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/total_runtime__GEN__get_process_runtime">
+	<rdf:type rdf:resource="http://www.w3.org/ns/prov#Generation"/>
+	<prov:activity rdf:resource="http://yesworkflow.org/get_process_runtime"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/total_runtime">
+	<prov:qualifiedGeneration rdf:resource="http://yesworkflow.org/total_runtime__GEN__get_process_runtime"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/inst_l.main">
+	<rdf:type rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/frequency_plot__GEN__provide_data_info">
+	<rdf:type rdf:resource="http://www.w3.org/ns/prov#Generation"/>
+	<prov:activity rdf:resource="http://yesworkflow.org/provide_data_info"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/frequency_plot">
+	<prov:qualifiedGeneration rdf:resource="http://yesworkflow.org/frequency_plot__GEN__provide_data_info"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/summary_csv">
+	<rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">persistence path for csv summary</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/freqs__USE__inst_l.main">
+	<rdf:type rdf:resource="http://www.w3.org/ns/prov#Usage"/>
+	<prov:entity rdf:resource="http://yesworkflow.org/freqs"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/inst_l.main">
+	<prov:qualifiedUsage rdf:resource="http://yesworkflow.org/freqs__USE__inst_l.main"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/data">
+	<rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/concurrent_executions__USE__get_conflicts">
+	<rdf:type rdf:resource="http://www.w3.org/ns/prov#Usage"/>
+	<prov:entity rdf:resource="http://yesworkflow.org/concurrent_executions"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/get_conflicts">
+	<prov:qualifiedUsage rdf:resource="http://yesworkflow.org/concurrent_executions__USE__get_conflicts"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/res_summary_csv__GEN__inst_l.main">
+	<rdf:type rdf:resource="http://www.w3.org/ns/prov#Generation"/>
+	<prov:activity rdf:resource="http://yesworkflow.org/inst_l.main"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/res_summary_csv">
+	<prov:qualifiedGeneration rdf:resource="http://yesworkflow.org/res_summary_csv__GEN__inst_l.main"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/pid__USE__persist_res_summary">
+	<rdf:type rdf:resource="http://www.w3.org/ns/prov#Usage"/>
+	<prov:entity rdf:resource="http://yesworkflow.org/pid"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/persist_res_summary">
+	<prov:qualifiedUsage rdf:resource="http://yesworkflow.org/pid__USE__persist_res_summary"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/count__GEN__get_pids">
+	<rdf:type rdf:resource="http://www.w3.org/ns/prov#Generation"/>
+	<prov:activity rdf:resource="http://yesworkflow.org/get_pids"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/count">
+	<prov:qualifiedGeneration rdf:resource="http://yesworkflow.org/count__GEN__get_pids"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/provide_data_info">
+	<rdf:type rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">print count and names of processes; save frequency plot</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/pid_logs__GEN__get_logs">
+	<rdf:type rdf:resource="http://www.w3.org/ns/prov#Generation"/>
+	<prov:activity rdf:resource="http://yesworkflow.org/get_logs"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/pid_logs">
+	<prov:qualifiedGeneration rdf:resource="http://yesworkflow.org/pid_logs__GEN__get_logs"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/frequency_plot__GEN__inst_l.main">
+	<rdf:type rdf:resource="http://www.w3.org/ns/prov#Generation"/>
+	<prov:activity rdf:resource="http://yesworkflow.org/inst_l.main"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/frequency_plot">
+	<prov:qualifiedGeneration rdf:resource="http://yesworkflow.org/frequency_plot__GEN__inst_l.main"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/all_pids__USE__provide_data_info">
+	<rdf:type rdf:resource="http://www.w3.org/ns/prov#Usage"/>
+	<prov:entity rdf:resource="http://yesworkflow.org/all_pids"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/provide_data_info">
+	<prov:qualifiedUsage rdf:resource="http://yesworkflow.org/all_pids__USE__provide_data_info"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/traces">
+	<rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">paths of process trace logs to analyze</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/traces__USE__load_data">
+	<rdf:type rdf:resource="http://www.w3.org/ns/prov#Usage"/>
+	<prov:entity rdf:resource="http://yesworkflow.org/traces"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/load_data">
+	<prov:qualifiedUsage rdf:resource="http://yesworkflow.org/traces__USE__load_data"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/count">
+	<rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/freqs">
+	<rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">persistence path for frequency plot</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/freqs__USE__provide_data_info">
+	<rdf:type rdf:resource="http://www.w3.org/ns/prov#Usage"/>
+	<prov:entity rdf:resource="http://yesworkflow.org/freqs"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/provide_data_info">
+	<prov:qualifiedUsage rdf:resource="http://yesworkflow.org/freqs__USE__provide_data_info"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/conflict_report">
+	<rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">file:{conflicts}</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/count__USE__provide_data_info">
+	<rdf:type rdf:resource="http://www.w3.org/ns/prov#Usage"/>
+	<prov:entity rdf:resource="http://yesworkflow.org/count"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/provide_data_info">
+	<prov:qualifiedUsage rdf:resource="http://yesworkflow.org/count__USE__provide_data_info"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/total_runtime__USE__persist_conflict_report">
+	<rdf:type rdf:resource="http://www.w3.org/ns/prov#Usage"/>
+	<prov:entity rdf:resource="http://yesworkflow.org/total_runtime"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/persist_conflict_report">
+	<prov:qualifiedUsage rdf:resource="http://yesworkflow.org/total_runtime__USE__persist_conflict_report"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/load_data">
+	<rdf:type rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">read process trace logs</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/summary_csv__USE__inst_l.main">
+	<rdf:type rdf:resource="http://www.w3.org/ns/prov#Usage"/>
+	<prov:entity rdf:resource="http://yesworkflow.org/summary_csv"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/inst_l.main">
+	<prov:qualifiedUsage rdf:resource="http://yesworkflow.org/summary_csv__USE__inst_l.main"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/pid_logs__USE__get_process_runtime">
+	<rdf:type rdf:resource="http://www.w3.org/ns/prov#Usage"/>
+	<prov:entity rdf:resource="http://yesworkflow.org/pid_logs"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/get_process_runtime">
+	<prov:qualifiedUsage rdf:resource="http://yesworkflow.org/pid_logs__USE__get_process_runtime"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/get_overlaps">
+	<rdf:type rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">determine overlapping PID trace logs</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/res_conflicts">
+	<rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/summary_plot">
+	<rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">persistence path for plot summary</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/res_summary_csv">
+	<rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">file:{summary_csv}</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/conflicts_per_resource__USE__get_resource_summary">
+	<rdf:type rdf:resource="http://www.w3.org/ns/prov#Usage"/>
+	<prov:entity rdf:resource="http://yesworkflow.org/conflicts_per_resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/get_resource_summary">
+	<prov:qualifiedUsage rdf:resource="http://yesworkflow.org/conflicts_per_resource__USE__get_resource_summary"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/concurrent_accesses_per_resource__GEN__get_resource_info">
+	<rdf:type rdf:resource="http://www.w3.org/ns/prov#Generation"/>
+	<prov:activity rdf:resource="http://yesworkflow.org/get_resource_info"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/concurrent_accesses_per_resource">
+	<prov:qualifiedGeneration rdf:resource="http://yesworkflow.org/concurrent_accesses_per_resource__GEN__get_resource_info"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/avg_runtime__GEN__get_process_runtime">
+	<rdf:type rdf:resource="http://www.w3.org/ns/prov#Generation"/>
+	<prov:activity rdf:resource="http://yesworkflow.org/get_process_runtime"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/avg_runtime">
+	<prov:qualifiedGeneration rdf:resource="http://yesworkflow.org/avg_runtime__GEN__get_process_runtime"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/conflicts__USE__get_resource_info">
+	<rdf:type rdf:resource="http://www.w3.org/ns/prov#Usage"/>
+	<prov:entity rdf:resource="http://yesworkflow.org/conflicts"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/get_resource_info">
+	<prov:qualifiedUsage rdf:resource="http://yesworkflow.org/conflicts__USE__get_resource_info"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/conflict_report__GEN__persist_conflict_report">
+	<rdf:type rdf:resource="http://www.w3.org/ns/prov#Generation"/>
+	<prov:activity rdf:resource="http://yesworkflow.org/persist_conflict_report"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/conflict_report">
+	<prov:qualifiedGeneration rdf:resource="http://yesworkflow.org/conflict_report__GEN__persist_conflict_report"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/avg_runtime__USE__persist_conflict_report">
+	<rdf:type rdf:resource="http://www.w3.org/ns/prov#Usage"/>
+	<prov:entity rdf:resource="http://yesworkflow.org/avg_runtime"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/persist_conflict_report">
+	<prov:qualifiedUsage rdf:resource="http://yesworkflow.org/avg_runtime__USE__persist_conflict_report"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/concurrent_accesses_per_resource">
+	<rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/concurrent_executions__GEN__get_overlaps">
+	<rdf:type rdf:resource="http://www.w3.org/ns/prov#Generation"/>
+	<prov:activity rdf:resource="http://yesworkflow.org/get_overlaps"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/concurrent_executions">
+	<prov:qualifiedGeneration rdf:resource="http://yesworkflow.org/concurrent_executions__GEN__get_overlaps"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/get_logs">
+	<rdf:type rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">retrieve trace logs of specified process</rdfs:label>
+</rdf:Description>
+
+</rdf:RDF>
