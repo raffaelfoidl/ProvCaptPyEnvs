@@ -1,0 +1,572 @@
+@prefix ns1: <https://github.com/gems-uff/noworkflow#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ns1:funcAct12ReturnValue a prov:Entity,
+        "returnValue"^^xsd:string ;
+    prov:qualifiedGeneration ns1:funcAct12RetValGeneration ;
+    prov:value "True"^^xsd:string .
+
+ns1:funcAct14ReturnValue a prov:Entity,
+        "returnValue"^^xsd:string ;
+    prov:qualifiedGeneration ns1:funcAct14RetValGeneration ;
+    prov:value """array([[[224, 185,  54],
+        [221, 173,  39],
+        [217, 161,  26],
+...128, 225],
+        [ 30, 129, 222],
+        [ 21, 115, 203]]], dtype=uint8)"""^^xsd:string .
+
+ns1:funcAct18ReturnValue a prov:Entity,
+        "returnValue"^^xsd:string ;
+    prov:qualifiedGeneration ns1:funcAct18RetValGeneration ;
+    prov:value """array([[[203, 169,  65],
+        [202, 169,  65],
+        [201, 167,  64],
+...122, 200],
+        [ 30, 121, 200],
+        [ 29, 120, 199]]], dtype=uint8)"""^^xsd:string .
+
+ns1:funcAct25ReturnValue a prov:Entity,
+        "returnValue"^^xsd:string ;
+    prov:qualifiedGeneration ns1:funcAct25RetValGeneration ;
+    prov:value "[[48, 49, 60, 62, 44, 46, 114, 151, 192, 133, 50, 28, 33, 60, 60, 68, 72, 6..., 3, 4, 5, 19, 13, 24, 33, 26, 27, 36, 36, 55, 56, 61, 39, 34, 38, 30, 17]]"^^xsd:string .
+
+ns1:funcAct2ReturnValue a prov:Entity,
+        "returnValue"^^xsd:string ;
+    prov:qualifiedGeneration ns1:funcAct2RetValGeneration ;
+    prov:value "('/mnt/2A96E79A96E764B3/Universitaet/Bachelorarbeit/noworkflow/instances/medium', 'inst_m.py')"^^xsd:string .
+
+ns1:funcAct3ReturnValue a prov:Entity,
+        "returnValue"^^xsd:string ;
+    prov:qualifiedGeneration ns1:funcAct3RetValGeneration ;
+    prov:value "'/mnt/2A96E79A96E764B3/Universitaet/Bachelorarbeit/noworkflow/instances/medium/in.jpg'"^^xsd:string .
+
+ns1:funcAct5ReturnValue a prov:Entity,
+        "returnValue"^^xsd:string ;
+    prov:qualifiedGeneration ns1:funcAct5RetValGeneration ;
+    prov:value "Namespace(diff='diff.jpg', input='in.jpg', output='out.jpg', sigma=6)"^^xsd:string .
+
+ns1:functionActivation13 a prov:Activity,
+        "functionActivation"^^xsd:string ;
+    rdfs:label "module.print"^^xsd:string ;
+    prov:endedAtTime "2020-03-20T13:12:37.205568"^^xsd:dateTime ;
+    prov:qualifiedCommunication ns1:funcAct13CalledBy4 ;
+    prov:startedAtTime "2020-03-20T13:12:37.205514"^^xsd:dateTime ;
+    ns1:depth "3"^^xsd:int ;
+    ns1:line "89"^^xsd:int .
+
+ns1:functionActivation15 a prov:Activity,
+        "functionActivation"^^xsd:string ;
+    rdfs:label "module.print"^^xsd:string ;
+    prov:endedAtTime "2020-03-20T13:12:37.211583"^^xsd:dateTime ;
+    prov:qualifiedCommunication ns1:funcAct15CalledBy4 ;
+    prov:startedAtTime "2020-03-20T13:12:37.211473"^^xsd:dateTime ;
+    ns1:depth "3"^^xsd:int ;
+    ns1:line "91"^^xsd:int .
+
+ns1:functionActivation154125 a prov:Activity,
+        "functionActivation"^^xsd:string ;
+    rdfs:label "module.print"^^xsd:string ;
+    prov:endedAtTime "2020-03-20T13:12:47.024979"^^xsd:dateTime ;
+    prov:qualifiedCommunication ns1:funcAct154125CalledBy4 ;
+    prov:startedAtTime "2020-03-20T13:12:47.024938"^^xsd:dateTime ;
+    ns1:depth "3"^^xsd:int ;
+    ns1:line "133"^^xsd:int .
+
+ns1:functionActivation154126 a prov:Activity,
+        "functionActivation"^^xsd:string ;
+    rdfs:label "module.print"^^xsd:string ;
+    prov:endedAtTime "2020-03-20T13:12:47.025003"^^xsd:dateTime ;
+    prov:qualifiedCommunication ns1:funcAct154126CalledBy4 ;
+    prov:startedAtTime "2020-03-20T13:12:47.024990"^^xsd:dateTime ;
+    ns1:depth "3"^^xsd:int ;
+    ns1:line "144"^^xsd:int .
+
+ns1:functionActivation154127 a prov:Activity,
+        "functionActivation"^^xsd:string ;
+    rdfs:label "save_diff_image"^^xsd:string ;
+    prov:endedAtTime "2020-03-20T13:12:47.058757"^^xsd:dateTime ;
+    prov:qualifiedCommunication ns1:funcAct154127CalledBy4 ;
+    prov:qualifiedUsage ns1:funcAct154127UsedArgAct296,
+        ns1:funcAct154127UsedArgAct297 ;
+    prov:startedAtTime "2020-03-20T13:12:47.039596"^^xsd:dateTime ;
+    ns1:depth "3"^^xsd:int ;
+    ns1:line "145"^^xsd:int .
+
+ns1:functionActivation154131 a prov:Activity,
+        "functionActivation"^^xsd:string ;
+    rdfs:label "module.print"^^xsd:string ;
+    prov:endedAtTime "2020-03-20T13:12:47.058808"^^xsd:dateTime ;
+    prov:qualifiedCommunication ns1:funcAct154131CalledBy4 ;
+    prov:startedAtTime "2020-03-20T13:12:47.058784"^^xsd:dateTime ;
+    ns1:depth "3"^^xsd:int ;
+    ns1:line "149"^^xsd:int .
+
+ns1:functionActivation16 a prov:Activity,
+        "functionActivation"^^xsd:string ;
+    rdfs:label "str.format"^^xsd:string ;
+    prov:endedAtTime "2020-03-20T13:12:37.211656"^^xsd:dateTime ;
+    prov:qualifiedCommunication ns1:funcAct16CalledBy4 ;
+    prov:startedAtTime "2020-03-20T13:12:37.211641"^^xsd:dateTime ;
+    ns1:depth "3"^^xsd:int ;
+    ns1:line "102"^^xsd:int .
+
+ns1:functionActivation17 a prov:Activity,
+        "functionActivation"^^xsd:string ;
+    rdfs:label "module.print"^^xsd:string ;
+    prov:endedAtTime "2020-03-20T13:12:37.211695"^^xsd:dateTime ;
+    prov:qualifiedCommunication ns1:funcAct17CalledBy4 ;
+    prov:startedAtTime "2020-03-20T13:12:37.211665"^^xsd:dateTime ;
+    ns1:depth "3"^^xsd:int ;
+    ns1:line "102"^^xsd:int .
+
+ns1:functionActivation20 a prov:Activity,
+        "functionActivation"^^xsd:string ;
+    rdfs:label "module.print"^^xsd:string ;
+    prov:endedAtTime "2020-03-20T13:12:37.222751"^^xsd:dateTime ;
+    prov:qualifiedCommunication ns1:funcAct20CalledBy4 ;
+    prov:startedAtTime "2020-03-20T13:12:37.222686"^^xsd:dateTime ;
+    ns1:depth "3"^^xsd:int ;
+    ns1:line "104"^^xsd:int .
+
+ns1:functionActivation21 a prov:Activity,
+        "functionActivation"^^xsd:string ;
+    rdfs:label "module.print"^^xsd:string ;
+    prov:endedAtTime "2020-03-20T13:12:37.222779"^^xsd:dateTime ;
+    prov:qualifiedCommunication ns1:funcAct21CalledBy4 ;
+    prov:startedAtTime "2020-03-20T13:12:37.222766"^^xsd:dateTime ;
+    ns1:depth "3"^^xsd:int ;
+    ns1:line "116"^^xsd:int .
+
+ns1:functionActivation22 a prov:Activity,
+        "functionActivation"^^xsd:string ;
+    rdfs:label "imsave"^^xsd:string ;
+    prov:endedAtTime "2020-03-20T13:12:37.238144"^^xsd:dateTime ;
+    prov:qualifiedCommunication ns1:funcAct22CalledBy4 ;
+    prov:qualifiedUsage ns1:funcAct22UsedArgAct51,
+        ns1:funcAct22UsedArgAct52 ;
+    prov:startedAtTime "2020-03-20T13:12:37.223368"^^xsd:dateTime ;
+    ns1:depth "3"^^xsd:int ;
+    ns1:line "117"^^xsd:int .
+
+ns1:functionActivation23 a prov:Activity,
+        "functionActivation"^^xsd:string ;
+    rdfs:label "module.print"^^xsd:string ;
+    prov:endedAtTime "2020-03-20T13:12:37.238780"^^xsd:dateTime ;
+    prov:qualifiedCommunication ns1:funcAct23CalledBy4 ;
+    prov:startedAtTime "2020-03-20T13:12:37.238719"^^xsd:dateTime ;
+    ns1:depth "3"^^xsd:int ;
+    ns1:line "118"^^xsd:int .
+
+ns1:functionActivation24 a prov:Activity,
+        "functionActivation"^^xsd:string ;
+    rdfs:label "module.print"^^xsd:string ;
+    prov:endedAtTime "2020-03-20T13:12:37.238866"^^xsd:dateTime ;
+    prov:qualifiedCommunication ns1:funcAct24CalledBy4 ;
+    prov:startedAtTime "2020-03-20T13:12:37.238801"^^xsd:dateTime ;
+    ns1:depth "3"^^xsd:int ;
+    ns1:line "131"^^xsd:int .
+
+ns1:trial2Prov a prov:Collection,
+        prov:Entity ;
+    rdfs:label "provenance collected by noworfklow"^^xsd:string ;
+    prov:hadMember ns1:trial2ExecutionProv .
+
+ns1:argumentActivation1 a prov:Entity,
+        "argumentActivation"^^xsd:string ;
+    rdfs:label "p"^^xsd:string ;
+    prov:value "'/mnt/2A96E79A96E764B3/Universitaet/Bachelorarbeit/noworkflow/instances/medium/inst_m.py'"^^xsd:string .
+
+ns1:argumentActivation2 a prov:Entity,
+        "argumentActivation"^^xsd:string ;
+    rdfs:label "a"^^xsd:string ;
+    prov:value "'/mnt/2A96E79A96E764B3/Universitaet/Bachelorarbeit/noworkflow/instances/medium'"^^xsd:string .
+
+ns1:argumentActivation296 a prov:Entity,
+        "argumentActivation"^^xsd:string ;
+    rdfs:label "path"^^xsd:string ;
+    prov:value "'diff.jpg'"^^xsd:string .
+
+ns1:argumentActivation297 a prov:Entity,
+        "argumentActivation"^^xsd:string ;
+    rdfs:label "diffs"^^xsd:string ;
+    prov:value "[[48, 49, 60, 62, 44, 46, 114, 151, 192, 133, 50, 28, 33, 60, 60, 68, 72, 6..., 3, 4, 5, 19, 13, 24, 33, 26, 27, 36, 36, 55, 56, 61, 39, 34, 38, 30, 17]]"^^xsd:string .
+
+ns1:argumentActivation3 a prov:Entity,
+        "argumentActivation"^^xsd:string ;
+    rdfs:label "p"^^xsd:string ;
+    prov:value "('in.jpg',)"^^xsd:string .
+
+ns1:argumentActivation39 a prov:Entity,
+        "argumentActivation"^^xsd:string ;
+    rdfs:label "path"^^xsd:string ;
+    prov:value "'in.jpg'"^^xsd:string .
+
+ns1:argumentActivation40 a prov:Entity,
+        "argumentActivation"^^xsd:string ;
+    rdfs:label "fname"^^xsd:string ;
+    prov:value "'in.jpg'"^^xsd:string .
+
+ns1:argumentActivation41 a prov:Entity,
+        "argumentActivation"^^xsd:string ;
+    rdfs:label "format"^^xsd:string ;
+    prov:value "None"^^xsd:string .
+
+ns1:argumentActivation42 a prov:Entity,
+        "argumentActivation"^^xsd:string ;
+    rdfs:label "img"^^xsd:string ;
+    prov:value """array([[[224, 185,  54],
+        [221, 173,  39],
+        [217, 161,  26],
+...128, 225],
+        [ 30, 129, 222],
+        [ 21, 115, 203]]], dtype=uint8)"""^^xsd:string .
+
+ns1:argumentActivation43 a prov:Entity,
+        "argumentActivation"^^xsd:string ;
+    rdfs:label "sigma"^^xsd:string ;
+    prov:value "6"^^xsd:string .
+
+ns1:argumentActivation51 a prov:Entity,
+        "argumentActivation"^^xsd:string ;
+    rdfs:label "fname"^^xsd:string ;
+    prov:value "'out.jpg'"^^xsd:string .
+
+ns1:argumentActivation52 a prov:Entity,
+        "argumentActivation"^^xsd:string ;
+    rdfs:label "arr"^^xsd:string ;
+    prov:value """array([[[203, 169,  65],
+        [202, 169,  65],
+        [201, 167,  64],
+...122, 200],
+        [ 30, 121, 200],
+        [ 29, 120, 199]]], dtype=uint8)"""^^xsd:string .
+
+ns1:argumentActivation53 a prov:Entity,
+        "argumentActivation"^^xsd:string ;
+    rdfs:label "img1"^^xsd:string ;
+    prov:value """array([[[224, 185,  54],
+        [221, 173,  39],
+        [217, 161,  26],
+...128, 225],
+        [ 30, 129, 222],
+        [ 21, 115, 203]]], dtype=uint8)"""^^xsd:string .
+
+ns1:argumentActivation54 a prov:Entity,
+        "argumentActivation"^^xsd:string ;
+    rdfs:label "img2"^^xsd:string ;
+    prov:value """array([[[203, 169,  65],
+        [202, 169,  65],
+        [201, 167,  64],
+...122, 200],
+        [ 30, 121, 200],
+        [ 29, 120, 199]]], dtype=uint8)"""^^xsd:string .
+
+ns1:funcAct12CalledBy4 a prov:Communication,
+        "callActivation"^^xsd:string ;
+    prov:activity ns1:functionActivation4 .
+
+ns1:funcAct12RetValGeneration a prov:Generation ;
+    prov:activity ns1:functionActivation12 ;
+    prov:atTime "2020-03-20T13:12:37.205484"^^xsd:dateTime .
+
+ns1:funcAct12UsedArgAct39 a prov:Usage,
+        "argumentActivation"^^xsd:string ;
+    prov:atTime "2020-03-20T13:12:37.205346"^^xsd:dateTime ;
+    prov:entity ns1:argumentActivation39 ;
+    prov:hadRole "argument"^^xsd:string .
+
+ns1:funcAct13CalledBy4 a prov:Communication,
+        "callActivation"^^xsd:string ;
+    prov:activity ns1:functionActivation4 .
+
+ns1:funcAct14CalledBy4 a prov:Communication,
+        "callActivation"^^xsd:string ;
+    prov:activity ns1:functionActivation4 .
+
+ns1:funcAct14RetValGeneration a prov:Generation ;
+    prov:activity ns1:functionActivation14 ;
+    prov:atTime "2020-03-20T13:12:37.210304"^^xsd:dateTime .
+
+ns1:funcAct14UsedArgAct40 a prov:Usage,
+        "argumentActivation"^^xsd:string ;
+    prov:atTime "2020-03-20T13:12:37.205623"^^xsd:dateTime ;
+    prov:entity ns1:argumentActivation40 ;
+    prov:hadRole "argument"^^xsd:string .
+
+ns1:funcAct14UsedArgAct41 a prov:Usage,
+        "argumentActivation"^^xsd:string ;
+    prov:atTime "2020-03-20T13:12:37.205623"^^xsd:dateTime ;
+    prov:entity ns1:argumentActivation41 ;
+    prov:hadRole "argument"^^xsd:string .
+
+ns1:funcAct154125CalledBy4 a prov:Communication,
+        "callActivation"^^xsd:string ;
+    prov:activity ns1:functionActivation4 .
+
+ns1:funcAct154126CalledBy4 a prov:Communication,
+        "callActivation"^^xsd:string ;
+    prov:activity ns1:functionActivation4 .
+
+ns1:funcAct154127CalledBy4 a prov:Communication,
+        "callActivation"^^xsd:string ;
+    prov:activity ns1:functionActivation4 .
+
+ns1:funcAct154127UsedArgAct296 a prov:Usage,
+        "argumentActivation"^^xsd:string ;
+    prov:atTime "2020-03-20T13:12:47.039596"^^xsd:dateTime ;
+    prov:entity ns1:argumentActivation296 ;
+    prov:hadRole "argument"^^xsd:string .
+
+ns1:funcAct154127UsedArgAct297 a prov:Usage,
+        "argumentActivation"^^xsd:string ;
+    prov:atTime "2020-03-20T13:12:47.039596"^^xsd:dateTime ;
+    prov:entity ns1:argumentActivation297 ;
+    prov:hadRole "argument"^^xsd:string .
+
+ns1:funcAct154131CalledBy4 a prov:Communication,
+        "callActivation"^^xsd:string ;
+    prov:activity ns1:functionActivation4 .
+
+ns1:funcAct15CalledBy4 a prov:Communication,
+        "callActivation"^^xsd:string ;
+    prov:activity ns1:functionActivation4 .
+
+ns1:funcAct16CalledBy4 a prov:Communication,
+        "callActivation"^^xsd:string ;
+    prov:activity ns1:functionActivation4 .
+
+ns1:funcAct17CalledBy4 a prov:Communication,
+        "callActivation"^^xsd:string ;
+    prov:activity ns1:functionActivation4 .
+
+ns1:funcAct18CalledBy4 a prov:Communication,
+        "callActivation"^^xsd:string ;
+    prov:activity ns1:functionActivation4 .
+
+ns1:funcAct18RetValGeneration a prov:Generation ;
+    prov:activity ns1:functionActivation18 ;
+    prov:atTime "2020-03-20T13:12:37.221844"^^xsd:dateTime .
+
+ns1:funcAct18UsedArgAct42 a prov:Usage,
+        "argumentActivation"^^xsd:string ;
+    prov:atTime "2020-03-20T13:12:37.212269"^^xsd:dateTime ;
+    prov:entity ns1:argumentActivation42 ;
+    prov:hadRole "argument"^^xsd:string .
+
+ns1:funcAct18UsedArgAct43 a prov:Usage,
+        "argumentActivation"^^xsd:string ;
+    prov:atTime "2020-03-20T13:12:37.212269"^^xsd:dateTime ;
+    prov:entity ns1:argumentActivation43 ;
+    prov:hadRole "argument"^^xsd:string .
+
+ns1:funcAct20CalledBy4 a prov:Communication,
+        "callActivation"^^xsd:string ;
+    prov:activity ns1:functionActivation4 .
+
+ns1:funcAct21CalledBy4 a prov:Communication,
+        "callActivation"^^xsd:string ;
+    prov:activity ns1:functionActivation4 .
+
+ns1:funcAct22CalledBy4 a prov:Communication,
+        "callActivation"^^xsd:string ;
+    prov:activity ns1:functionActivation4 .
+
+ns1:funcAct22UsedArgAct51 a prov:Usage,
+        "argumentActivation"^^xsd:string ;
+    prov:atTime "2020-03-20T13:12:37.223368"^^xsd:dateTime ;
+    prov:entity ns1:argumentActivation51 ;
+    prov:hadRole "argument"^^xsd:string .
+
+ns1:funcAct22UsedArgAct52 a prov:Usage,
+        "argumentActivation"^^xsd:string ;
+    prov:atTime "2020-03-20T13:12:37.223368"^^xsd:dateTime ;
+    prov:entity ns1:argumentActivation52 ;
+    prov:hadRole "argument"^^xsd:string .
+
+ns1:funcAct23CalledBy4 a prov:Communication,
+        "callActivation"^^xsd:string ;
+    prov:activity ns1:functionActivation4 .
+
+ns1:funcAct24CalledBy4 a prov:Communication,
+        "callActivation"^^xsd:string ;
+    prov:activity ns1:functionActivation4 .
+
+ns1:funcAct25CalledBy4 a prov:Communication,
+        "callActivation"^^xsd:string ;
+    prov:activity ns1:functionActivation4 .
+
+ns1:funcAct25RetValGeneration a prov:Generation ;
+    prov:activity ns1:functionActivation25 ;
+    prov:atTime "2020-03-20T13:12:47.010305"^^xsd:dateTime .
+
+ns1:funcAct25UsedArgAct53 a prov:Usage,
+        "argumentActivation"^^xsd:string ;
+    prov:atTime "2020-03-20T13:12:37.240320"^^xsd:dateTime ;
+    prov:entity ns1:argumentActivation53 ;
+    prov:hadRole "argument"^^xsd:string .
+
+ns1:funcAct25UsedArgAct54 a prov:Usage,
+        "argumentActivation"^^xsd:string ;
+    prov:atTime "2020-03-20T13:12:37.240320"^^xsd:dateTime ;
+    prov:entity ns1:argumentActivation54 ;
+    prov:hadRole "argument"^^xsd:string .
+
+ns1:funcAct2CalledBy1 a prov:Communication,
+        "callActivation"^^xsd:string ;
+    prov:activity ns1:functionActivation1 .
+
+ns1:funcAct2RetValGeneration a prov:Generation ;
+    prov:activity ns1:functionActivation2 ;
+    prov:atTime "2020-03-20T13:12:37.194885"^^xsd:dateTime .
+
+ns1:funcAct2UsedArgAct1 a prov:Usage,
+        "argumentActivation"^^xsd:string ;
+    prov:atTime "2020-03-20T13:12:37.194844"^^xsd:dateTime ;
+    prov:entity ns1:argumentActivation1 ;
+    prov:hadRole "argument"^^xsd:string .
+
+ns1:funcAct3CalledBy1 a prov:Communication,
+        "callActivation"^^xsd:string ;
+    prov:activity ns1:functionActivation1 .
+
+ns1:funcAct3RetValGeneration a prov:Generation ;
+    prov:activity ns1:functionActivation3 ;
+    prov:atTime "2020-03-20T13:12:37.194956"^^xsd:dateTime .
+
+ns1:funcAct3UsedArgAct2 a prov:Usage,
+        "argumentActivation"^^xsd:string ;
+    prov:atTime "2020-03-20T13:12:37.194918"^^xsd:dateTime ;
+    prov:entity ns1:argumentActivation2 ;
+    prov:hadRole "argument"^^xsd:string .
+
+ns1:funcAct3UsedArgAct3 a prov:Usage,
+        "argumentActivation"^^xsd:string ;
+    prov:atTime "2020-03-20T13:12:37.194918"^^xsd:dateTime ;
+    prov:entity ns1:argumentActivation3 ;
+    prov:hadRole "argument"^^xsd:string .
+
+ns1:funcAct4CalledBy1 a prov:Communication,
+        "callActivation"^^xsd:string ;
+    prov:activity ns1:functionActivation1 .
+
+ns1:funcAct5CalledBy4 a prov:Communication,
+        "callActivation"^^xsd:string ;
+    prov:activity ns1:functionActivation4 .
+
+ns1:funcAct5RetValGeneration a prov:Generation ;
+    prov:activity ns1:functionActivation5 ;
+    prov:atTime "2020-03-20T13:12:37.205258"^^xsd:dateTime .
+
+ns1:functionActivation12 a prov:Activity,
+        "functionActivation"^^xsd:string ;
+    rdfs:label "exists"^^xsd:string ;
+    prov:endedAtTime "2020-03-20T13:12:37.205484"^^xsd:dateTime ;
+    prov:qualifiedCommunication ns1:funcAct12CalledBy4 ;
+    prov:qualifiedUsage ns1:funcAct12UsedArgAct39 ;
+    prov:startedAtTime "2020-03-20T13:12:37.205346"^^xsd:dateTime ;
+    ns1:depth "3"^^xsd:int ;
+    ns1:line "80"^^xsd:int .
+
+ns1:functionActivation14 a prov:Activity,
+        "functionActivation"^^xsd:string ;
+    rdfs:label "imread"^^xsd:string ;
+    prov:endedAtTime "2020-03-20T13:12:37.210304"^^xsd:dateTime ;
+    prov:qualifiedCommunication ns1:funcAct14CalledBy4 ;
+    prov:qualifiedUsage ns1:funcAct14UsedArgAct40,
+        ns1:funcAct14UsedArgAct41 ;
+    prov:startedAtTime "2020-03-20T13:12:37.205623"^^xsd:dateTime ;
+    ns1:depth "3"^^xsd:int ;
+    ns1:line "90"^^xsd:int .
+
+ns1:functionActivation18 a prov:Activity,
+        "functionActivation"^^xsd:string ;
+    rdfs:label "blur_image"^^xsd:string ;
+    prov:endedAtTime "2020-03-20T13:12:37.221844"^^xsd:dateTime ;
+    prov:qualifiedCommunication ns1:funcAct18CalledBy4 ;
+    prov:qualifiedUsage ns1:funcAct18UsedArgAct42,
+        ns1:funcAct18UsedArgAct43 ;
+    prov:startedAtTime "2020-03-20T13:12:37.212269"^^xsd:dateTime ;
+    ns1:depth "3"^^xsd:int ;
+    ns1:line "103"^^xsd:int .
+
+ns1:functionActivation2 a prov:Activity,
+        "functionActivation"^^xsd:string ;
+    rdfs:label "split"^^xsd:string ;
+    prov:endedAtTime "2020-03-20T13:12:37.194885"^^xsd:dateTime ;
+    prov:qualifiedCommunication ns1:funcAct2CalledBy1 ;
+    prov:qualifiedUsage ns1:funcAct2UsedArgAct1 ;
+    prov:startedAtTime "2020-03-20T13:12:37.194844"^^xsd:dateTime ;
+    ns1:depth "2"^^xsd:int ;
+    ns1:line "8"^^xsd:int .
+
+ns1:functionActivation25 a prov:Activity,
+        "functionActivation"^^xsd:string ;
+    rdfs:label "get_diff"^^xsd:string ;
+    prov:endedAtTime "2020-03-20T13:12:47.010305"^^xsd:dateTime ;
+    prov:qualifiedCommunication ns1:funcAct25CalledBy4 ;
+    prov:qualifiedUsage ns1:funcAct25UsedArgAct53,
+        ns1:funcAct25UsedArgAct54 ;
+    prov:startedAtTime "2020-03-20T13:12:37.240320"^^xsd:dateTime ;
+    ns1:depth "3"^^xsd:int ;
+    ns1:line "132"^^xsd:int .
+
+ns1:functionActivation3 a prov:Activity,
+        "functionActivation"^^xsd:string ;
+    rdfs:label "join"^^xsd:string ;
+    prov:endedAtTime "2020-03-20T13:12:37.194956"^^xsd:dateTime ;
+    prov:qualifiedCommunication ns1:funcAct3CalledBy1 ;
+    prov:qualifiedUsage ns1:funcAct3UsedArgAct2,
+        ns1:funcAct3UsedArgAct3 ;
+    prov:startedAtTime "2020-03-20T13:12:37.194918"^^xsd:dateTime ;
+    ns1:depth "2"^^xsd:int ;
+    ns1:line "9"^^xsd:int .
+
+ns1:functionActivation5 a prov:Activity,
+        "functionActivation"^^xsd:string ;
+    rdfs:label "parse_args"^^xsd:string ;
+    prov:endedAtTime "2020-03-20T13:12:37.205258"^^xsd:dateTime ;
+    prov:qualifiedCommunication ns1:funcAct5CalledBy4 ;
+    prov:startedAtTime "2020-03-20T13:12:37.195030"^^xsd:dateTime ;
+    ns1:depth "3"^^xsd:int ;
+    ns1:line "78"^^xsd:int .
+
+ns1:inst_m_py a prov:Agent,
+        prov:SoftwareAgent ;
+    ns1:codeHash "3889367b0b9b9bdc1dfc7d7cc9056c028642a079"^^xsd:string ;
+    ns1:id "2"^^xsd:int ;
+    ns1:script "inst_m.py"^^xsd:string .
+
+ns1:trial2Execution a prov:Activity ;
+    prov:endedAtTime "2020-03-20T13:12:47.061016"^^xsd:dateTime ;
+    prov:qualifiedAssociation ns1:trial2ExecutionByScript ;
+    prov:startedAtTime "2020-03-20T13:12:08.379693"^^xsd:dateTime ;
+    ns1:nowCommand "run inst_m.py 6 in.jpg out.jpg diff.jpg"^^xsd:string ;
+    ns1:parentId "1"^^xsd:int .
+
+ns1:trial2ExecutionByScript a prov:Association ;
+    prov:agent ns1:inst_m_py .
+
+ns1:trial2ExecutionProv prov:wasGeneratedBy ns1:trial2Execution .
+
+ns1:functionActivation1 a prov:Activity,
+        "functionActivation"^^xsd:string ;
+    rdfs:label "/mnt/2A96E79A96E764B3/Universitaet/Bachelorarbeit/noworkflow/instances/medium/inst_m.py"^^xsd:string ;
+    prov:endedAtTime "2020-03-20T13:12:47.060912"^^xsd:dateTime ;
+    prov:startedAtTime "2020-03-20T13:12:37.194785"^^xsd:dateTime ;
+    ns1:depth "1"^^xsd:int ;
+    ns1:line "61"^^xsd:int .
+
+ns1:functionActivation4 a prov:Activity,
+        "functionActivation"^^xsd:string ;
+    rdfs:label "main"^^xsd:string ;
+    prov:endedAtTime "2020-03-20T13:12:47.058815"^^xsd:dateTime ;
+    prov:qualifiedCommunication ns1:funcAct4CalledBy1 ;
+    prov:startedAtTime "2020-03-20T13:12:37.194999"^^xsd:dateTime ;
+    ns1:depth "2"^^xsd:int ;
+    ns1:line "157"^^xsd:int .
+

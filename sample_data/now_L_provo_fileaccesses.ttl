@@ -1,0 +1,324 @@
+@prefix ns1: <https://github.com/gems-uff/noworkflow#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ns1:fileAccess1 a prov:Activity,
+        "w"^^xsd:string ;
+    prov:atLocation "/dev/null"^^xsd:string ;
+    prov:time "2020-03-20T13:56:30.242279"^^xsd:dateTime ;
+    ns1:buffering "default"^^xsd:string ;
+    ns1:contentHashBefore "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"^^xsd:string .
+
+ns1:fileAccess10 a prov:Activity,
+        "r"^^xsd:string ;
+    prov:atLocation "/mnt/2A96E79A96E764B3/Universitaet/Bachelorarbeit/noworkflow/venv/lib/python3.5/site-packages/matplotlib/mpl-data/stylelib/seaborn-bright.mplstyle"^^xsd:string ;
+    prov:time "2020-03-20T13:56:31.033046"^^xsd:dateTime ;
+    ns1:buffering "default"^^xsd:string ;
+    ns1:contentHashAfter "5e9e949378159bf83de825101b088afe23bbc5ec"^^xsd:string ;
+    ns1:contentHashBefore "5e9e949378159bf83de825101b088afe23bbc5ec"^^xsd:string .
+
+ns1:fileAccess11 a prov:Activity,
+        "r"^^xsd:string ;
+    prov:atLocation "/mnt/2A96E79A96E764B3/Universitaet/Bachelorarbeit/noworkflow/venv/lib/python3.5/site-packages/matplotlib/mpl-data/stylelib/seaborn-colorblind.mplstyle"^^xsd:string ;
+    prov:time "2020-03-20T13:56:31.035875"^^xsd:dateTime ;
+    ns1:buffering "default"^^xsd:string ;
+    ns1:contentHashAfter "e13b7aade323933472751664088c68a682cecf6e"^^xsd:string ;
+    ns1:contentHashBefore "e13b7aade323933472751664088c68a682cecf6e"^^xsd:string .
+
+ns1:fileAccess12 a prov:Activity,
+        "r"^^xsd:string ;
+    prov:atLocation "/mnt/2A96E79A96E764B3/Universitaet/Bachelorarbeit/noworkflow/venv/lib/python3.5/site-packages/matplotlib/mpl-data/stylelib/seaborn-dark-palette.mplstyle"^^xsd:string ;
+    prov:time "2020-03-20T13:56:31.038393"^^xsd:dateTime ;
+    ns1:buffering "default"^^xsd:string ;
+    ns1:contentHashAfter "30160ae2506c63788b799fa80e3f3dedef7bca77"^^xsd:string ;
+    ns1:contentHashBefore "30160ae2506c63788b799fa80e3f3dedef7bca77"^^xsd:string .
+
+ns1:fileAccess13 a prov:Activity,
+        "r"^^xsd:string ;
+    prov:atLocation "/mnt/2A96E79A96E764B3/Universitaet/Bachelorarbeit/noworkflow/venv/lib/python3.5/site-packages/matplotlib/mpl-data/stylelib/seaborn-dark.mplstyle"^^xsd:string ;
+    prov:time "2020-03-20T13:56:31.041620"^^xsd:dateTime ;
+    ns1:buffering "default"^^xsd:string ;
+    ns1:contentHashAfter "55b50b5bdd2689798504291cf4bca6ed775690d9"^^xsd:string ;
+    ns1:contentHashBefore "55b50b5bdd2689798504291cf4bca6ed775690d9"^^xsd:string .
+
+ns1:fileAccess14 a prov:Activity,
+        "r"^^xsd:string ;
+    prov:atLocation "/mnt/2A96E79A96E764B3/Universitaet/Bachelorarbeit/noworkflow/venv/lib/python3.5/site-packages/matplotlib/mpl-data/stylelib/seaborn-darkgrid.mplstyle"^^xsd:string ;
+    prov:time "2020-03-20T13:56:31.044878"^^xsd:dateTime ;
+    ns1:buffering "default"^^xsd:string ;
+    ns1:contentHashAfter "0f5d955d7df60665cb30067c0fc83907438b319a"^^xsd:string ;
+    ns1:contentHashBefore "0f5d955d7df60665cb30067c0fc83907438b319a"^^xsd:string .
+
+ns1:fileAccess15 a prov:Activity,
+        "r"^^xsd:string ;
+    prov:atLocation "/mnt/2A96E79A96E764B3/Universitaet/Bachelorarbeit/noworkflow/venv/lib/python3.5/site-packages/matplotlib/mpl-data/stylelib/seaborn-deep.mplstyle"^^xsd:string ;
+    prov:time "2020-03-20T13:56:31.047891"^^xsd:dateTime ;
+    ns1:buffering "default"^^xsd:string ;
+    ns1:contentHashAfter "5d6b7c56009882e8f3a1cee0b8c8c8a52eb1fcfd"^^xsd:string ;
+    ns1:contentHashBefore "5d6b7c56009882e8f3a1cee0b8c8c8a52eb1fcfd"^^xsd:string .
+
+ns1:fileAccess16 a prov:Activity,
+        "r"^^xsd:string ;
+    prov:atLocation "/mnt/2A96E79A96E764B3/Universitaet/Bachelorarbeit/noworkflow/venv/lib/python3.5/site-packages/matplotlib/mpl-data/stylelib/seaborn-muted.mplstyle"^^xsd:string ;
+    prov:time "2020-03-20T13:56:31.050979"^^xsd:dateTime ;
+    ns1:buffering "default"^^xsd:string ;
+    ns1:contentHashAfter "4a71646ce9036116fedfb2094d9f21d52ac3e40a"^^xsd:string ;
+    ns1:contentHashBefore "4a71646ce9036116fedfb2094d9f21d52ac3e40a"^^xsd:string .
+
+ns1:fileAccess17 a prov:Activity,
+        "r"^^xsd:string ;
+    prov:atLocation "/mnt/2A96E79A96E764B3/Universitaet/Bachelorarbeit/noworkflow/venv/lib/python3.5/site-packages/matplotlib/mpl-data/stylelib/seaborn-notebook.mplstyle"^^xsd:string ;
+    prov:time "2020-03-20T13:56:31.053852"^^xsd:dateTime ;
+    ns1:buffering "default"^^xsd:string ;
+    ns1:contentHashAfter "18bcf3e1204208f50834f6438d67d26e20b90482"^^xsd:string ;
+    ns1:contentHashBefore "18bcf3e1204208f50834f6438d67d26e20b90482"^^xsd:string .
+
+ns1:fileAccess18 a prov:Activity,
+        "r"^^xsd:string ;
+    prov:atLocation "/mnt/2A96E79A96E764B3/Universitaet/Bachelorarbeit/noworkflow/venv/lib/python3.5/site-packages/matplotlib/mpl-data/stylelib/seaborn-paper.mplstyle"^^xsd:string ;
+    prov:time "2020-03-20T13:56:31.055863"^^xsd:dateTime ;
+    ns1:buffering "default"^^xsd:string ;
+    ns1:contentHashAfter "3326be4333b875b481ad294adb8235a7106838e5"^^xsd:string ;
+    ns1:contentHashBefore "3326be4333b875b481ad294adb8235a7106838e5"^^xsd:string .
+
+ns1:fileAccess19 a prov:Activity,
+        "r"^^xsd:string ;
+    prov:atLocation "/mnt/2A96E79A96E764B3/Universitaet/Bachelorarbeit/noworkflow/venv/lib/python3.5/site-packages/matplotlib/mpl-data/stylelib/seaborn-pastel.mplstyle"^^xsd:string ;
+    prov:time "2020-03-20T13:56:31.058077"^^xsd:dateTime ;
+    ns1:buffering "default"^^xsd:string ;
+    ns1:contentHashAfter "dff67482c085da8d5d508a4dc5ce946b7230b513"^^xsd:string ;
+    ns1:contentHashBefore "dff67482c085da8d5d508a4dc5ce946b7230b513"^^xsd:string .
+
+ns1:fileAccess2 a prov:Activity,
+        "r"^^xsd:string ;
+    prov:atLocation "/home/raffa/.cache/matplotlib/fontlist-v300.json"^^xsd:string ;
+    prov:time "2020-03-20T13:56:30.724220"^^xsd:dateTime ;
+    ns1:buffering "default"^^xsd:string ;
+    ns1:contentHashAfter "35bb163cac471d8831616cdcefddf9c1fb3163c0"^^xsd:string ;
+    ns1:contentHashBefore "35bb163cac471d8831616cdcefddf9c1fb3163c0"^^xsd:string .
+
+ns1:fileAccess20 a prov:Activity,
+        "r"^^xsd:string ;
+    prov:atLocation "/mnt/2A96E79A96E764B3/Universitaet/Bachelorarbeit/noworkflow/venv/lib/python3.5/site-packages/matplotlib/mpl-data/stylelib/seaborn-poster.mplstyle"^^xsd:string ;
+    prov:time "2020-03-20T13:56:31.061522"^^xsd:dateTime ;
+    ns1:buffering "default"^^xsd:string ;
+    ns1:contentHashAfter "47f237006caeac212840f23a8c2568947523c596"^^xsd:string ;
+    ns1:contentHashBefore "47f237006caeac212840f23a8c2568947523c596"^^xsd:string .
+
+ns1:fileAccess21 a prov:Activity,
+        "r"^^xsd:string ;
+    prov:atLocation "/mnt/2A96E79A96E764B3/Universitaet/Bachelorarbeit/noworkflow/venv/lib/python3.5/site-packages/matplotlib/mpl-data/stylelib/seaborn-talk.mplstyle"^^xsd:string ;
+    prov:time "2020-03-20T13:56:31.063671"^^xsd:dateTime ;
+    ns1:buffering "default"^^xsd:string ;
+    ns1:contentHashAfter "29a77c53c4a844a10c1970176f37a6354ad27680"^^xsd:string ;
+    ns1:contentHashBefore "29a77c53c4a844a10c1970176f37a6354ad27680"^^xsd:string .
+
+ns1:fileAccess22 a prov:Activity,
+        "r"^^xsd:string ;
+    prov:atLocation "/mnt/2A96E79A96E764B3/Universitaet/Bachelorarbeit/noworkflow/venv/lib/python3.5/site-packages/matplotlib/mpl-data/stylelib/seaborn-ticks.mplstyle"^^xsd:string ;
+    prov:time "2020-03-20T13:56:31.065909"^^xsd:dateTime ;
+    ns1:buffering "default"^^xsd:string ;
+    ns1:contentHashAfter "c2a1cab9a5ebb7eee134f7c15133954d5ea9f878"^^xsd:string ;
+    ns1:contentHashBefore "c2a1cab9a5ebb7eee134f7c15133954d5ea9f878"^^xsd:string .
+
+ns1:fileAccess23 a prov:Activity,
+        "r"^^xsd:string ;
+    prov:atLocation "/mnt/2A96E79A96E764B3/Universitaet/Bachelorarbeit/noworkflow/venv/lib/python3.5/site-packages/matplotlib/mpl-data/stylelib/seaborn-white.mplstyle"^^xsd:string ;
+    prov:time "2020-03-20T13:56:31.068752"^^xsd:dateTime ;
+    ns1:buffering "default"^^xsd:string ;
+    ns1:contentHashAfter "dcbe3acf31dad3f06521e254cd54a74252c77839"^^xsd:string ;
+    ns1:contentHashBefore "dcbe3acf31dad3f06521e254cd54a74252c77839"^^xsd:string .
+
+ns1:fileAccess24 a prov:Activity,
+        "r"^^xsd:string ;
+    prov:atLocation "/mnt/2A96E79A96E764B3/Universitaet/Bachelorarbeit/noworkflow/venv/lib/python3.5/site-packages/matplotlib/mpl-data/stylelib/seaborn-whitegrid.mplstyle"^^xsd:string ;
+    prov:time "2020-03-20T13:56:31.071289"^^xsd:dateTime ;
+    ns1:buffering "default"^^xsd:string ;
+    ns1:contentHashAfter "612e21813e198296fe9ab95dbb73f8509f97e678"^^xsd:string ;
+    ns1:contentHashBefore "612e21813e198296fe9ab95dbb73f8509f97e678"^^xsd:string .
+
+ns1:fileAccess25 a prov:Activity,
+        "r"^^xsd:string ;
+    prov:atLocation "/mnt/2A96E79A96E764B3/Universitaet/Bachelorarbeit/noworkflow/venv/lib/python3.5/site-packages/matplotlib/mpl-data/stylelib/seaborn.mplstyle"^^xsd:string ;
+    prov:time "2020-03-20T13:56:31.074631"^^xsd:dateTime ;
+    ns1:buffering "default"^^xsd:string ;
+    ns1:contentHashAfter "94b1bc837a4728887cefffc6fdfa622ea4dd786c"^^xsd:string ;
+    ns1:contentHashBefore "94b1bc837a4728887cefffc6fdfa622ea4dd786c"^^xsd:string .
+
+ns1:fileAccess26 a prov:Activity,
+        "r"^^xsd:string ;
+    prov:atLocation "/mnt/2A96E79A96E764B3/Universitaet/Bachelorarbeit/noworkflow/venv/lib/python3.5/site-packages/matplotlib/mpl-data/stylelib/Solarize_Light2.mplstyle"^^xsd:string ;
+    prov:time "2020-03-20T13:56:31.079439"^^xsd:dateTime ;
+    ns1:buffering "default"^^xsd:string ;
+    ns1:contentHashAfter "6c7aa7ee121994c35dbca6de936b40f128ab5bc5"^^xsd:string ;
+    ns1:contentHashBefore "6c7aa7ee121994c35dbca6de936b40f128ab5bc5"^^xsd:string .
+
+ns1:fileAccess27 a prov:Activity,
+        "r"^^xsd:string ;
+    prov:atLocation "/mnt/2A96E79A96E764B3/Universitaet/Bachelorarbeit/noworkflow/venv/lib/python3.5/site-packages/matplotlib/mpl-data/stylelib/tableau-colorblind10.mplstyle"^^xsd:string ;
+    prov:time "2020-03-20T13:56:31.084892"^^xsd:dateTime ;
+    ns1:buffering "default"^^xsd:string ;
+    ns1:contentHashAfter "2d8cb0208d5a2af8915bc605931931605229e263"^^xsd:string ;
+    ns1:contentHashBefore "2d8cb0208d5a2af8915bc605931931605229e263"^^xsd:string .
+
+ns1:fileAccess28 a prov:Activity,
+        "r"^^xsd:string ;
+    prov:atLocation "/mnt/2A96E79A96E764B3/Universitaet/Bachelorarbeit/noworkflow/venv/lib/python3.5/site-packages/matplotlib/mpl-data/stylelib/_classic_test.mplstyle"^^xsd:string ;
+    prov:time "2020-03-20T13:56:31.089007"^^xsd:dateTime ;
+    ns1:buffering "default"^^xsd:string ;
+    ns1:contentHashAfter "853b3481e4c7abfa7d60d82f9354e168ef249b71"^^xsd:string ;
+    ns1:contentHashBefore "853b3481e4c7abfa7d60d82f9354e168ef249b71"^^xsd:string .
+
+ns1:fileAccess29 a prov:Activity,
+        "r"^^xsd:string ;
+    prov:atLocation "trace_1.json"^^xsd:string ;
+    prov:time "2020-03-20T13:56:31.345893"^^xsd:dateTime ;
+    ns1:buffering "default"^^xsd:string ;
+    ns1:contentHashAfter "aee80d664efb9a95f3ec9fd8ffc152407f71bd15"^^xsd:string ;
+    ns1:contentHashBefore "aee80d664efb9a95f3ec9fd8ffc152407f71bd15"^^xsd:string .
+
+ns1:fileAccess3 a prov:Activity,
+        "r"^^xsd:string ;
+    prov:atLocation "/mnt/2A96E79A96E764B3/Universitaet/Bachelorarbeit/noworkflow/venv/lib/python3.5/site-packages/matplotlib/mpl-data/stylelib/bmh.mplstyle"^^xsd:string ;
+    prov:time "2020-03-20T13:56:30.979416"^^xsd:dateTime ;
+    ns1:buffering "default"^^xsd:string ;
+    ns1:contentHashAfter "1b449cc09fbf25c79ee4cc4f93e26a889bef0b52"^^xsd:string ;
+    ns1:contentHashBefore "1b449cc09fbf25c79ee4cc4f93e26a889bef0b52"^^xsd:string .
+
+ns1:fileAccess30 a prov:Activity,
+        "r"^^xsd:string ;
+    prov:atLocation "trace_2.json"^^xsd:string ;
+    prov:time "2020-03-20T13:56:40.762350"^^xsd:dateTime ;
+    ns1:buffering "default"^^xsd:string ;
+    ns1:contentHashAfter "a3455e41cdfefe3f0fe4bc5cb6404714454c72d2"^^xsd:string ;
+    ns1:contentHashBefore "a3455e41cdfefe3f0fe4bc5cb6404714454c72d2"^^xsd:string .
+
+ns1:fileAccess31 a prov:Activity,
+        "r"^^xsd:string ;
+    prov:atLocation "trace_3.json"^^xsd:string ;
+    prov:time "2020-03-20T13:56:49.830163"^^xsd:dateTime ;
+    ns1:buffering "default"^^xsd:string ;
+    ns1:contentHashAfter "81639b48e783279c3b10e2695778369334c65369"^^xsd:string ;
+    ns1:contentHashBefore "81639b48e783279c3b10e2695778369334c65369"^^xsd:string .
+
+ns1:fileAccess32 a prov:Activity,
+        "r"^^xsd:string ;
+    prov:atLocation "trace_4.json"^^xsd:string ;
+    prov:time "2020-03-20T13:56:58.699331"^^xsd:dateTime ;
+    ns1:buffering "default"^^xsd:string ;
+    ns1:contentHashAfter "adaa573f619744762412ed104f2d7ace7b1c8f29"^^xsd:string ;
+    ns1:contentHashBefore "adaa573f619744762412ed104f2d7ace7b1c8f29"^^xsd:string .
+
+ns1:fileAccess33 a prov:Activity,
+        "rb"^^xsd:string ;
+    prov:atLocation "/mnt/2A96E79A96E764B3/Universitaet/Bachelorarbeit/noworkflow/venv/lib/python3.5/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf"^^xsd:string ;
+    prov:time "2020-03-20T13:57:09.096793"^^xsd:dateTime ;
+    ns1:buffering "default"^^xsd:string ;
+    ns1:contentHashAfter "5267218852f631928716a8005d7bf4b492aaf83d"^^xsd:string ;
+    ns1:contentHashBefore "5267218852f631928716a8005d7bf4b492aaf83d"^^xsd:string .
+
+ns1:fileAccess34 a prov:Activity,
+        "w+b"^^xsd:string ;
+    prov:atLocation "process_freqs.jpg"^^xsd:string ;
+    prov:time "2020-03-20T13:57:09.309809"^^xsd:dateTime ;
+    ns1:buffering "default"^^xsd:string ;
+    ns1:contentHashAfter "86f715a89b2e1735c573c75a4ca786836c211568"^^xsd:string ;
+    ns1:contentHashBefore "86f715a89b2e1735c573c75a4ca786836c211568"^^xsd:string .
+
+ns1:fileAccess35 a prov:Activity,
+        "w"^^xsd:string ;
+    prov:atLocation "res_summary_237.csv"^^xsd:string ;
+    prov:time "2020-03-20T13:57:28.409714"^^xsd:dateTime ;
+    ns1:buffering "default"^^xsd:string ;
+    ns1:contentHashAfter "0b3a49ee88c3ea44d5f0ca529a7e38d059503511"^^xsd:string ;
+    ns1:contentHashBefore "0b3a49ee88c3ea44d5f0ca529a7e38d059503511"^^xsd:string .
+
+ns1:fileAccess36 a prov:Activity,
+        "w+b"^^xsd:string ;
+    prov:atLocation "res_summary_237.jpg"^^xsd:string ;
+    prov:time "2020-03-20T13:57:39.333984"^^xsd:dateTime ;
+    ns1:buffering "default"^^xsd:string ;
+    ns1:contentHashAfter "4723cd2da44e19f6f0136dd4fa9e86edf52bd7d2"^^xsd:string ;
+    ns1:contentHashBefore "4723cd2da44e19f6f0136dd4fa9e86edf52bd7d2"^^xsd:string .
+
+ns1:fileAccess37 a prov:Activity,
+        "w"^^xsd:string ;
+    prov:atLocation "res_conflicts_237.json"^^xsd:string ;
+    prov:time "2020-03-20T13:57:39.389234"^^xsd:dateTime ;
+    ns1:buffering "default"^^xsd:string ;
+    ns1:contentHashAfter "68a0b90b23fa11da787f2108a328c2d5f05e4c14"^^xsd:string ;
+    ns1:contentHashBefore "7b0d29f69a9cf954394789ef8aebe305b204524c"^^xsd:string .
+
+ns1:fileAccess4 a prov:Activity,
+        "r"^^xsd:string ;
+    prov:atLocation "/mnt/2A96E79A96E764B3/Universitaet/Bachelorarbeit/noworkflow/venv/lib/python3.5/site-packages/matplotlib/mpl-data/stylelib/classic.mplstyle"^^xsd:string ;
+    prov:time "2020-03-20T13:56:30.988120"^^xsd:dateTime ;
+    ns1:buffering "default"^^xsd:string ;
+    ns1:contentHashAfter "6da7b07b27dda792ca9c7f9fae645fb8afa8c920"^^xsd:string ;
+    ns1:contentHashBefore "6da7b07b27dda792ca9c7f9fae645fb8afa8c920"^^xsd:string .
+
+ns1:fileAccess5 a prov:Activity,
+        "r"^^xsd:string ;
+    prov:atLocation "/mnt/2A96E79A96E764B3/Universitaet/Bachelorarbeit/noworkflow/venv/lib/python3.5/site-packages/matplotlib/mpl-data/stylelib/dark_background.mplstyle"^^xsd:string ;
+    prov:time "2020-03-20T13:56:31.012167"^^xsd:dateTime ;
+    ns1:buffering "default"^^xsd:string ;
+    ns1:contentHashAfter "a8b754005bfd3dd8b0f1fc7ed662f412005d0ad4"^^xsd:string ;
+    ns1:contentHashBefore "a8b754005bfd3dd8b0f1fc7ed662f412005d0ad4"^^xsd:string .
+
+ns1:fileAccess6 a prov:Activity,
+        "r"^^xsd:string ;
+    prov:atLocation "/mnt/2A96E79A96E764B3/Universitaet/Bachelorarbeit/noworkflow/venv/lib/python3.5/site-packages/matplotlib/mpl-data/stylelib/fast.mplstyle"^^xsd:string ;
+    prov:time "2020-03-20T13:56:31.017347"^^xsd:dateTime ;
+    ns1:buffering "default"^^xsd:string ;
+    ns1:contentHashAfter "1f7be7d4632a352f5c96959c8ecdba06c9a06b86"^^xsd:string ;
+    ns1:contentHashBefore "1f7be7d4632a352f5c96959c8ecdba06c9a06b86"^^xsd:string .
+
+ns1:fileAccess7 a prov:Activity,
+        "r"^^xsd:string ;
+    prov:atLocation "/mnt/2A96E79A96E764B3/Universitaet/Bachelorarbeit/noworkflow/venv/lib/python3.5/site-packages/matplotlib/mpl-data/stylelib/fivethirtyeight.mplstyle"^^xsd:string ;
+    prov:time "2020-03-20T13:56:31.018847"^^xsd:dateTime ;
+    ns1:buffering "default"^^xsd:string ;
+    ns1:contentHashAfter "738db39f5f806e11cd0b57dd91b84b60929809fc"^^xsd:string ;
+    ns1:contentHashBefore "738db39f5f806e11cd0b57dd91b84b60929809fc"^^xsd:string .
+
+ns1:fileAccess8 a prov:Activity,
+        "r"^^xsd:string ;
+    prov:atLocation "/mnt/2A96E79A96E764B3/Universitaet/Bachelorarbeit/noworkflow/venv/lib/python3.5/site-packages/matplotlib/mpl-data/stylelib/ggplot.mplstyle"^^xsd:string ;
+    prov:time "2020-03-20T13:56:31.024059"^^xsd:dateTime ;
+    ns1:buffering "default"^^xsd:string ;
+    ns1:contentHashAfter "67afd83cc42d395b0bfee6cd30f19bf43cb1297b"^^xsd:string ;
+    ns1:contentHashBefore "67afd83cc42d395b0bfee6cd30f19bf43cb1297b"^^xsd:string .
+
+ns1:fileAccess9 a prov:Activity,
+        "r"^^xsd:string ;
+    prov:atLocation "/mnt/2A96E79A96E764B3/Universitaet/Bachelorarbeit/noworkflow/venv/lib/python3.5/site-packages/matplotlib/mpl-data/stylelib/grayscale.mplstyle"^^xsd:string ;
+    prov:time "2020-03-20T13:56:31.029097"^^xsd:dateTime ;
+    ns1:buffering "default"^^xsd:string ;
+    ns1:contentHashAfter "6a1114e4069882f09c8e518f362a651a5b90ed9d"^^xsd:string ;
+    ns1:contentHashBefore "6a1114e4069882f09c8e518f362a651a5b90ed9d"^^xsd:string .
+
+ns1:trial1Prov a prov:Collection,
+        prov:Entity ;
+    rdfs:label "provenance collected by noworfklow"^^xsd:string ;
+    prov:hadMember ns1:trial1ExecutionProv .
+
+ns1:inst_l_py a prov:Agent,
+        prov:SoftwareAgent ;
+    ns1:codeHash "a398886bb576ef519d99064d871c1da067136308"^^xsd:string ;
+    ns1:id "1"^^xsd:int ;
+    ns1:script "inst_l.py"^^xsd:string .
+
+ns1:trial1Execution a prov:Activity ;
+    prov:endedAtTime "2020-03-20T13:57:39.432257"^^xsd:dateTime ;
+    prov:qualifiedAssociation ns1:trial1ExecutionByScript ;
+    prov:startedAtTime "2020-03-20T13:56:26.875808"^^xsd:dateTime ;
+    ns1:nowCommand "run -v -d 2 inst_l.py 237 process_freqs.jpg res_summary.csv res_summary.jpg res_conflicts.json trace_1.json trace_2.json trace_3.json trace_4.json"^^xsd:string .
+
+ns1:trial1ExecutionByScript a prov:Association ;
+    prov:agent ns1:inst_l_py .
+
+ns1:trial1ExecutionProv prov:wasGeneratedBy ns1:trial1Execution .
+

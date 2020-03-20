@@ -1,0 +1,54 @@
+@prefix ns1: <https://github.com/gems-uff/noworkflow#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ns1:fileAccess1 a prov:Activity,
+        "rb"^^xsd:string ;
+    prov:atLocation "in.jpg"^^xsd:string ;
+    prov:time "2020-03-20T13:12:37.205907"^^xsd:dateTime ;
+    ns1:buffering "default"^^xsd:string ;
+    ns1:contentHashAfter "a97c3acb8fbf13348d617b16c5e7ab3b5495df73"^^xsd:string ;
+    ns1:contentHashBefore "a97c3acb8fbf13348d617b16c5e7ab3b5495df73"^^xsd:string .
+
+ns1:fileAccess2 a prov:Activity,
+        "w+b"^^xsd:string ;
+    prov:atLocation "out.jpg"^^xsd:string ;
+    prov:time "2020-03-20T13:12:37.232728"^^xsd:dateTime ;
+    ns1:buffering "default"^^xsd:string ;
+    ns1:contentHashAfter "3ed582a2ed5babd64f4d8e2ba556c65d0ddf1587"^^xsd:string ;
+    ns1:contentHashBefore "ce9ffaace5809b23a8b5ddf82a6e2b1105536bb4"^^xsd:string .
+
+ns1:fileAccess3 a prov:Activity,
+        "w+b"^^xsd:string ;
+    prov:atLocation "diff.jpg"^^xsd:string ;
+    prov:time "2020-03-20T13:12:47.054734"^^xsd:dateTime ;
+    ns1:buffering "default"^^xsd:string ;
+    ns1:contentHashAfter "6a618c3ab17bf11c8d67727244b783dc9673d742"^^xsd:string ;
+    ns1:contentHashBefore "bcfd7b62f302cec63c12a06befeb80ee76d43a48"^^xsd:string .
+
+ns1:trial2Prov a prov:Collection,
+        prov:Entity ;
+    rdfs:label "provenance collected by noworfklow"^^xsd:string ;
+    prov:hadMember ns1:trial2ExecutionProv .
+
+ns1:inst_m_py a prov:Agent,
+        prov:SoftwareAgent ;
+    ns1:codeHash "3889367b0b9b9bdc1dfc7d7cc9056c028642a079"^^xsd:string ;
+    ns1:id "2"^^xsd:int ;
+    ns1:script "inst_m.py"^^xsd:string .
+
+ns1:trial2Execution a prov:Activity ;
+    prov:endedAtTime "2020-03-20T13:12:47.061016"^^xsd:dateTime ;
+    prov:qualifiedAssociation ns1:trial2ExecutionByScript ;
+    prov:startedAtTime "2020-03-20T13:12:08.379693"^^xsd:dateTime ;
+    ns1:nowCommand "run inst_m.py 6 in.jpg out.jpg diff.jpg"^^xsd:string ;
+    ns1:parentId "1"^^xsd:int .
+
+ns1:trial2ExecutionByScript a prov:Association ;
+    prov:agent ns1:inst_m_py .
+
+ns1:trial2ExecutionProv prov:wasGeneratedBy ns1:trial2Execution .
+

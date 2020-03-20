@@ -1,0 +1,673 @@
+@prefix ns1: <https://github.com/gems-uff/noworkflow#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ns1:callDefinition11 a prov:Activity,
+        "callDefinition"^^xsd:string ;
+    rdfs:label "open"^^xsd:string ;
+    prov:qualifiedCommunication ns1:callDef11CalledByFuncDef2 .
+
+ns1:callDefinition12 a prov:Activity,
+        "callDefinition"^^xsd:string ;
+    rdfs:label "csv.reader"^^xsd:string ;
+    prov:qualifiedCommunication ns1:callDef12CalledByFuncDef2 .
+
+ns1:callDefinition13 a prov:Activity,
+        "callDefinition"^^xsd:string ;
+    rdfs:label "collections.namedtuple"^^xsd:string ;
+    prov:qualifiedCommunication ns1:callDef13CalledByFuncDef2 .
+
+ns1:callDefinition14 a prov:Activity,
+        "callDefinition"^^xsd:string ;
+    rdfs:label "return_value.append"^^xsd:string ;
+    prov:qualifiedCommunication ns1:callDef14CalledByFuncDef2 .
+
+ns1:callDefinition15 a prov:Activity,
+        "callDefinition"^^xsd:string ;
+    rdfs:label "Entry"^^xsd:string ;
+    prov:qualifiedCommunication ns1:callDef15CalledByFuncDef2 .
+
+ns1:callDefinition18 a prov:Activity,
+        "callDefinition"^^xsd:string ;
+    rdfs:label "min"^^xsd:string ;
+    prov:qualifiedCommunication ns1:callDef18CalledByFuncDef3 .
+
+ns1:callDefinition20 a prov:Activity,
+        "callDefinition"^^xsd:string ;
+    rdfs:label "list"^^xsd:string ;
+    prov:qualifiedCommunication ns1:callDef20CalledByFuncDef4 .
+
+ns1:callDefinition21 a prov:Activity,
+        "callDefinition"^^xsd:string ;
+    rdfs:label "sum"^^xsd:string ;
+    prov:qualifiedCommunication ns1:callDef21CalledByFuncDef4 .
+
+ns1:callDefinition22 a prov:Activity,
+        "callDefinition"^^xsd:string ;
+    rdfs:label "float"^^xsd:string ;
+    prov:qualifiedCommunication ns1:callDef22CalledByFuncDef4 .
+
+ns1:callDefinition23 a prov:Activity,
+        "callDefinition"^^xsd:string ;
+    rdfs:label "len"^^xsd:string ;
+    prov:qualifiedCommunication ns1:callDef23CalledByFuncDef4 .
+
+ns1:callDefinition24 a prov:Activity,
+        "callDefinition"^^xsd:string ;
+    rdfs:label "ret_lst.append"^^xsd:string ;
+    prov:qualifiedCommunication ns1:callDef24CalledByFuncDef4 .
+
+ns1:callDefinition25 a prov:Activity,
+        "callDefinition"^^xsd:string ;
+    rdfs:label "ret_lst.sort"^^xsd:string ;
+    prov:qualifiedCommunication ns1:callDef25CalledByFuncDef4 .
+
+ns1:callDefinition28 a prov:Activity,
+        "callDefinition"^^xsd:string ;
+    rdfs:label "enumerate"^^xsd:string ;
+    prov:qualifiedCommunication ns1:callDef28CalledByFuncDef5 .
+
+ns1:callDefinition29 a prov:Activity,
+        "callDefinition"^^xsd:string ;
+    rdfs:label "get_classification"^^xsd:string ;
+    prov:qualifiedCommunication ns1:callDef29CalledByFuncDef5 .
+
+ns1:callDefinition30 a prov:Activity,
+        "callDefinition"^^xsd:string ;
+    rdfs:label "float"^^xsd:string ;
+    prov:qualifiedCommunication ns1:callDef30CalledByFuncDef5 .
+
+ns1:callDefinition31 a prov:Activity,
+        "callDefinition"^^xsd:string ;
+    rdfs:label "dict_to_persist.append"^^xsd:string ;
+    prov:qualifiedCommunication ns1:callDef31CalledByFuncDef5 .
+
+ns1:callDefinition32 a prov:Activity,
+        "callDefinition"^^xsd:string ;
+    rdfs:label "\"{0} (level {1})\".format"^^xsd:string ;
+    prov:qualifiedCommunication ns1:callDef32CalledByFuncDef5 .
+
+ns1:callDefinition33 a prov:Activity,
+        "callDefinition"^^xsd:string ;
+    rdfs:label "open"^^xsd:string ;
+    prov:qualifiedCommunication ns1:callDef33CalledByFuncDef5 .
+
+ns1:callDefinition34 a prov:Activity,
+        "callDefinition"^^xsd:string ;
+    rdfs:label "json.dump"^^xsd:string ;
+    prov:qualifiedCommunication ns1:callDef34CalledByFuncDef5 .
+
+ns1:callDefinition36 a prov:Activity,
+        "callDefinition"^^xsd:string ;
+    rdfs:label "sorted"^^xsd:string ;
+    prov:qualifiedCommunication ns1:callDef36CalledByFuncDef6 .
+
+ns1:callDefinition37 a prov:Activity,
+        "callDefinition"^^xsd:string ;
+    rdfs:label "float"^^xsd:string ;
+    prov:qualifiedCommunication ns1:callDef37CalledByFuncDef6 .
+
+ns1:callDefinition40 a prov:Activity,
+        "callDefinition"^^xsd:string ;
+    rdfs:label "enumerate"^^xsd:string ;
+    prov:qualifiedCommunication ns1:callDef40CalledByFuncDef7 .
+
+ns1:callDefinition41 a prov:Activity,
+        "callDefinition"^^xsd:string ;
+    rdfs:label "get_classification"^^xsd:string ;
+    prov:qualifiedCommunication ns1:callDef41CalledByFuncDef7 .
+
+ns1:callDefinition42 a prov:Activity,
+        "callDefinition"^^xsd:string ;
+    rdfs:label "float"^^xsd:string ;
+    prov:qualifiedCommunication ns1:callDef42CalledByFuncDef7 .
+
+ns1:callDefinition43 a prov:Activity,
+        "callDefinition"^^xsd:string ;
+    rdfs:label "dict_to_persist.append"^^xsd:string ;
+    prov:qualifiedCommunication ns1:callDef43CalledByFuncDef7 .
+
+ns1:callDefinition44 a prov:Activity,
+        "callDefinition"^^xsd:string ;
+    rdfs:label "\"{0} (level {1})\".format"^^xsd:string ;
+    prov:qualifiedCommunication ns1:callDef44CalledByFuncDef7 .
+
+ns1:callDefinition45 a prov:Activity,
+        "callDefinition"^^xsd:string ;
+    rdfs:label "open"^^xsd:string ;
+    prov:qualifiedCommunication ns1:callDef45CalledByFuncDef7 .
+
+ns1:callDefinition46 a prov:Activity,
+        "callDefinition"^^xsd:string ;
+    rdfs:label "json.dump"^^xsd:string ;
+    prov:qualifiedCommunication ns1:callDef46CalledByFuncDef7 .
+
+ns1:callDefinition47 a prov:Activity,
+        "callDefinition"^^xsd:string ;
+    rdfs:label "parse_args"^^xsd:string ;
+    prov:qualifiedCommunication ns1:callDef47CalledByFuncDef8 .
+
+ns1:callDefinition48 a prov:Activity,
+        "callDefinition"^^xsd:string ;
+    rdfs:label "print"^^xsd:string ;
+    prov:qualifiedCommunication ns1:callDef48CalledByFuncDef8 .
+
+ns1:callDefinition49 a prov:Activity,
+        "callDefinition"^^xsd:string ;
+    rdfs:label "os.path.exists"^^xsd:string ;
+    prov:qualifiedCommunication ns1:callDef49CalledByFuncDef8 .
+
+ns1:callDefinition50 a prov:Activity,
+        "callDefinition"^^xsd:string ;
+    rdfs:label "print"^^xsd:string ;
+    prov:qualifiedCommunication ns1:callDef50CalledByFuncDef8 .
+
+ns1:callDefinition51 a prov:Activity,
+        "callDefinition"^^xsd:string ;
+    rdfs:label "exit"^^xsd:string ;
+    prov:qualifiedCommunication ns1:callDef51CalledByFuncDef8 .
+
+ns1:callDefinition52 a prov:Activity,
+        "callDefinition"^^xsd:string ;
+    rdfs:label "read_file"^^xsd:string ;
+    prov:qualifiedCommunication ns1:callDef52CalledByFuncDef8 .
+
+ns1:callDefinition53 a prov:Activity,
+        "callDefinition"^^xsd:string ;
+    rdfs:label "data.sort"^^xsd:string ;
+    prov:qualifiedCommunication ns1:callDef53CalledByFuncDef8 .
+
+ns1:callDefinition54 a prov:Activity,
+        "callDefinition"^^xsd:string ;
+    rdfs:label "print"^^xsd:string ;
+    prov:qualifiedCommunication ns1:callDef54CalledByFuncDef8 .
+
+ns1:callDefinition55 a prov:Activity,
+        "callDefinition"^^xsd:string ;
+    rdfs:label "len"^^xsd:string ;
+    prov:qualifiedCommunication ns1:callDef55CalledByFuncDef8 .
+
+ns1:callDefinition56 a prov:Activity,
+        "callDefinition"^^xsd:string ;
+    rdfs:label "print"^^xsd:string ;
+    prov:qualifiedCommunication ns1:callDef56CalledByFuncDef8 .
+
+ns1:callDefinition57 a prov:Activity,
+        "callDefinition"^^xsd:string ;
+    rdfs:label "exit"^^xsd:string ;
+    prov:qualifiedCommunication ns1:callDef57CalledByFuncDef8 .
+
+ns1:callDefinition58 a prov:Activity,
+        "callDefinition"^^xsd:string ;
+    rdfs:label "print"^^xsd:string ;
+    prov:qualifiedCommunication ns1:callDef58CalledByFuncDef8 .
+
+ns1:callDefinition59 a prov:Activity,
+        "callDefinition"^^xsd:string ;
+    rdfs:label "itertools.groupby"^^xsd:string ;
+    prov:qualifiedCommunication ns1:callDef59CalledByFuncDef8 .
+
+ns1:callDefinition6 a prov:Activity,
+        "callDefinition"^^xsd:string ;
+    rdfs:label "argparse.ArgumentParser"^^xsd:string ;
+    prov:qualifiedCommunication ns1:callDef6CalledByFuncDef1 .
+
+ns1:callDefinition60 a prov:Activity,
+        "callDefinition"^^xsd:string ;
+    rdfs:label "get_top_ten_by_country"^^xsd:string ;
+    prov:qualifiedCommunication ns1:callDef60CalledByFuncDef8 .
+
+ns1:callDefinition61 a prov:Activity,
+        "callDefinition"^^xsd:string ;
+    rdfs:label "get_top_ten_overall"^^xsd:string ;
+    prov:qualifiedCommunication ns1:callDef61CalledByFuncDef8 .
+
+ns1:callDefinition62 a prov:Activity,
+        "callDefinition"^^xsd:string ;
+    rdfs:label "print"^^xsd:string ;
+    prov:qualifiedCommunication ns1:callDef62CalledByFuncDef8 .
+
+ns1:callDefinition63 a prov:Activity,
+        "callDefinition"^^xsd:string ;
+    rdfs:label "print"^^xsd:string ;
+    prov:qualifiedCommunication ns1:callDef63CalledByFuncDef8 .
+
+ns1:callDefinition64 a prov:Activity,
+        "callDefinition"^^xsd:string ;
+    rdfs:label "\"Saving summaries to {0} and {1}...\".format"^^xsd:string ;
+    prov:qualifiedCommunication ns1:callDef64CalledByFuncDef8 .
+
+ns1:callDefinition65 a prov:Activity,
+        "callDefinition"^^xsd:string ;
+    rdfs:label "os.path.basename"^^xsd:string ;
+    prov:qualifiedCommunication ns1:callDef65CalledByFuncDef8 .
+
+ns1:callDefinition66 a prov:Activity,
+        "callDefinition"^^xsd:string ;
+    rdfs:label "os.path.basename"^^xsd:string ;
+    prov:qualifiedCommunication ns1:callDef66CalledByFuncDef8 .
+
+ns1:callDefinition67 a prov:Activity,
+        "callDefinition"^^xsd:string ;
+    rdfs:label "persist_top_ten_by_country"^^xsd:string ;
+    prov:qualifiedCommunication ns1:callDef67CalledByFuncDef8 .
+
+ns1:callDefinition68 a prov:Activity,
+        "callDefinition"^^xsd:string ;
+    rdfs:label "persist_top_ten_overall"^^xsd:string ;
+    prov:qualifiedCommunication ns1:callDef68CalledByFuncDef8 .
+
+ns1:callDefinition69 a prov:Activity,
+        "callDefinition"^^xsd:string ;
+    rdfs:label "print"^^xsd:string ;
+    prov:qualifiedCommunication ns1:callDef69CalledByFuncDef8 .
+
+ns1:callDefinition7 a prov:Activity,
+        "callDefinition"^^xsd:string ;
+    rdfs:label "parser.add_argument"^^xsd:string ;
+    prov:qualifiedCommunication ns1:callDef7CalledByFuncDef1 .
+
+ns1:callDefinition8 a prov:Activity,
+        "callDefinition"^^xsd:string ;
+    rdfs:label "parser.parse_args"^^xsd:string ;
+    prov:qualifiedCommunication ns1:callDef8CalledByFuncDef1 .
+
+ns1:trial5Prov a prov:Collection,
+        prov:Entity ;
+    rdfs:label "provenance collected by noworfklow"^^xsd:string ;
+    prov:hadMember ns1:trial5DefinitionProv .
+
+ns1:argumentDefinition16 a prov:Entity,
+        "argumentDefinition"^^xsd:string ;
+    rdfs:label "speed"^^xsd:string .
+
+ns1:argumentDefinition19 a prov:Entity,
+        "argumentDefinition"^^xsd:string ;
+    rdfs:label "data"^^xsd:string .
+
+ns1:argumentDefinition26 a prov:Entity,
+        "argumentDefinition"^^xsd:string ;
+    rdfs:label "data"^^xsd:string .
+
+ns1:argumentDefinition27 a prov:Entity,
+        "argumentDefinition"^^xsd:string ;
+    rdfs:label "path"^^xsd:string .
+
+ns1:argumentDefinition35 a prov:Entity,
+        "argumentDefinition"^^xsd:string ;
+    rdfs:label "data"^^xsd:string .
+
+ns1:argumentDefinition38 a prov:Entity,
+        "argumentDefinition"^^xsd:string ;
+    rdfs:label "data"^^xsd:string .
+
+ns1:argumentDefinition39 a prov:Entity,
+        "argumentDefinition"^^xsd:string ;
+    rdfs:label "path"^^xsd:string .
+
+ns1:argumentDefinition9 a prov:Entity,
+        "argumentDefinition"^^xsd:string ;
+    rdfs:label "path"^^xsd:string .
+
+ns1:callDef11CalledByFuncDef2 a prov:Communication,
+        "callDefinition"^^xsd:string ;
+    prov:activity ns1:functionDefinition2 .
+
+ns1:callDef12CalledByFuncDef2 a prov:Communication,
+        "callDefinition"^^xsd:string ;
+    prov:activity ns1:functionDefinition2 .
+
+ns1:callDef13CalledByFuncDef2 a prov:Communication,
+        "callDefinition"^^xsd:string ;
+    prov:activity ns1:functionDefinition2 .
+
+ns1:callDef14CalledByFuncDef2 a prov:Communication,
+        "callDefinition"^^xsd:string ;
+    prov:activity ns1:functionDefinition2 .
+
+ns1:callDef15CalledByFuncDef2 a prov:Communication,
+        "callDefinition"^^xsd:string ;
+    prov:activity ns1:functionDefinition2 .
+
+ns1:callDef18CalledByFuncDef3 a prov:Communication,
+        "callDefinition"^^xsd:string ;
+    prov:activity ns1:functionDefinition3 .
+
+ns1:callDef20CalledByFuncDef4 a prov:Communication,
+        "callDefinition"^^xsd:string ;
+    prov:activity ns1:functionDefinition4 .
+
+ns1:callDef21CalledByFuncDef4 a prov:Communication,
+        "callDefinition"^^xsd:string ;
+    prov:activity ns1:functionDefinition4 .
+
+ns1:callDef22CalledByFuncDef4 a prov:Communication,
+        "callDefinition"^^xsd:string ;
+    prov:activity ns1:functionDefinition4 .
+
+ns1:callDef23CalledByFuncDef4 a prov:Communication,
+        "callDefinition"^^xsd:string ;
+    prov:activity ns1:functionDefinition4 .
+
+ns1:callDef24CalledByFuncDef4 a prov:Communication,
+        "callDefinition"^^xsd:string ;
+    prov:activity ns1:functionDefinition4 .
+
+ns1:callDef25CalledByFuncDef4 a prov:Communication,
+        "callDefinition"^^xsd:string ;
+    prov:activity ns1:functionDefinition4 .
+
+ns1:callDef28CalledByFuncDef5 a prov:Communication,
+        "callDefinition"^^xsd:string ;
+    prov:activity ns1:functionDefinition5 .
+
+ns1:callDef29CalledByFuncDef5 a prov:Communication,
+        "callDefinition"^^xsd:string ;
+    prov:activity ns1:functionDefinition5 .
+
+ns1:callDef30CalledByFuncDef5 a prov:Communication,
+        "callDefinition"^^xsd:string ;
+    prov:activity ns1:functionDefinition5 .
+
+ns1:callDef31CalledByFuncDef5 a prov:Communication,
+        "callDefinition"^^xsd:string ;
+    prov:activity ns1:functionDefinition5 .
+
+ns1:callDef32CalledByFuncDef5 a prov:Communication,
+        "callDefinition"^^xsd:string ;
+    prov:activity ns1:functionDefinition5 .
+
+ns1:callDef33CalledByFuncDef5 a prov:Communication,
+        "callDefinition"^^xsd:string ;
+    prov:activity ns1:functionDefinition5 .
+
+ns1:callDef34CalledByFuncDef5 a prov:Communication,
+        "callDefinition"^^xsd:string ;
+    prov:activity ns1:functionDefinition5 .
+
+ns1:callDef36CalledByFuncDef6 a prov:Communication,
+        "callDefinition"^^xsd:string ;
+    prov:activity ns1:functionDefinition6 .
+
+ns1:callDef37CalledByFuncDef6 a prov:Communication,
+        "callDefinition"^^xsd:string ;
+    prov:activity ns1:functionDefinition6 .
+
+ns1:callDef40CalledByFuncDef7 a prov:Communication,
+        "callDefinition"^^xsd:string ;
+    prov:activity ns1:functionDefinition7 .
+
+ns1:callDef41CalledByFuncDef7 a prov:Communication,
+        "callDefinition"^^xsd:string ;
+    prov:activity ns1:functionDefinition7 .
+
+ns1:callDef42CalledByFuncDef7 a prov:Communication,
+        "callDefinition"^^xsd:string ;
+    prov:activity ns1:functionDefinition7 .
+
+ns1:callDef43CalledByFuncDef7 a prov:Communication,
+        "callDefinition"^^xsd:string ;
+    prov:activity ns1:functionDefinition7 .
+
+ns1:callDef44CalledByFuncDef7 a prov:Communication,
+        "callDefinition"^^xsd:string ;
+    prov:activity ns1:functionDefinition7 .
+
+ns1:callDef45CalledByFuncDef7 a prov:Communication,
+        "callDefinition"^^xsd:string ;
+    prov:activity ns1:functionDefinition7 .
+
+ns1:callDef46CalledByFuncDef7 a prov:Communication,
+        "callDefinition"^^xsd:string ;
+    prov:activity ns1:functionDefinition7 .
+
+ns1:callDef47CalledByFuncDef8 a prov:Communication,
+        "callDefinition"^^xsd:string ;
+    prov:activity ns1:functionDefinition8 .
+
+ns1:callDef48CalledByFuncDef8 a prov:Communication,
+        "callDefinition"^^xsd:string ;
+    prov:activity ns1:functionDefinition8 .
+
+ns1:callDef49CalledByFuncDef8 a prov:Communication,
+        "callDefinition"^^xsd:string ;
+    prov:activity ns1:functionDefinition8 .
+
+ns1:callDef50CalledByFuncDef8 a prov:Communication,
+        "callDefinition"^^xsd:string ;
+    prov:activity ns1:functionDefinition8 .
+
+ns1:callDef51CalledByFuncDef8 a prov:Communication,
+        "callDefinition"^^xsd:string ;
+    prov:activity ns1:functionDefinition8 .
+
+ns1:callDef52CalledByFuncDef8 a prov:Communication,
+        "callDefinition"^^xsd:string ;
+    prov:activity ns1:functionDefinition8 .
+
+ns1:callDef53CalledByFuncDef8 a prov:Communication,
+        "callDefinition"^^xsd:string ;
+    prov:activity ns1:functionDefinition8 .
+
+ns1:callDef54CalledByFuncDef8 a prov:Communication,
+        "callDefinition"^^xsd:string ;
+    prov:activity ns1:functionDefinition8 .
+
+ns1:callDef55CalledByFuncDef8 a prov:Communication,
+        "callDefinition"^^xsd:string ;
+    prov:activity ns1:functionDefinition8 .
+
+ns1:callDef56CalledByFuncDef8 a prov:Communication,
+        "callDefinition"^^xsd:string ;
+    prov:activity ns1:functionDefinition8 .
+
+ns1:callDef57CalledByFuncDef8 a prov:Communication,
+        "callDefinition"^^xsd:string ;
+    prov:activity ns1:functionDefinition8 .
+
+ns1:callDef58CalledByFuncDef8 a prov:Communication,
+        "callDefinition"^^xsd:string ;
+    prov:activity ns1:functionDefinition8 .
+
+ns1:callDef59CalledByFuncDef8 a prov:Communication,
+        "callDefinition"^^xsd:string ;
+    prov:activity ns1:functionDefinition8 .
+
+ns1:callDef60CalledByFuncDef8 a prov:Communication,
+        "callDefinition"^^xsd:string ;
+    prov:activity ns1:functionDefinition8 .
+
+ns1:callDef61CalledByFuncDef8 a prov:Communication,
+        "callDefinition"^^xsd:string ;
+    prov:activity ns1:functionDefinition8 .
+
+ns1:callDef62CalledByFuncDef8 a prov:Communication,
+        "callDefinition"^^xsd:string ;
+    prov:activity ns1:functionDefinition8 .
+
+ns1:callDef63CalledByFuncDef8 a prov:Communication,
+        "callDefinition"^^xsd:string ;
+    prov:activity ns1:functionDefinition8 .
+
+ns1:callDef64CalledByFuncDef8 a prov:Communication,
+        "callDefinition"^^xsd:string ;
+    prov:activity ns1:functionDefinition8 .
+
+ns1:callDef65CalledByFuncDef8 a prov:Communication,
+        "callDefinition"^^xsd:string ;
+    prov:activity ns1:functionDefinition8 .
+
+ns1:callDef66CalledByFuncDef8 a prov:Communication,
+        "callDefinition"^^xsd:string ;
+    prov:activity ns1:functionDefinition8 .
+
+ns1:callDef67CalledByFuncDef8 a prov:Communication,
+        "callDefinition"^^xsd:string ;
+    prov:activity ns1:functionDefinition8 .
+
+ns1:callDef68CalledByFuncDef8 a prov:Communication,
+        "callDefinition"^^xsd:string ;
+    prov:activity ns1:functionDefinition8 .
+
+ns1:callDef69CalledByFuncDef8 a prov:Communication,
+        "callDefinition"^^xsd:string ;
+    prov:activity ns1:functionDefinition8 .
+
+ns1:callDef6CalledByFuncDef1 a prov:Communication,
+        "callDefinition"^^xsd:string ;
+    prov:activity ns1:functionDefinition1 .
+
+ns1:callDef7CalledByFuncDef1 a prov:Communication,
+        "callDefinition"^^xsd:string ;
+    prov:activity ns1:functionDefinition1 .
+
+ns1:callDef8CalledByFuncDef1 a prov:Communication,
+        "callDefinition"^^xsd:string ;
+    prov:activity ns1:functionDefinition1 .
+
+ns1:funcDef2UsedArgDef9 a prov:Usage,
+        "argumentDefinition"^^xsd:string ;
+    prov:entity ns1:argumentDefinition9 ;
+    prov:hadRole "argument"^^xsd:string .
+
+ns1:funcDef2UsedGlobalDef10 a prov:Usage,
+        "globalDefinition"^^xsd:string ;
+    prov:entity ns1:globalDefinition10 ;
+    prov:hadRole "global"^^xsd:string .
+
+ns1:funcDef3UsedArgDef16 a prov:Usage,
+        "argumentDefinition"^^xsd:string ;
+    prov:entity ns1:argumentDefinition16 ;
+    prov:hadRole "argument"^^xsd:string .
+
+ns1:funcDef3UsedGlobalDef17 a prov:Usage,
+        "globalDefinition"^^xsd:string ;
+    prov:entity ns1:globalDefinition17 ;
+    prov:hadRole "global"^^xsd:string .
+
+ns1:funcDef4UsedArgDef19 a prov:Usage,
+        "argumentDefinition"^^xsd:string ;
+    prov:entity ns1:argumentDefinition19 ;
+    prov:hadRole "argument"^^xsd:string .
+
+ns1:funcDef5UsedArgDef26 a prov:Usage,
+        "argumentDefinition"^^xsd:string ;
+    prov:entity ns1:argumentDefinition26 ;
+    prov:hadRole "argument"^^xsd:string .
+
+ns1:funcDef5UsedArgDef27 a prov:Usage,
+        "argumentDefinition"^^xsd:string ;
+    prov:entity ns1:argumentDefinition27 ;
+    prov:hadRole "argument"^^xsd:string .
+
+ns1:funcDef6UsedArgDef35 a prov:Usage,
+        "argumentDefinition"^^xsd:string ;
+    prov:entity ns1:argumentDefinition35 ;
+    prov:hadRole "argument"^^xsd:string .
+
+ns1:funcDef7UsedArgDef38 a prov:Usage,
+        "argumentDefinition"^^xsd:string ;
+    prov:entity ns1:argumentDefinition38 ;
+    prov:hadRole "argument"^^xsd:string .
+
+ns1:funcDef7UsedArgDef39 a prov:Usage,
+        "argumentDefinition"^^xsd:string ;
+    prov:entity ns1:argumentDefinition39 ;
+    prov:hadRole "argument"^^xsd:string .
+
+ns1:functionDefinition3 a prov:Activity,
+        "functionDefinition"^^xsd:string ;
+    rdfs:label "get_classification"^^xsd:string ;
+    prov:qualifiedUsage ns1:funcDef3UsedArgDef16,
+        ns1:funcDef3UsedGlobalDef17 ;
+    ns1:codeHash "af700fcedfa610453cedc8f6744513f079419a6d"^^xsd:string ;
+    ns1:firstLine "46"^^xsd:int ;
+    ns1:lastLine "68"^^xsd:int .
+
+ns1:globalDefinition10 a prov:Entity,
+        "globalDefinition"^^xsd:string ;
+    rdfs:label "Entry"^^xsd:string .
+
+ns1:globalDefinition17 a prov:Entity,
+        "globalDefinition"^^xsd:string ;
+    rdfs:label "root"^^xsd:string .
+
+ns1:inst_s_py a prov:Agent,
+        prov:SoftwareAgent ;
+    ns1:codeHash "5b62cd5eaf5a0471ba9e42d435db8da0318755ce"^^xsd:string ;
+    ns1:id "5"^^xsd:int ;
+    ns1:script "inst_s.py"^^xsd:string .
+
+ns1:trial5DefinitionProv prov:wasGeneratedBy ns1:trial5Execution .
+
+ns1:trial5Execution a prov:Activity ;
+    prov:endedAtTime "2020-03-20T14:36:35.483923"^^xsd:dateTime ;
+    prov:qualifiedAssociation ns1:trial5ExecutionByScript ;
+    prov:startedAtTime "2020-03-20T14:36:31.995122"^^xsd:dateTime ;
+    ns1:nowCommand "run inst_s.py data_medium.csv"^^xsd:string ;
+    ns1:parentId "4"^^xsd:int .
+
+ns1:trial5ExecutionByScript a prov:Association ;
+    prov:agent ns1:inst_s_py .
+
+ns1:functionDefinition6 a prov:Activity,
+        "functionDefinition"^^xsd:string ;
+    rdfs:label "get_top_ten_overall"^^xsd:string ;
+    prov:qualifiedUsage ns1:funcDef6UsedArgDef35 ;
+    ns1:codeHash "cd82203f7eabd59fc5165e1a65e65147c97c0027"^^xsd:string ;
+    ns1:firstLine "97"^^xsd:int ;
+    ns1:lastLine "98"^^xsd:int .
+
+ns1:functionDefinition1 a prov:Activity,
+        "functionDefinition"^^xsd:string ;
+    rdfs:label "parse_args"^^xsd:string ;
+    ns1:codeHash "d8353f6da1aca5690cbf975e5495c5928b9ddb7c"^^xsd:string ;
+    ns1:firstLine "18"^^xsd:int ;
+    ns1:lastLine "25"^^xsd:int .
+
+ns1:functionDefinition2 a prov:Activity,
+        "functionDefinition"^^xsd:string ;
+    rdfs:label "read_file"^^xsd:string ;
+    prov:qualifiedUsage ns1:funcDef2UsedArgDef9,
+        ns1:funcDef2UsedGlobalDef10 ;
+    ns1:codeHash "a96e5d154cfeb58fe3a04124970a7b0d964f5efa"^^xsd:string ;
+    ns1:docString "Read the CSV input data as NamedTuple"^^xsd:string ;
+    ns1:firstLine "28"^^xsd:int ;
+    ns1:lastLine "43"^^xsd:int .
+
+ns1:functionDefinition4 a prov:Activity,
+        "functionDefinition"^^xsd:string ;
+    rdfs:label "get_top_ten_by_country"^^xsd:string ;
+    prov:qualifiedUsage ns1:funcDef4UsedArgDef19 ;
+    ns1:codeHash "86ea2da10c8dd6b2785282655020fd5bbe04a8e9"^^xsd:string ;
+    ns1:firstLine "71"^^xsd:int ;
+    ns1:lastLine "80"^^xsd:int .
+
+ns1:functionDefinition5 a prov:Activity,
+        "functionDefinition"^^xsd:string ;
+    rdfs:label "persist_top_ten_by_country"^^xsd:string ;
+    prov:qualifiedUsage ns1:funcDef5UsedArgDef26,
+        ns1:funcDef5UsedArgDef27 ;
+    ns1:codeHash "dea2d9f32e96b0c5d8a40ea26c64feb3e0964abe"^^xsd:string ;
+    ns1:firstLine "83"^^xsd:int ;
+    ns1:lastLine "94"^^xsd:int .
+
+ns1:functionDefinition7 a prov:Activity,
+        "functionDefinition"^^xsd:string ;
+    rdfs:label "persist_top_ten_overall"^^xsd:string ;
+    prov:qualifiedUsage ns1:funcDef7UsedArgDef38,
+        ns1:funcDef7UsedArgDef39 ;
+    ns1:codeHash "014f08ecdfb0b6e96fa623bec3c75b49566ec54c"^^xsd:string ;
+    ns1:firstLine "101"^^xsd:int ;
+    ns1:lastLine "111"^^xsd:int .
+
+ns1:functionDefinition8 a prov:Activity,
+        "functionDefinition"^^xsd:string ;
+    rdfs:label "main"^^xsd:string ;
+    ns1:codeHash "f5d46dfc488322d4ad49241f4dddf662e875a159"^^xsd:string ;
+    ns1:firstLine "123"^^xsd:int ;
+    ns1:lastLine "205"^^xsd:int .
+

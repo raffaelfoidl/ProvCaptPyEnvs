@@ -1,0 +1,61 @@
+@prefix ns1: <https://github.com/gems-uff/noworkflow#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ns1:fileAccess1 a prov:Activity,
+        "w"^^xsd:string ;
+    prov:atLocation "/dev/null"^^xsd:string ;
+    prov:time "2020-03-20T14:36:35.211789"^^xsd:dateTime ;
+    ns1:buffering "default"^^xsd:string ;
+    ns1:contentHashBefore "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"^^xsd:string .
+
+ns1:fileAccess2 a prov:Activity,
+        "r"^^xsd:string ;
+    prov:atLocation "data_medium.csv"^^xsd:string ;
+    prov:time "2020-03-20T14:36:35.396158"^^xsd:dateTime ;
+    ns1:buffering "default"^^xsd:string ;
+    ns1:contentHashAfter "b55e766ee2872d0fb024779ab4425d20e6eba18d"^^xsd:string ;
+    ns1:contentHashBefore "b55e766ee2872d0fb024779ab4425d20e6eba18d"^^xsd:string .
+
+ns1:fileAccess3 a prov:Activity,
+        "w"^^xsd:string ;
+    prov:atLocation "/mnt/2A96E79A96E764B3/Universitaet/Bachelorarbeit/noworkflow/instances/small/by_country.json"^^xsd:string ;
+    prov:time "2020-03-20T14:36:35.459719"^^xsd:dateTime ;
+    ns1:buffering "default"^^xsd:string ;
+    ns1:contentHashAfter "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"^^xsd:string ;
+    ns1:contentHashBefore "9672306cb4cf67afd9807ca3e2b87fb8c6badcbc"^^xsd:string .
+
+ns1:fileAccess4 a prov:Activity,
+        "w"^^xsd:string ;
+    prov:atLocation "/mnt/2A96E79A96E764B3/Universitaet/Bachelorarbeit/noworkflow/instances/small/overall.json"^^xsd:string ;
+    prov:time "2020-03-20T14:36:35.475263"^^xsd:dateTime ;
+    ns1:buffering "default"^^xsd:string ;
+    ns1:contentHashAfter "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"^^xsd:string ;
+    ns1:contentHashBefore "3a25b1ac895eb82cb071ff49dfeedd1ce07eeb41"^^xsd:string .
+
+ns1:trial5Prov a prov:Collection,
+        prov:Entity ;
+    rdfs:label "provenance collected by noworfklow"^^xsd:string ;
+    prov:hadMember ns1:trial5ExecutionProv .
+
+ns1:inst_s_py a prov:Agent,
+        prov:SoftwareAgent ;
+    ns1:codeHash "5b62cd5eaf5a0471ba9e42d435db8da0318755ce"^^xsd:string ;
+    ns1:id "5"^^xsd:int ;
+    ns1:script "inst_s.py"^^xsd:string .
+
+ns1:trial5Execution a prov:Activity ;
+    prov:endedAtTime "2020-03-20T14:36:35.483923"^^xsd:dateTime ;
+    prov:qualifiedAssociation ns1:trial5ExecutionByScript ;
+    prov:startedAtTime "2020-03-20T14:36:31.995122"^^xsd:dateTime ;
+    ns1:nowCommand "run inst_s.py data_medium.csv"^^xsd:string ;
+    ns1:parentId "4"^^xsd:int .
+
+ns1:trial5ExecutionByScript a prov:Association ;
+    prov:agent ns1:inst_s_py .
+
+ns1:trial5ExecutionProv prov:wasGeneratedBy ns1:trial5Execution .
+
