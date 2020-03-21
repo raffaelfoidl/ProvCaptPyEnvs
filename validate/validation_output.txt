@@ -1,0 +1,29 @@
+$ ./validate_prov-check 
+
+Found prov-check at ./prov-check-master/provcheck/provconstraints.py
+  No download necessary
+
+Start validation process...
+  checking files from ../sample_data
+1/21 (7 kB): ../sample_data/now_L_diff_environment-fileaccesses-modules.ttl True
+2/21 (102 kB): ../sample_data/now_L_provo_activations.ttl True
+3/21 (32 kB): ../sample_data/now_L_provo_definitions.ttl True
+4/21 (49 kB): ../sample_data/now_L_provo_environment.ttl True
+5/21 (18 kB): ../sample_data/now_L_provo_fileaccesses.ttl True
+6/21 (55 kB): ../sample_data/now_L_provo_modules.ttl True
+7/21 (6 kB): ../sample_data/now_M_diff_environment-fileaccesses-modules.ttl True
+8/21 (22 kB): ../sample_data/now_M_provo_activations.ttl True
+9/21 (18 kB): ../sample_data/now_M_provo_definitions.ttl True
+10/21 (49 kB): ../sample_data/now_M_provo_environment.ttl True
+11/21 (2 kB): ../sample_data/now_M_provo_fileaccesses.ttl True
+12/21 (418 kB): ../sample_data/now_M_provo_modules.ttl True
+13/21 (15 kB): ../sample_data/now_S_diff_environment-fileaccesses-modules.ttl True
+14/21 (1629 kB): ../sample_data/now_S_provo_activations.ttl True
+15/21 (24 kB): ../sample_data/now_S_provo_definitions.ttl True
+16/21 (49 kB): ../sample_data/now_S_provo_environment.ttl True
+17/21 (2 kB): ../sample_data/now_S_provo_fileaccesses.ttl True
+18/21 (56 kB): ../sample_data/now_S_provo_modules.ttl True
+19/21 (11 kB): ../sample_data/yw_L.ttl True
+20/21 (4 kB): ../sample_data/yw_M.ttl True
+21/21 (4 kB): ../sample_data/yw_S.ttl True
+Done.
