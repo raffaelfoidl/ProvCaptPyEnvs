@@ -27,20 +27,20 @@ yw:resource_summary__GEN__get_resource_summary a prov:Generation ;
 
 yw:resource_summary prov:qualifiedGeneration yw:resource_summary__GEN__get_resource_summary .
 
-yw:summary_plot__USE__inst_l.main a prov:Usage ;
-	prov:entity yw:summary_plot .
+yw:conflicts__USE__inst_l_main a prov:Usage ;
+	prov:entity yw:conflicts .
 
-yw:inst_l.main prov:qualifiedUsage yw:summary_plot__USE__inst_l.main .
+yw:inst_l_main prov:qualifiedUsage yw:conflicts__USE__inst_l_main .
 
 yw:res_summary_plot__GEN__persist_res_summary a prov:Generation ;
 	prov:activity yw:persist_res_summary .
 
 yw:res_summary_plot prov:qualifiedGeneration yw:res_summary_plot__GEN__persist_res_summary .
 
-yw:conflicts__USE__inst_l.main a prov:Usage ;
-	prov:entity yw:conflicts .
+yw:summary_plot__USE__inst_l_main a prov:Usage ;
+	prov:entity yw:summary_plot .
 
-yw:inst_l.main prov:qualifiedUsage yw:conflicts__USE__inst_l.main .
+yw:inst_l_main prov:qualifiedUsage yw:summary_plot__USE__inst_l_main .
 
 yw:res_conflicts__GEN__get_conflicts a prov:Generation ;
 	prov:activity yw:get_conflicts .
@@ -57,11 +57,6 @@ yw:concurrent_accesses_per_resource__USE__get_resource_summary a prov:Usage ;
 	prov:entity yw:concurrent_accesses_per_resource .
 
 yw:get_resource_summary prov:qualifiedUsage yw:concurrent_accesses_per_resource__USE__get_resource_summary .
-
-yw:pid__USE__inst_l.main a prov:Usage ;
-	prov:entity yw:pid .
-
-yw:inst_l.main prov:qualifiedUsage yw:pid__USE__inst_l.main .
 
 yw:concurrent_executions__USE__get_resource_info a prov:Usage ;
 	prov:entity yw:concurrent_executions .
@@ -81,16 +76,26 @@ yw:pid__USE__get_logs a prov:Usage ;
 
 yw:get_logs prov:qualifiedUsage yw:pid__USE__get_logs .
 
-yw:conflict_report__GEN__inst_l.main a prov:Generation ;
-	prov:activity yw:inst_l.main .
-
-yw:conflict_report prov:qualifiedGeneration yw:conflict_report__GEN__inst_l.main .
-
 yw:get_conflicts a prov:Activity ;
 	rdfs:label "determine write-write conflicts" .
 
+yw:traces__USE__inst_l_main a prov:Usage ;
+	prov:entity yw:traces .
+
+yw:inst_l_main prov:qualifiedUsage yw:traces__USE__inst_l_main .
+
 yw:get_resource_info a prov:Activity ;
 	rdfs:label "determine usage and resource conflict infos" .
+
+yw:frequency_plot__GEN__inst_l_main a prov:Generation ;
+	prov:activity yw:inst_l_main .
+
+yw:frequency_plot prov:qualifiedGeneration yw:frequency_plot__GEN__inst_l_main .
+
+yw:res_summary_plot__GEN__inst_l_main a prov:Generation ;
+	prov:activity yw:inst_l_main .
+
+yw:res_summary_plot prov:qualifiedGeneration yw:res_summary_plot__GEN__inst_l_main .
 
 yw:res_summary_csv__GEN__persist_res_summary a prov:Generation ;
 	prov:activity yw:persist_res_summary .
@@ -151,17 +156,12 @@ yw:res_conflicts__USE__persist_conflict_report a prov:Usage ;
 
 yw:persist_conflict_report prov:qualifiedUsage yw:res_conflicts__USE__persist_conflict_report .
 
-yw:res_summary_plot__GEN__inst_l.main a prov:Generation ;
-	prov:activity yw:inst_l.main .
-
-yw:res_summary_plot prov:qualifiedGeneration yw:res_summary_plot__GEN__inst_l.main .
-
 yw:conflicts_per_resource a prov:Entity .
 
-yw:traces__USE__inst_l.main a prov:Usage ;
-	prov:entity yw:traces .
+yw:conflict_report__GEN__inst_l_main a prov:Generation ;
+	prov:activity yw:inst_l_main .
 
-yw:inst_l.main prov:qualifiedUsage yw:traces__USE__inst_l.main .
+yw:conflict_report prov:qualifiedGeneration yw:conflict_report__GEN__inst_l_main .
 
 yw:concurrent_executions a prov:Entity .
 
@@ -195,25 +195,25 @@ yw:persist_res_summary prov:qualifiedUsage yw:resource_summary__USE__persist_res
 	a prov:Activity ;
 	rdfs:label "save resource summary as CSV file and plot" .
 
+yw:inst_l_main a prov:Activity .
+
 yw:total_runtime__GEN__get_process_runtime a prov:Generation ;
 	prov:activity yw:get_process_runtime .
 
 yw:total_runtime prov:qualifiedGeneration yw:total_runtime__GEN__get_process_runtime .
-
-yw:inst_l.main a prov:Activity .
 
 yw:frequency_plot__GEN__provide_data_info a prov:Generation ;
 	prov:activity yw:provide_data_info .
 
 yw:frequency_plot prov:qualifiedGeneration yw:frequency_plot__GEN__provide_data_info .
 
-yw:summary_csv a prov:Entity ;
-	rdfs:label "persistence path for csv summary" .
-
-yw:freqs__USE__inst_l.main a prov:Usage ;
+yw:freqs__USE__inst_l_main a prov:Usage ;
 	prov:entity yw:freqs .
 
-yw:inst_l.main prov:qualifiedUsage yw:freqs__USE__inst_l.main .
+yw:inst_l_main prov:qualifiedUsage yw:freqs__USE__inst_l_main .
+
+yw:summary_csv a prov:Entity ;
+	rdfs:label "persistence path for csv summary" .
 
 yw:data a prov:Entity .
 
@@ -221,11 +221,6 @@ yw:concurrent_executions__USE__get_conflicts a prov:Usage ;
 	prov:entity yw:concurrent_executions .
 
 yw:get_conflicts prov:qualifiedUsage yw:concurrent_executions__USE__get_conflicts .
-
-yw:res_summary_csv__GEN__inst_l.main a prov:Generation ;
-	prov:activity yw:inst_l.main .
-
-yw:res_summary_csv prov:qualifiedGeneration yw:res_summary_csv__GEN__inst_l.main .
 
 yw:pid__USE__persist_res_summary a prov:Usage ;
 	prov:entity yw:pid .
@@ -244,11 +239,6 @@ yw:pid_logs__GEN__get_logs a prov:Generation ;
 	prov:activity yw:get_logs .
 
 yw:pid_logs prov:qualifiedGeneration yw:pid_logs__GEN__get_logs .
-
-yw:frequency_plot__GEN__inst_l.main a prov:Generation ;
-	prov:activity yw:inst_l.main .
-
-yw:frequency_plot prov:qualifiedGeneration yw:frequency_plot__GEN__inst_l.main .
 
 yw:all_pids__USE__provide_data_info a prov:Usage ;
 	prov:entity yw:all_pids .
@@ -289,10 +279,10 @@ yw:persist_conflict_report prov:qualifiedUsage yw:total_runtime__USE__persist_co
 yw:load_data a prov:Activity ;
 	rdfs:label "read process trace logs" .
 
-yw:summary_csv__USE__inst_l.main a prov:Usage ;
+yw:summary_csv__USE__inst_l_main a prov:Usage ;
 	prov:entity yw:summary_csv .
 
-yw:inst_l.main prov:qualifiedUsage yw:summary_csv__USE__inst_l.main .
+yw:inst_l_main prov:qualifiedUsage yw:summary_csv__USE__inst_l_main .
 
 yw:pid_logs__USE__get_process_runtime a prov:Usage ;
 	prov:entity yw:pid_logs .
@@ -330,10 +320,20 @@ yw:conflicts__USE__get_resource_info a prov:Usage ;
 
 yw:get_resource_info prov:qualifiedUsage yw:conflicts__USE__get_resource_info .
 
+yw:res_summary_csv__GEN__inst_l_main a prov:Generation ;
+	prov:activity yw:inst_l_main .
+
+yw:res_summary_csv prov:qualifiedGeneration yw:res_summary_csv__GEN__inst_l_main .
+
 yw:conflict_report__GEN__persist_conflict_report a prov:Generation ;
 	prov:activity yw:persist_conflict_report .
 
 yw:conflict_report prov:qualifiedGeneration yw:conflict_report__GEN__persist_conflict_report .
+
+yw:pid__USE__inst_l_main a prov:Usage ;
+	prov:entity yw:pid .
+
+yw:inst_l_main prov:qualifiedUsage yw:pid__USE__inst_l_main .
 
 yw:avg_runtime__USE__persist_conflict_report a prov:Usage ;
 	prov:entity yw:avg_runtime .

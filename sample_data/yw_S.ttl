@@ -16,10 +16,10 @@ yw:data_by_country prov:qualifiedGeneration yw:data_by_country__GEN__group_data_
 yw:get_top_ten_overall a prov:Activity ;
 	rdfs:label "sort by wind speed, return first 10 items" .
 
-yw:summary_overall__GEN__inst_s.main a prov:Generation ;
-	prov:activity yw:inst_s.main .
+yw:summary_overall__GEN__inst_s_main a prov:Generation ;
+	prov:activity yw:inst_s_main .
 
-yw:summary_overall prov:qualifiedGeneration yw:summary_overall__GEN__inst_s.main .
+yw:summary_overall prov:qualifiedGeneration yw:summary_overall__GEN__inst_s_main .
 
 yw:data_parsed__GEN__read_file a prov:Generation ;
 	prov:activity yw:read_file .
@@ -30,6 +30,11 @@ yw:country_top_ten a prov:Entity .
 
 yw:data a prov:Entity ;
 	rdfs:label "CSV file with country, code, city, wind_speed as columns" .
+
+yw:summary_by_country__GEN__inst_s_main a prov:Generation ;
+	prov:activity yw:inst_s_main .
+
+yw:summary_by_country prov:qualifiedGeneration yw:summary_by_country__GEN__inst_s_main .
 
 yw:read_file a prov:Activity ;
 	rdfs:label "read CSV data as NamedTuple" .
@@ -69,16 +74,11 @@ yw:data__USE__read_file a prov:Usage ;
 
 yw:read_file prov:qualifiedUsage yw:data__USE__read_file .
 
-yw:data__USE__inst_s.main a prov:Usage ;
-	prov:entity yw:data .
-
-yw:inst_s.main prov:qualifiedUsage yw:data__USE__inst_s.main .
+yw:inst_s_main a prov:Activity ;
+	rdfs:label "Processes a list of wind speed measurements" .
 
 yw:summary_by_country a prov:Entity ;
 	rdfs:label "file:by_country.json" .
-
-yw:inst_s.main a prov:Activity ;
-	rdfs:label "Processes a list of wind speed measurements" .
 
 yw:summary_overall a prov:Entity ;
 	rdfs:label "file:overall.json" .
@@ -91,15 +91,15 @@ yw:summary_by_country__GEN__persist_top_ten_by_country a prov:Generation ;
 
 yw:summary_by_country prov:qualifiedGeneration yw:summary_by_country__GEN__persist_top_ten_by_country .
 
+yw:data__USE__inst_s_main a prov:Usage ;
+	prov:entity yw:data .
+
+yw:inst_s_main prov:qualifiedUsage yw:data__USE__inst_s_main .
+
 yw:summary_overall__GEN__persist_top_ten_overall a prov:Generation ;
 	prov:activity yw:persist_top_ten_overall .
 
 yw:summary_overall prov:qualifiedGeneration yw:summary_overall__GEN__persist_top_ten_overall .
-
-yw:summary_by_country__GEN__inst_s.main a prov:Generation ;
-	prov:activity yw:inst_s.main .
-
-yw:summary_by_country prov:qualifiedGeneration yw:summary_by_country__GEN__inst_s.main .
 
 yw:persist_top_ten_by_country a prov:Activity .
 
