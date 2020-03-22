@@ -18,8 +18,8 @@ WHERE {
    ?activity2 prov:qualifiedUsage ?usage .
  }
 
- # optional: exclude certain functions from being considered in output computation
- FILTER ( (?activity != yw:inst_s.main) )
+ # optional: exclude certain functions from output computation
+ FILTER ( (?activity != yw:inst_s_main) )
  
 }
 ORDER BY ?entity ?activity
