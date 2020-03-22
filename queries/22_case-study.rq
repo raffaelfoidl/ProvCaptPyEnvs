@@ -1,0 +1,28 @@
+#title:Get classification of wind speed measurements
+#comment:This is a simplified version of the very general query number 16 that determines input arguments and corresponding return values of function activations.\nThis query, however, is tailored to the function get_classification of the small test instance. It is used in order to examine its return values that have apparently become incorrect after a refactoring operation.
+#command:now provo -a --format turtle 1
+#tags:noworkflow,case-study,group
+#color:ex-red
+
+SELECT ?speed ?classification
+WHERE {
+ ?activation a prov:Activity, "functionActivation" ;
+             rdfs:label "get_classification" .
+			   
+ ?generation a prov:Generation ;
+             prov:activity ?activation .
+ 
+ ?retVal a prov:Entity, "returnValue" ;
+         prov:qualifiedGeneration ?generation ;
+         prov:value ?classification .
+   
+ ?activation prov:qualifiedUsage ?usage . 
+ ?usage a prov:Usage, "argumentActivation" ;
+        prov:hadRole "argument" ;
+        prov:entity ?argumentAct .
+   
+ ?argumentAct a prov:Entity, "argumentActivation" ;
+              prov:value ?speed .
+}
+GROUP BY ?classification ?speed
+

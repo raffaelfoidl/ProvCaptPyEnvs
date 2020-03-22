@@ -7,6 +7,7 @@ import locale
 from typing import List, NamedTuple, Tuple, Iterator, Any
 import argparse
 import PIL
+from collections import OrderedDict
 
 root, filename = os.path.split(__file__)
 by_country_path = os.path.join(root, "by_country.json")
@@ -44,27 +45,29 @@ def read_file(path: str) -> List[Entry]:
 
 
 def get_classification(speed: float) -> Tuple[float, str]:
-    global root
-    classes = {
-        (0, 0., 1.85): "Calm",
-        (1, 1.85, 7.41): "Light Airs",
-        (2, 7.41, 12.96): "Light breeze",
-        (3, 12.96, 20.37): "Gentle breeze",
-        (4, 20.37, 29.63): "Moderate breeze",
-        (5, 29.63, 40.74): "Fresh breeze",
-        (6, 40.74, 51.86): "Strong breeze",
-        (7, 51.86, 62.97): "Moderate (near) gale",
-        (8, 62.97, 75.93): "Fresh gale",
-        (9, 75.93, 88.9): "Strong or severe gale",
-        (10, 88.9, 103.71): "Whole gale or Storm",
-        (11, 103.71, 118.53): "Violent Storm",
-        (12, 118.53, 118.54): "Hurricane"
-    }
+    infinity = float("inf")
+    classes = OrderedDict([
+        ((0, 0.), "Calm"),
+        ((1, 1.85), "Light Airs"),
+        ((2, 7.41), "Light breeze"),
+        ((3, 12.96), "Gentle breeze"),
+        ((4, 20.37), "Moderate breeze"),
+        ((5, 29.63), "Fresh breeze"),
+        ((6, 40.74), "Strong breeze"),
+        ((7, 51.86), "Moderate (near) gale"),
+        ((8, 62.97), "Fresh gale"),
+        ((9, 75.93), "Strong or severe gale"),
+        ((10, 88.9), "Whole gale or Storm"),
+        ((11, 103.71), "Violent Storm"),
+        ((12, 118.53), "Hurricane"),
+        ((12, infinity), "Hurricane")
+    ])
 
-    speed = min(118.54, speed)
-    for level, lower, upper in classes:
-        if lower < speed <= upper:
-            return level, classes[(level, lower, upper)]
+    items = list(classes.keys())
+    for i, (level, lower) in enumerate(items[:-1]):
+        _, lower_next = items[i + 1]
+        if lower < speed <= lower_next:
+            return level, classes[(level, lower)]
     return -1, "unknown"
 
 
