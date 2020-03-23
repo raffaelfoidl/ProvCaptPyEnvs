@@ -15,6 +15,15 @@
 	<prov:qualifiedGeneration rdf:resource="http://yesworkflow.org/diff_file__GEN__save_diff_image"/>
 </rdf:Description>
 
+<rdf:Description rdf:about="http://yesworkflow.org/diff__USE__inst_m_main">
+	<rdf:type rdf:resource="http://www.w3.org/ns/prov#Usage"/>
+	<prov:entity rdf:resource="http://yesworkflow.org/diff"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/inst_m_main">
+	<prov:qualifiedUsage rdf:resource="http://yesworkflow.org/diff__USE__inst_m_main"/>
+</rdf:Description>
+
 <rdf:Description rdf:about="http://yesworkflow.org/diff__USE__save_diff_image">
 	<rdf:type rdf:resource="http://www.w3.org/ns/prov#Usage"/>
 	<prov:entity rdf:resource="http://yesworkflow.org/diff"/>
@@ -46,22 +55,13 @@
 	<prov:qualifiedGeneration rdf:resource="http://yesworkflow.org/out_file__GEN__save_out_file"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://yesworkflow.org/output_path__USE__inst_m.main">
+<rdf:Description rdf:about="http://yesworkflow.org/output_path__USE__inst_m_main">
 	<rdf:type rdf:resource="http://www.w3.org/ns/prov#Usage"/>
 	<prov:entity rdf:resource="http://yesworkflow.org/output_path"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://yesworkflow.org/inst_m.main">
-	<prov:qualifiedUsage rdf:resource="http://yesworkflow.org/output_path__USE__inst_m.main"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://yesworkflow.org/diff__USE__inst_m.main">
-	<rdf:type rdf:resource="http://www.w3.org/ns/prov#Usage"/>
-	<prov:entity rdf:resource="http://yesworkflow.org/diff"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://yesworkflow.org/inst_m.main">
-	<prov:qualifiedUsage rdf:resource="http://yesworkflow.org/diff__USE__inst_m.main"/>
+<rdf:Description rdf:about="http://yesworkflow.org/inst_m_main">
+	<prov:qualifiedUsage rdf:resource="http://yesworkflow.org/output_path__USE__inst_m_main"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://yesworkflow.org/output_path__USE__save_out_file">
@@ -91,15 +91,6 @@
 	<prov:qualifiedUsage rdf:resource="http://yesworkflow.org/diff_image__USE__save_diff_image"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://yesworkflow.org/input_path__USE__inst_m.main">
-	<rdf:type rdf:resource="http://www.w3.org/ns/prov#Usage"/>
-	<prov:entity rdf:resource="http://yesworkflow.org/input_path"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://yesworkflow.org/inst_m.main">
-	<prov:qualifiedUsage rdf:resource="http://yesworkflow.org/input_path__USE__inst_m.main"/>
-</rdf:Description>
-
 <rdf:Description rdf:about="http://yesworkflow.org/input_path">
 	<rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
 	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">input file</rdfs:label>
@@ -119,13 +110,22 @@
 	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">persist image with color differences</rdfs:label>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://yesworkflow.org/sigma__USE__inst_m.main">
-	<rdf:type rdf:resource="http://www.w3.org/ns/prov#Usage"/>
-	<prov:entity rdf:resource="http://yesworkflow.org/sigma"/>
+<rdf:Description rdf:about="http://yesworkflow.org/out_file__GEN__inst_m_main">
+	<rdf:type rdf:resource="http://www.w3.org/ns/prov#Generation"/>
+	<prov:activity rdf:resource="http://yesworkflow.org/inst_m_main"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://yesworkflow.org/inst_m.main">
-	<prov:qualifiedUsage rdf:resource="http://yesworkflow.org/sigma__USE__inst_m.main"/>
+<rdf:Description rdf:about="http://yesworkflow.org/out_file">
+	<prov:qualifiedGeneration rdf:resource="http://yesworkflow.org/out_file__GEN__inst_m_main"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/diff_file__GEN__inst_m_main">
+	<rdf:type rdf:resource="http://www.w3.org/ns/prov#Generation"/>
+	<prov:activity rdf:resource="http://yesworkflow.org/inst_m_main"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/diff_file">
+	<prov:qualifiedGeneration rdf:resource="http://yesworkflow.org/diff_file__GEN__inst_m_main"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://yesworkflow.org/input_path__USE__read_input">
@@ -203,14 +203,14 @@
 	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sigma for gauss filter</rdfs:label>
 </rdf:Description>
 
+<rdf:Description rdf:about="http://yesworkflow.org/inst_m_main">
+	<rdf:type rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Blurs an image and computes the differences to the original</rdfs:label>
+</rdf:Description>
+
 <rdf:Description rdf:about="http://yesworkflow.org/output_path">
 	<rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
 	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">output image file path</rdfs:label>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://yesworkflow.org/inst_m.main">
-	<rdf:type rdf:resource="http://www.w3.org/ns/prov#Activity"/>
-	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Blurs an image and computes the differences to the original</rdfs:label>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://yesworkflow.org/calculate_differences">
@@ -218,6 +218,15 @@
 	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">compute color differences in pixels</rdfs:label>
 	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">log_diff_image: {percentage} % done</rdfs:label>
 	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">log_diff_image: Done calculating</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/input_path__USE__inst_m_main">
+	<rdf:type rdf:resource="http://www.w3.org/ns/prov#Usage"/>
+	<prov:entity rdf:resource="http://yesworkflow.org/input_path"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/inst_m_main">
+	<prov:qualifiedUsage rdf:resource="http://yesworkflow.org/input_path__USE__inst_m_main"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://yesworkflow.org/diff_file">
@@ -234,26 +243,17 @@
 	<prov:qualifiedUsage rdf:resource="http://yesworkflow.org/sigma__USE__apply_gauss"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://yesworkflow.org/out_file__GEN__inst_m.main">
-	<rdf:type rdf:resource="http://www.w3.org/ns/prov#Generation"/>
-	<prov:activity rdf:resource="http://yesworkflow.org/inst_m.main"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://yesworkflow.org/out_file">
-	<prov:qualifiedGeneration rdf:resource="http://yesworkflow.org/out_file__GEN__inst_m.main"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://yesworkflow.org/diff_file__GEN__inst_m.main">
-	<rdf:type rdf:resource="http://www.w3.org/ns/prov#Generation"/>
-	<prov:activity rdf:resource="http://yesworkflow.org/inst_m.main"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://yesworkflow.org/diff_file">
-	<prov:qualifiedGeneration rdf:resource="http://yesworkflow.org/diff_file__GEN__inst_m.main"/>
-</rdf:Description>
-
 <rdf:Description rdf:about="http://yesworkflow.org/input_file">
 	<rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/sigma__USE__inst_m_main">
+	<rdf:type rdf:resource="http://www.w3.org/ns/prov#Usage"/>
+	<prov:entity rdf:resource="http://yesworkflow.org/sigma"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yesworkflow.org/inst_m_main">
+	<prov:qualifiedUsage rdf:resource="http://yesworkflow.org/sigma__USE__inst_m_main"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://yesworkflow.org/out_file">

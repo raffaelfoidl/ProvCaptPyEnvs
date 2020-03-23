@@ -17,17 +17,17 @@
         <prov:entity prov:ref="yw:resource__summary"/>
         <prov:activity prov:ref="yw:get__resource__summary"/>
     </prov:wasGeneratedBy>
-    <prov:used prov:id="yw:summary__plot____USE____inst__l.main">
-        <prov:activity prov:ref="yw:inst__l.main"/>
-        <prov:entity prov:ref="yw:summary__plot"/>
+    <prov:used prov:id="yw:conflicts____USE____inst__l__main">
+        <prov:activity prov:ref="yw:inst__l__main"/>
+        <prov:entity prov:ref="yw:conflicts"/>
     </prov:used>
     <prov:wasGeneratedBy prov:id="yw:res__summary__plot____GEN____persist__res__summary">
         <prov:entity prov:ref="yw:res__summary__plot"/>
         <prov:activity prov:ref="yw:persist__res__summary"/>
     </prov:wasGeneratedBy>
-    <prov:used prov:id="yw:conflicts____USE____inst__l.main">
-        <prov:activity prov:ref="yw:inst__l.main"/>
-        <prov:entity prov:ref="yw:conflicts"/>
+    <prov:used prov:id="yw:summary__plot____USE____inst__l__main">
+        <prov:activity prov:ref="yw:inst__l__main"/>
+        <prov:entity prov:ref="yw:summary__plot"/>
     </prov:used>
     <prov:wasGeneratedBy prov:id="yw:res__conflicts____GEN____get__conflicts">
         <prov:entity prov:ref="yw:res__conflicts"/>
@@ -42,10 +42,6 @@
     <prov:used prov:id="yw:concurrent__accesses__per__resource____USE____get__resource__summary">
         <prov:activity prov:ref="yw:get__resource__summary"/>
         <prov:entity prov:ref="yw:concurrent__accesses__per__resource"/>
-    </prov:used>
-    <prov:used prov:id="yw:pid____USE____inst__l.main">
-        <prov:activity prov:ref="yw:inst__l.main"/>
-        <prov:entity prov:ref="yw:pid"/>
     </prov:used>
     <prov:used prov:id="yw:concurrent__executions____USE____get__resource__info">
         <prov:activity prov:ref="yw:get__resource__info"/>
@@ -62,16 +58,24 @@
         <prov:activity prov:ref="yw:get__logs"/>
         <prov:entity prov:ref="yw:pid"/>
     </prov:used>
-    <prov:wasGeneratedBy prov:id="yw:conflict__report____GEN____inst__l.main">
-        <prov:entity prov:ref="yw:conflict__report"/>
-        <prov:activity prov:ref="yw:inst__l.main"/>
-    </prov:wasGeneratedBy>
     <prov:activity prov:id="yw:get__conflicts">
         <prov:label>determine write-write conflicts</prov:label>
     </prov:activity>
+    <prov:used prov:id="yw:traces____USE____inst__l__main">
+        <prov:activity prov:ref="yw:inst__l__main"/>
+        <prov:entity prov:ref="yw:traces"/>
+    </prov:used>
     <prov:activity prov:id="yw:get__resource__info">
         <prov:label>determine usage and resource conflict infos</prov:label>
     </prov:activity>
+    <prov:wasGeneratedBy prov:id="yw:frequency__plot____GEN____inst__l__main">
+        <prov:entity prov:ref="yw:frequency__plot"/>
+        <prov:activity prov:ref="yw:inst__l__main"/>
+    </prov:wasGeneratedBy>
+    <prov:wasGeneratedBy prov:id="yw:res__summary__plot____GEN____inst__l__main">
+        <prov:entity prov:ref="yw:res__summary__plot"/>
+        <prov:activity prov:ref="yw:inst__l__main"/>
+    </prov:wasGeneratedBy>
     <prov:wasGeneratedBy prov:id="yw:res__summary__csv____GEN____persist__res__summary">
         <prov:entity prov:ref="yw:res__summary__csv"/>
         <prov:activity prov:ref="yw:persist__res__summary"/>
@@ -118,15 +122,11 @@
         <prov:activity prov:ref="yw:persist__conflict__report"/>
         <prov:entity prov:ref="yw:res__conflicts"/>
     </prov:used>
-    <prov:wasGeneratedBy prov:id="yw:res__summary__plot____GEN____inst__l.main">
-        <prov:entity prov:ref="yw:res__summary__plot"/>
-        <prov:activity prov:ref="yw:inst__l.main"/>
-    </prov:wasGeneratedBy>
     <prov:entity prov:id="yw:conflicts__per__resource"/>
-    <prov:used prov:id="yw:traces____USE____inst__l.main">
-        <prov:activity prov:ref="yw:inst__l.main"/>
-        <prov:entity prov:ref="yw:traces"/>
-    </prov:used>
+    <prov:wasGeneratedBy prov:id="yw:conflict__report____GEN____inst__l__main">
+        <prov:entity prov:ref="yw:conflict__report"/>
+        <prov:activity prov:ref="yw:inst__l__main"/>
+    </prov:wasGeneratedBy>
     <prov:entity prov:id="yw:concurrent__executions"/>
     <prov:wasGeneratedBy prov:id="yw:data____GEN____load__data">
         <prov:entity prov:ref="yw:data"/>
@@ -154,31 +154,27 @@
     <prov:activity prov:id="yw:persist__res__summary">
         <prov:label>save resource summary as CSV file and plot</prov:label>
     </prov:activity>
+    <prov:activity prov:id="yw:inst__l__main"/>
     <prov:wasGeneratedBy prov:id="yw:total__runtime____GEN____get__process__runtime">
         <prov:entity prov:ref="yw:total__runtime"/>
         <prov:activity prov:ref="yw:get__process__runtime"/>
     </prov:wasGeneratedBy>
-    <prov:activity prov:id="yw:inst__l.main"/>
     <prov:wasGeneratedBy prov:id="yw:frequency__plot____GEN____provide__data__info">
         <prov:entity prov:ref="yw:frequency__plot"/>
         <prov:activity prov:ref="yw:provide__data__info"/>
     </prov:wasGeneratedBy>
+    <prov:used prov:id="yw:freqs____USE____inst__l__main">
+        <prov:activity prov:ref="yw:inst__l__main"/>
+        <prov:entity prov:ref="yw:freqs"/>
+    </prov:used>
     <prov:entity prov:id="yw:summary__csv">
         <prov:label>persistence path for csv summary</prov:label>
     </prov:entity>
-    <prov:used prov:id="yw:freqs____USE____inst__l.main">
-        <prov:activity prov:ref="yw:inst__l.main"/>
-        <prov:entity prov:ref="yw:freqs"/>
-    </prov:used>
     <prov:entity prov:id="yw:data"/>
     <prov:used prov:id="yw:concurrent__executions____USE____get__conflicts">
         <prov:activity prov:ref="yw:get__conflicts"/>
         <prov:entity prov:ref="yw:concurrent__executions"/>
     </prov:used>
-    <prov:wasGeneratedBy prov:id="yw:res__summary__csv____GEN____inst__l.main">
-        <prov:entity prov:ref="yw:res__summary__csv"/>
-        <prov:activity prov:ref="yw:inst__l.main"/>
-    </prov:wasGeneratedBy>
     <prov:used prov:id="yw:pid____USE____persist__res__summary">
         <prov:activity prov:ref="yw:persist__res__summary"/>
         <prov:entity prov:ref="yw:pid"/>
@@ -193,10 +189,6 @@
     <prov:wasGeneratedBy prov:id="yw:pid__logs____GEN____get__logs">
         <prov:entity prov:ref="yw:pid__logs"/>
         <prov:activity prov:ref="yw:get__logs"/>
-    </prov:wasGeneratedBy>
-    <prov:wasGeneratedBy prov:id="yw:frequency__plot____GEN____inst__l.main">
-        <prov:entity prov:ref="yw:frequency__plot"/>
-        <prov:activity prov:ref="yw:inst__l.main"/>
     </prov:wasGeneratedBy>
     <prov:used prov:id="yw:all__pids____USE____provide__data__info">
         <prov:activity prov:ref="yw:provide__data__info"/>
@@ -231,8 +223,8 @@
     <prov:activity prov:id="yw:load__data">
         <prov:label>read process trace logs</prov:label>
     </prov:activity>
-    <prov:used prov:id="yw:summary__csv____USE____inst__l.main">
-        <prov:activity prov:ref="yw:inst__l.main"/>
+    <prov:used prov:id="yw:summary__csv____USE____inst__l__main">
+        <prov:activity prov:ref="yw:inst__l__main"/>
         <prov:entity prov:ref="yw:summary__csv"/>
     </prov:used>
     <prov:used prov:id="yw:pid__logs____USE____get__process__runtime">
@@ -265,10 +257,18 @@
         <prov:activity prov:ref="yw:get__resource__info"/>
         <prov:entity prov:ref="yw:conflicts"/>
     </prov:used>
+    <prov:wasGeneratedBy prov:id="yw:res__summary__csv____GEN____inst__l__main">
+        <prov:entity prov:ref="yw:res__summary__csv"/>
+        <prov:activity prov:ref="yw:inst__l__main"/>
+    </prov:wasGeneratedBy>
     <prov:wasGeneratedBy prov:id="yw:conflict__report____GEN____persist__conflict__report">
         <prov:entity prov:ref="yw:conflict__report"/>
         <prov:activity prov:ref="yw:persist__conflict__report"/>
     </prov:wasGeneratedBy>
+    <prov:used prov:id="yw:pid____USE____inst__l__main">
+        <prov:activity prov:ref="yw:inst__l__main"/>
+        <prov:entity prov:ref="yw:pid"/>
+    </prov:used>
     <prov:used prov:id="yw:avg__runtime____USE____persist__conflict__report">
         <prov:activity prov:ref="yw:persist__conflict__report"/>
         <prov:entity prov:ref="yw:avg__runtime"/>

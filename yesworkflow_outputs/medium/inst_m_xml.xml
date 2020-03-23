@@ -4,6 +4,10 @@
         <prov:entity prov:ref="yw:diff__file"/>
         <prov:activity prov:ref="yw:save__diff__image"/>
     </prov:wasGeneratedBy>
+    <prov:used prov:id="yw:diff____USE____inst__m__main">
+        <prov:activity prov:ref="yw:inst__m__main"/>
+        <prov:entity prov:ref="yw:diff"/>
+    </prov:used>
     <prov:used prov:id="yw:diff____USE____save__diff__image">
         <prov:activity prov:ref="yw:save__diff__image"/>
         <prov:entity prov:ref="yw:diff"/>
@@ -17,13 +21,9 @@
         <prov:entity prov:ref="yw:out__file"/>
         <prov:activity prov:ref="yw:save__out__file"/>
     </prov:wasGeneratedBy>
-    <prov:used prov:id="yw:output__path____USE____inst__m.main">
-        <prov:activity prov:ref="yw:inst__m.main"/>
+    <prov:used prov:id="yw:output__path____USE____inst__m__main">
+        <prov:activity prov:ref="yw:inst__m__main"/>
         <prov:entity prov:ref="yw:output__path"/>
-    </prov:used>
-    <prov:used prov:id="yw:diff____USE____inst__m.main">
-        <prov:activity prov:ref="yw:inst__m.main"/>
-        <prov:entity prov:ref="yw:diff"/>
     </prov:used>
     <prov:used prov:id="yw:output__path____USE____save__out__file">
         <prov:activity prov:ref="yw:save__out__file"/>
@@ -37,10 +37,6 @@
         <prov:activity prov:ref="yw:save__diff__image"/>
         <prov:entity prov:ref="yw:diff__image"/>
     </prov:used>
-    <prov:used prov:id="yw:input__path____USE____inst__m.main">
-        <prov:activity prov:ref="yw:inst__m.main"/>
-        <prov:entity prov:ref="yw:input__path"/>
-    </prov:used>
     <prov:entity prov:id="yw:input__path">
         <prov:label>input file</prov:label>
     </prov:entity>
@@ -51,10 +47,14 @@
     <prov:activity prov:id="yw:save__diff__image">
         <prov:label>persist image with color differences</prov:label>
     </prov:activity>
-    <prov:used prov:id="yw:sigma____USE____inst__m.main">
-        <prov:activity prov:ref="yw:inst__m.main"/>
-        <prov:entity prov:ref="yw:sigma"/>
-    </prov:used>
+    <prov:wasGeneratedBy prov:id="yw:out__file____GEN____inst__m__main">
+        <prov:entity prov:ref="yw:out__file"/>
+        <prov:activity prov:ref="yw:inst__m__main"/>
+    </prov:wasGeneratedBy>
+    <prov:wasGeneratedBy prov:id="yw:diff__file____GEN____inst__m__main">
+        <prov:entity prov:ref="yw:diff__file"/>
+        <prov:activity prov:ref="yw:inst__m__main"/>
+    </prov:wasGeneratedBy>
     <prov:used prov:id="yw:input__path____USE____read__input">
         <prov:activity prov:ref="yw:read__input"/>
         <prov:entity prov:ref="yw:input__path"/>
@@ -92,17 +92,21 @@
     <prov:entity prov:id="yw:sigma">
         <prov:label>sigma for gauss filter</prov:label>
     </prov:entity>
+    <prov:activity prov:id="yw:inst__m__main">
+        <prov:label>Blurs an image and computes the differences to the original</prov:label>
+    </prov:activity>
     <prov:entity prov:id="yw:output__path">
         <prov:label>output image file path</prov:label>
     </prov:entity>
-    <prov:activity prov:id="yw:inst__m.main">
-        <prov:label>Blurs an image and computes the differences to the original</prov:label>
-    </prov:activity>
     <prov:activity prov:id="yw:calculate__differences">
         <prov:label>compute color differences in pixels</prov:label>
         <prov:label>log_diff_image: {percentage} % done</prov:label>
         <prov:label>log_diff_image: Done calculating</prov:label>
     </prov:activity>
+    <prov:used prov:id="yw:input__path____USE____inst__m__main">
+        <prov:activity prov:ref="yw:inst__m__main"/>
+        <prov:entity prov:ref="yw:input__path"/>
+    </prov:used>
     <prov:entity prov:id="yw:diff__file">
         <prov:label>file:{diff}</prov:label>
     </prov:entity>
@@ -110,15 +114,11 @@
         <prov:activity prov:ref="yw:apply__gauss"/>
         <prov:entity prov:ref="yw:sigma"/>
     </prov:used>
-    <prov:wasGeneratedBy prov:id="yw:out__file____GEN____inst__m.main">
-        <prov:entity prov:ref="yw:out__file"/>
-        <prov:activity prov:ref="yw:inst__m.main"/>
-    </prov:wasGeneratedBy>
-    <prov:wasGeneratedBy prov:id="yw:diff__file____GEN____inst__m.main">
-        <prov:entity prov:ref="yw:diff__file"/>
-        <prov:activity prov:ref="yw:inst__m.main"/>
-    </prov:wasGeneratedBy>
     <prov:entity prov:id="yw:input__file"/>
+    <prov:used prov:id="yw:sigma____USE____inst__m__main">
+        <prov:activity prov:ref="yw:inst__m__main"/>
+        <prov:entity prov:ref="yw:sigma"/>
+    </prov:used>
     <prov:entity prov:id="yw:out__file">
         <prov:label>file:{out}</prov:label>
     </prov:entity>
