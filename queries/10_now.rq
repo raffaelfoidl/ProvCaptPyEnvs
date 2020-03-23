@@ -11,14 +11,14 @@ WHERE {
          ns1:script ?script_file .
   
  ?execution a prov:Activity ;
-			prov:qualifiedAssociation ?execAssociation .
+            prov:qualifiedAssociation ?execAssociation .
   
  ?execAssociation a prov:Association ;
-				  prov:agent ?script .
+                  prov:agent ?script .
   
  ?execution prov:endedAtTime ?end_time ;
-			prov:startedAtTime ?start_time ;
-			ns1:nowCommand ?command ;
+            prov:startedAtTime ?start_time ;
+            ns1:nowCommand ?command ;
   
  OPTIONAL { ?execution ns1:parentId ?parent } .
 

@@ -7,11 +7,11 @@
 SELECT ?name ?version ?path ?code_hash
 WHERE {
  ?removed_dep a prov:Entity, "moduleDependency" ;
-			  rdfs:label ?name ;
-			  prov:qualifiedInvalidation ?removal .
+              rdfs:label ?name ;
+              prov:qualifiedInvalidation ?removal .
  
  ?removal a prov:Invalidation ;
-		  prov:hadRole "dependencyRemoval" .
+          prov:hadRole "dependencyRemoval" .
  
  OPTIONAL { ?removed_dep ns1:version ?version_ . }
  OPTIONAL { ?removed_dep prov:atLocation ?path_ . }

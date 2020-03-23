@@ -7,10 +7,10 @@
 SELECT ?attribute_name ?attribute_value
 WHERE {
  ?attributes a prov:Collection ;
-			 prov:hadMember ?attribute .
+             prov:hadMember ?attribute .
  ?attribute a prov:Entity,
-			  "environmentAttribute" ;
-			rdfs:label ?attribute_name ;
-			prov:value ?attribute_value .
+              "environmentAttribute" ;
+            rdfs:label ?attribute_name ;
+            prov:value ?attribute_value .
 }
 ORDER BY ?attribute_name

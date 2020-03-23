@@ -7,29 +7,29 @@
 SELECT ?activation ?line_called ?start_time ?end_time (GROUP_CONCAT(CONCAT("{", UCASE(?argument_name), " = ", ?argument_value, "}"); separator = ", ") AS ?args) ?return_value
 WHERE {
  ?activation a prov:Activity, "functionActivation" ;
-			 rdfs:label "get_classification" ; # change desired function name here
-			 prov:startedAtTime ?start_time ;
-			 prov:endedAtTime ?end_time ;
-			 ns1:line ?line_called .
+             rdfs:label "get_classification" ; # change desired function name here
+             prov:startedAtTime ?start_time ;
+             prov:endedAtTime ?end_time ;
+             ns1:line ?line_called .
 			   
  OPTIONAL {
   ?generation a prov:Generation ;
-			  prov:activity ?activation .
+              prov:activity ?activation .
  
   ?retVal a prov:Entity, "returnValue" ;
-		  prov:qualifiedGeneration ?generation ;
-		  prov:value ?return_value .
+          prov:qualifiedGeneration ?generation ;
+          prov:value ?return_value .
  }
    
  OPTIONAL {
    ?activation prov:qualifiedUsage ?usage . 
    ?usage a prov:Usage, "argumentActivation" ;
-		prov:hadRole "argument" ;
-		prov:entity ?argumentAct .
-   
+          prov:hadRole "argument" ;
+          prov:entity ?argumentAct .
+
    ?argumentAct a prov:Entity, "argumentActivation" ;
-	            rdfs:label ?argument_name ;
-			    prov:value ?argument_value .
+                rdfs:label ?argument_name ;
+                prov:value ?argument_value .
  }
  
 }

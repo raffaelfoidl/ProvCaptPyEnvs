@@ -7,17 +7,17 @@
 SELECT ?calling_function (COUNT(?called_function) AS ?called_count) (GROUP_CONCAT(?called_function; separator=", ") AS ?called_functions)
 WHERE {
  ?func a prov:Activity ,
-		 "functionDefinition" ;
-	   rdfs:label ?calling_function . # change desired function here (e. g. hardcoded)
+         "functionDefinition" ;
+       rdfs:label ?calling_function . # change desired function here (e. g. hardcoded)
   
  ?call a prov:Communication,
-		 "callDefinition" ;
-	   prov:activity ?func .
+         "callDefinition" ;
+       prov:activity ?func .
 		 
  ?callDef a prov:Activity,
-			"callDefinition" ;
-		  rdfs:label ?called_function ;
-		  prov:qualifiedCommunication ?call .
+            "callDefinition" ;
+          rdfs:label ?called_function ;
+          prov:qualifiedCommunication ?call .
 }
 GROUP BY ?calling_function
 ORDER BY ?calling_function

@@ -7,10 +7,10 @@
 SELECT ?module_name ?version ?path ?code_hash
 WHERE {
  ?modules a prov:Collection ;
-			prov:hadMember ?module .
+          prov:hadMember ?module .
  ?module a prov:Entity,
-			  "moduleDependency" ;
-			rdfs:label ?module_name .
+           "moduleDependency" ;
+         rdfs:label ?module_name .
  
  OPTIONAL { ?module ns1:version ?version_ . }
  OPTIONAL { ?module prov:atLocation ?path_ . }

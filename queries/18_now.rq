@@ -1,25 +1,25 @@
 #title:Get function activations that influenced an output parameter
 #comment:This query selects all functions that were involved in the generation of a specific, configurable  output parameter (return value).\nThe result contains all function activations in this property path (until the root activity is reached), along with function name, depth (i. e. depth(root) == 1), start and end time.
 #command:now provo -a --format turtle 7
-#tags:noworkflow,order,alias,property path,desc,provo
+#tags:noworkflow,order,alias,property path,desc,provo,distinct
 #color:ex-green
 
-SELECT (?destination AS ?function_activation) ?function_name ?depth ?line ?start_time ?end_time
+SELECT DISTINCT (?destination AS ?function_activation) ?function_name ?depth ?line ?start_time ?end_time
 WHERE {
  # desired return value (= starting point for property path) can be set here
  ns1:funcAct168ReturnValue a prov:Entity, "returnValue" ;
-						   prov:value ?value ;
-						   prov:qualifiedGeneration ?generation .
+                           prov:value ?value ;
+                           prov:qualifiedGeneration ?generation .
  
  ?generation a prov:Generation ;
-			 prov:activity ?origin .
+             prov:activity ?origin .
 
  # go along "informed-by-path" until top activity (typically script itself) is reached
  ?origin (prov:qualifiedCommunication/prov:activity)* ?destination .
  ?destination ns1:depth ?depth ;
-			  ns1:line ?line ;
-			  prov:startedAtTime ?start_time ;
-			  rdfs:label ?function_name ;
-			  prov:endedAtTime ?end_time .
+              ns1:line ?line ;
+              prov:startedAtTime ?start_time ;
+              rdfs:label ?function_name ;
+              prov:endedAtTime ?end_time .
 }
 ORDER BY DESC(?depth)

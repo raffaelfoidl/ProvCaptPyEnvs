@@ -7,9 +7,9 @@
 SELECT ?file ?mode ?time ?hash_before ?hash_after
 WHERE {
  ?file_access a prov:Activity,
-				?mode ;
-			  prov:atLocation ?file ;
-			  prov:time ?time .
+                ?mode ;
+              prov:atLocation ?file ;
+              prov:time ?time .
  OPTIONAL {	?file_access ns1:contentHashBefore ?hash_before; }
  OPTIONAL { ?file_access ns1:contentHashAfter ?hash_after . }
  FILTER (?mode != prov:Activity)

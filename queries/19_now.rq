@@ -18,8 +18,8 @@ WHERE {
                    prov:agent ?script1 .
   
  ?execution1 prov:endedAtTime ?end_time1 ;
-			 prov:startedAtTime ?start_time1 ;
-			 ns1:nowCommand ?command1 ;
+             prov:startedAtTime ?start_time1 ;
+             ns1:nowCommand ?command1 ;
   
  OPTIONAL { ?execution1 ns1:parentId ?parent1 } .
  BIND(COALESCE(?parent1, "<none>") AS ?parent_trial1) .
@@ -30,14 +30,14 @@ WHERE {
           ns1:script ?script_file2 .
   
  ?execution2 a prov:Activity ;
-		     prov:qualifiedAssociation ?execAssociation2 .
+             prov:qualifiedAssociation ?execAssociation2 .
   
  ?execAssociation2 a prov:Association ;
-				   prov:agent ?script2 .
+                   prov:agent ?script2 .
   
  ?execution2 prov:endedAtTime ?end_time2 ;
-			 prov:startedAtTime ?start_time2 ;
-			 ns1:nowCommand ?command2 ;
+             prov:startedAtTime ?start_time2 ;
+             ns1:nowCommand ?command2 ;
   
  OPTIONAL { ?execution2 ns1:parentId ?parent2 } .
 

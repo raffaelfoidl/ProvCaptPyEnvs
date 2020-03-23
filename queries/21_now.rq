@@ -7,17 +7,17 @@
 SELECT ?name ?old_id ?old_value ?new_id ?new_value
 WHERE {
  ?addedAttr a prov:Entity, "environmentAttribute" ;
-			rdfs:label ?name ;
-			prov:qualifiedRevision ?revisionNode ;
-			prov:value ?new_value ;
-			ns1:id ?new_id .
+            rdfs:label ?name ;
+            prov:qualifiedRevision ?revisionNode ;
+            prov:value ?new_value ;
+            ns1:id ?new_id .
   
  ?revisionNode a prov:Revision, "environmentAttributeReplacement" ;
-			   prov:entity ?removedAttr .
+               prov:entity ?removedAttr .
   
  ?removedAttr a prov:Entity, "environmentAttribute" ;
-			  prov:value ?old_value ;
-			  ns1:id ?old_id .
+              prov:value ?old_value ;
+              ns1:id ?old_id .
 				 
 }
 ORDER BY ?name
