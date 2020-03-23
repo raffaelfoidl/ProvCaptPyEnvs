@@ -1,9 +1,7 @@
 [
   {
-    "rank": 1,
-    "avg_wind_speed": 124.94999999999999,
-    "country": "Saint Lucia",
     "country_code": "LC",
+    "avg_wind_speed": 124.94999999999999,
     "entries": [
       {
         "city": "Soufri\u00e8re",
@@ -14,13 +12,13 @@
         "speed": "124.3"
       }
     ],
-    "classification": "Hurricane (level 12)"
+    "rank": 1,
+    "classification": "Hurricane (level 12)",
+    "country": "Saint Lucia"
   },
   {
-    "rank": 2,
-    "avg_wind_speed": 120.65,
-    "country": "Reunion",
     "country_code": "RE",
+    "avg_wind_speed": 120.65,
     "entries": [
       {
         "city": "Saint-Denis",
@@ -39,39 +37,39 @@
         "speed": "115.3"
       }
     ],
-    "classification": "Hurricane (level 12)"
+    "rank": 2,
+    "classification": "Hurricane (level 12)",
+    "country": "Reunion"
   },
   {
-    "rank": 3,
-    "avg_wind_speed": 117.3,
-    "country": "San Marino",
     "country_code": "SM",
+    "avg_wind_speed": 117.3,
     "entries": [
       {
         "city": "Serravalle",
         "speed": "117.3"
       }
     ],
-    "classification": "Violent Storm (level 11)"
+    "rank": 3,
+    "classification": "Violent Storm (level 11)",
+    "country": "San Marino"
   },
   {
-    "rank": 4,
-    "avg_wind_speed": 114.4,
-    "country": "Saint Vincent and the Grenadines",
     "country_code": "VC",
+    "avg_wind_speed": 114.4,
     "entries": [
       {
         "city": "Byera Village",
         "speed": "114.4"
       }
     ],
-    "classification": "Violent Storm (level 11)"
+    "rank": 4,
+    "classification": "Violent Storm (level 11)",
+    "country": "Saint Vincent and the Grenadines"
   },
   {
-    "rank": 5,
-    "avg_wind_speed": 111.69999999999999,
-    "country": "Samoa",
     "country_code": "WS",
+    "avg_wind_speed": 111.69999999999999,
     "entries": [
       {
         "city": "Malie",
@@ -82,13 +80,13 @@
         "speed": "103.6"
       }
     ],
-    "classification": "Violent Storm (level 11)"
+    "rank": 5,
+    "classification": "Violent Storm (level 11)",
+    "country": "Samoa"
   },
   {
-    "rank": 6,
-    "avg_wind_speed": 109.64999999999999,
-    "country": "Malta",
     "country_code": "MT",
+    "avg_wind_speed": 109.64999999999999,
     "entries": [
       {
         "city": "Saint Lucia",
@@ -107,13 +105,13 @@
         "speed": "95.7"
       }
     ],
-    "classification": "Violent Storm (level 11)"
+    "rank": 6,
+    "classification": "Violent Storm (level 11)",
+    "country": "Malta"
   },
   {
-    "rank": 7,
-    "avg_wind_speed": 104.73333333333333,
-    "country": "Jamaica",
     "country_code": "JM",
+    "avg_wind_speed": 104.73333333333333,
     "entries": [
       {
         "city": "Wakefield",
@@ -140,13 +138,13 @@
         "speed": "104.0"
       }
     ],
-    "classification": "Violent Storm (level 11)"
+    "rank": 7,
+    "classification": "Violent Storm (level 11)",
+    "country": "Jamaica"
   },
   {
-    "rank": 8,
-    "avg_wind_speed": 102.80000000000001,
-    "country": "Puerto Rico",
     "country_code": "PR",
+    "avg_wind_speed": 102.80000000000001,
     "entries": [
       {
         "city": "San Juan",
@@ -157,26 +155,26 @@
         "speed": "112.9"
       }
     ],
-    "classification": "Whole gale or Storm (level 10)"
+    "rank": 8,
+    "classification": "Whole gale or Storm (level 10)",
+    "country": "Puerto Rico"
   },
   {
-    "rank": 9,
-    "avg_wind_speed": 102.0,
-    "country": "Saint Kitts and Nevis",
     "country_code": "KN",
+    "avg_wind_speed": 102.0,
     "entries": [
       {
         "city": "Nicola Town",
         "speed": "102.0"
       }
     ],
-    "classification": "Whole gale or Storm (level 10)"
+    "rank": 9,
+    "classification": "Whole gale or Storm (level 10)",
+    "country": "Saint Kitts and Nevis"
   },
   {
-    "rank": 10,
-    "avg_wind_speed": 101.8,
-    "country": "Lesotho",
     "country_code": "LS",
+    "avg_wind_speed": 101.8,
     "entries": [
       {
         "city": "Mohale\u2019s Hoek",
@@ -187,6 +185,8 @@
         "speed": "87.3"
       }
     ],
-    "classification": "Whole gale or Storm (level 10)"
+    "rank": 10,
+    "classification": "Whole gale or Storm (level 10)",
+    "country": "Lesotho"
   }
 ]
