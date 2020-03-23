@@ -1,0 +1,30 @@
+Invocations of noWorkflow and YesWorkflow to produce the output files contained in this folder (in alphabetical order):
+
+now_L_diff_environment-fileaccesses-modules.ttl: now diff -p -efm --format turtle --file now_S_diff_environment-fileaccesses-modules 1 2
+now_L_provo_activations.ttl: now provo -a --format turtle --file now_L_provo_activations 1
+now_L_provo_definitions.ttl: now provo -d --format turtle --file now_L_provo_definitions 1
+now_L_provo_environment.ttl: now provo -e --format turtle --file now_L_provo_environment 1
+now_L_provo_fileaccesses.ttl: now provo -f --format turtle --file now_L_provo_fileaccesses 1
+now_L_provo_modules.ttl: now provo -m --format turtle --file now_L_modules 1
+
+now_M_diff_environment-fileaccesses-modules.ttl: now diff -p -efm --format turtle --file now_M_diff_environment-fileaccesses-modules 1 2 
+now_M_provo_activations.ttl: now provo -a --format turtle --file now_M_activations 1
+now_M_provo_definitions.ttl: now provo -d --format turtle --file now_M_provo_definitions 1
+now_M_provo_environment.ttl: now provo -e --format turtle --file now_M_provo_environment 1
+now_M_provo_fileaccesses.ttl: now provo -f --format turtle --file now_M_provo_fileaccesses 1
+now_M_provo_modules.ttl: now provo -m --format turtle --file now_M_modules 1
+
+now_S_case-study_original.ttl: now provo -a --format turtle --file now_S_case-study_original 1
+now_S_case-study_refactored_fixed.ttl: now provo -a --format turtle --file now_S_case-study_refactored_fixed 3
+now_S_case-study_refactored.ttl: now provo -a --format turtle --file now_S_case-study_refactored 2
+
+now_S_diff_environment-fileaccesses-modules.ttl:  now diff -p -efm --format turtle --file now_L_diff_environment-fileaccesses-modules 1 2
+now_S_provo_activations.ttl: now provo -a --format turtle --file now_S_provo_activations 1
+now_S_provo_definitions.ttl: now provo -d --format turtle --file now_S_provo_definitions 1
+now_S_provo_environment.ttl: now provo -e --format turtle --file now_M_provo_environment 1
+now_S_provo_fileaccesses.ttl: now provo -f --format turtle --file now_S_provo_fileaccesses 1
+now_S_provo_modules.ttl: nowo provo -m --format turtle --file now_S_modules 1
+
+yw_L.ttl: yw extract instances/large/inst_l.py -c extract.provenancefile=instances/out/yw_L -c extract.provenanceformat=turtle -c extract.provenancens=http://yesworkflow.org/ -c extract.provenanceprefix=yw
+yw_M.ttl: yw extract instances/medium/inst_m.py -c extract.provenancefile=instances/out/yw_M -c extract.provenanceformat=turtle -c extract.provenancens=http://yesworkflow.org/ -c extract.provenanceprefix=yw
+yw_S.ttl: yw extract instances/small/inst_s.py -c extract.provenancefile=instances/out/yw_S -c extract.provenanceformat=turtle -c extract.provenancens=http://yesworkflow.org/ -c extract.provenanceprefix=yw
