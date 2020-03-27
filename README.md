@@ -33,4 +33,4 @@ This is achieved with the help of specifically constructed SPARQL queries.
 - [noWorkflow](https://github.com/raffaelfoidl/noworkflow): modified source code of [noWorkflow](https://github.com/gems-uff/noworkflow) with PROV-O exporter module
 - [SPARQL Playground](https://github.com/raffaelfoidl/sparql-playground): modified source code of [SPARQL Playground](https://github.com/calipho-sib/sparql-playground), pre-equipped with test data (created with extended versions of YesWorkflow and noWorkflow) and provenance queries conceived for the thesis
 
-_Note: The recommended Python and Java versions are Python 3.5 and Java 8 or 11 since the scripts and software artifacts involved in this thesis have been developed and tested using them._
+_Note: The recommended Python and Java versions are Python 3.5 and Java 8 ([SPARQL Playground](https://github.com/raffaelfoidl/sparql-playground)) or 11 ([YesWorkflow](https://github.com/raffaelfoidl/yw-prototypes)) since the scripts and software artifacts involved in this thesis have been developed and tested using them._
